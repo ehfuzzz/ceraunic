@@ -1,0 +1,401 @@
+{
+ "_meta": {
+  "doNotRegenerateFromSolidity": true,
+  "generator": "wi.engine.parity (scripts/engine_fixture_run.py)",
+  "positionValue": "mulDiv(shares, totalStaked + 1, totalShares + 1e6)",
+  "spec": "SPEC 8.7, 14",
+  "tolerance": "exact integer equality",
+  "what": "WI staking haircut on a closed day's net junior loss: bps = min(mulDiv(l, 1e4, junior + l), cap); burned = mulDiv(totalStaked, bps, 1e4); cooldown shares stay cuttable"
+ },
+ "cases": [
+  {
+   "cooldowns": [],
+   "dayPnl": -500000000,
+   "expected": {
+    "burned": 50000000000000000000000,
+    "haircutBps": 500,
+    "positions": [
+     {
+      "activeShares": 600000000000000000000000000000,
+      "activeValue": 570000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     },
+     {
+      "activeShares": 400000000000000000000000000000,
+      "activeValue": 380000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001004"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 950000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 9500000000,
+   "name": "below_cap",
+   "stakes": [
+    {
+     "amount": 600000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    },
+    {
+     "amount": 400000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001004"
+    }
+   ]
+  },
+  {
+   "cooldowns": [],
+   "dayPnl": -500000000,
+   "expected": {
+    "burned": 50000000000000000000000,
+    "haircutBps": 500,
+    "positions": [
+     {
+      "activeShares": 1000000000000000000000000000000,
+      "activeValue": 950000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 950000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 9500000000,
+   "name": "spec_example_500bps",
+   "stakes": [
+    {
+     "amount": 1000000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    }
+   ]
+  },
+  {
+   "cooldowns": [],
+   "dayPnl": -3000000000,
+   "expected": {
+    "burned": 300000000000000000000000,
+    "haircutBps": 3000,
+    "positions": [
+     {
+      "activeShares": 1000000000000000000000000000000,
+      "activeValue": 700000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 700000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 7000000000,
+   "name": "at_cap",
+   "stakes": [
+    {
+     "amount": 1000000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    }
+   ]
+  },
+  {
+   "cooldowns": [],
+   "dayPnl": -9000000000,
+   "expected": {
+    "burned": 300000000000000000000000,
+    "haircutBps": 3000,
+    "positions": [
+     {
+      "activeShares": 700000000000000000000000000000,
+      "activeValue": 490000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     },
+     {
+      "activeShares": 300000000000000000000000000000,
+      "activeValue": 210000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001004"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 700000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 1000000000,
+   "name": "above_cap",
+   "stakes": [
+    {
+     "amount": 700000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    },
+    {
+     "amount": 300000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001004"
+    }
+   ]
+  },
+  {
+   "cooldowns": [],
+   "dayPnl": -10000000000,
+   "expected": {
+    "burned": 300000000000000000000000,
+    "haircutBps": 3000,
+    "positions": [
+     {
+      "activeShares": 1000000000000000000000000000000,
+      "activeValue": 700000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 700000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 0,
+   "name": "junior_wiped",
+   "stakes": [
+    {
+     "amount": 1000000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    }
+   ]
+  },
+  {
+   "cooldowns": [
+    {
+     "owner": "0x0000000000000000000000000000000000001004",
+     "shareDivisor": 2
+    }
+   ],
+   "dayPnl": -1000000000,
+   "expected": {
+    "burned": 100000000000000000000000,
+    "haircutBps": 1000,
+    "positions": [
+     {
+      "activeShares": 500000000000000000000000000000,
+      "activeValue": 450000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     },
+     {
+      "activeShares": 250000000000000000000000000000,
+      "activeValue": 225000000000000000000000,
+      "cooldownShares": 250000000000000000000000000000,
+      "cooldownValue": 225000000000000000000000,
+      "owner": "0x0000000000000000000000000000000000001004"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 900000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 9000000000,
+   "name": "cooldown_shares_cut",
+   "stakes": [
+    {
+     "amount": 500000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    },
+    {
+     "amount": 500000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001004"
+    }
+   ]
+  },
+  {
+   "cooldowns": [
+    {
+     "owner": "0x0000000000000000000000000000000000001003",
+     "shareDivisor": 1
+    }
+   ],
+   "dayPnl": -1000000000,
+   "expected": {
+    "burned": 100000000000000000000000,
+    "haircutBps": 1000,
+    "positions": [
+     {
+      "activeShares": 0,
+      "activeValue": 0,
+      "cooldownShares": 1000000000000000000000000000000,
+      "cooldownValue": 900000000000000000000000,
+      "owner": "0x0000000000000000000000000000000000001003"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 900000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 9000000000,
+   "name": "all_in_cooldown",
+   "stakes": [
+    {
+     "amount": 1000000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    }
+   ]
+  },
+  {
+   "cooldowns": [],
+   "dayPnl": 500000000,
+   "expected": {
+    "burned": 0,
+    "haircutBps": 0,
+    "positions": [
+     {
+      "activeShares": 1000000000000000000000000000000,
+      "activeValue": 1000000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 1000000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 10500000000,
+   "name": "day_with_net_gain",
+   "stakes": [
+    {
+     "amount": 1000000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    }
+   ]
+  },
+  {
+   "cooldowns": [],
+   "dayPnl": 0,
+   "expected": {
+    "burned": 0,
+    "haircutBps": 0,
+    "positions": [
+     {
+      "activeShares": 1000000000000000000000000000000,
+      "activeValue": 1000000000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 1000000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 10000000000,
+   "name": "zero_pnl",
+   "stakes": [
+    {
+     "amount": 1000000000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    }
+   ]
+  },
+  {
+   "cooldowns": [],
+   "dayPnl": -1,
+   "expected": {
+    "burned": 0,
+    "haircutBps": 0,
+    "positions": [
+     {
+      "activeShares": 3000000000000000000000000,
+      "activeValue": 3000000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     }
+    ],
+    "totalShares": 3000000000000000000000000,
+    "totalStakedAfter": 3000000000000000000,
+    "totalStakedBefore": 3000000000000000000
+   },
+   "haircutCapBps": 3000,
+   "juniorAssetsAtClose": 1000000000000,
+   "name": "tiny_loss_rounds_to_zero",
+   "stakes": [
+    {
+     "amount": 3000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    }
+   ]
+  },
+  {
+   "cooldowns": [
+    {
+     "owner": "0x0000000000000000000000000000000000001005",
+     "shareDivisor": 3
+    }
+   ],
+   "dayPnl": -678000000,
+   "expected": {
+    "burned": 52000000000000000000000,
+    "haircutBps": 520,
+    "positions": [
+     {
+      "activeShares": 333333000000000000000000000000,
+      "activeValue": 315999684000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001003"
+     },
+     {
+      "activeShares": 1000000000000000000000000,
+      "activeValue": 948000000000000000,
+      "cooldownShares": 0,
+      "cooldownValue": 0,
+      "owner": "0x0000000000000000000000000000000000001004"
+     },
+     {
+      "activeShares": 444444000000000000000000000000,
+      "activeValue": 421332912000000000000000,
+      "cooldownShares": 222222000000000000000000000000,
+      "cooldownValue": 210666456000000000000000,
+      "owner": "0x0000000000000000000000000000000000001005"
+     }
+    ],
+    "totalShares": 1000000000000000000000000000000,
+    "totalStakedAfter": 948000000000000000000000,
+    "totalStakedBefore": 1000000000000000000000000
+   },
+   "haircutCapBps": 1500,
+   "juniorAssetsAtClose": 12345000000,
+   "name": "odd_stakes",
+   "stakes": [
+    {
+     "amount": 333333000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001003"
+    },
+    {
+     "amount": 1000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001004"
+    },
+    {
+     "amount": 666666000000000000000000,
+     "owner": "0x0000000000000000000000000000000000001005"
+    }
+   ]
+  }
+ ]
+}

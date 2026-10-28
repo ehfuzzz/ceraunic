@@ -1,0 +1,17 @@
+[project]
+name = "wi-engine-api"
+version = "0.9.0"
+description = "weather-insurance engine API (slim deploy bundle; the full project venv is 535 MB, Vercel's Python limit is 500 MB)"
+requires-python = ">=3.12"
+# Never pandas / xarray / netCDF4 / pyarrow / matplotlib / scipy / statsmodels here (scripts/deploy-engine.sh
+# fails the deploy if any of them is importable from the bundle). numpy: wi.eval.ladder + the Phase 5 estimator.
+# eth-abi / eth-utils / eth-account: EIP-712 digests (engine) and EvmLedger calldata; no web3.
+dependencies = [
+    "fastapi>=0.142",
+    "pydantic>=2.13",
+    "upstash-redis>=1.8",
+    "numpy>=2.3",
+    "eth-abi>=5.2",
+    "eth-utils>=5.3",
+    "eth-account>=0.14",
+]

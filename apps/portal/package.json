@@ -1,0 +1,39 @@
+{
+  "name": "@wi/portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "gen:fixtures": "tsx scripts/gen-square-fixtures.ts",
+    "pos:accept": "tsx scripts/pos-accept.ts",
+    "smoke": "playwright test",
+    "test:unit": "tsx --test tests/execute.test.ts",
+    "gen:api": "openapi-typescript ${ENGINE_ORIGIN:-http://127.0.0.1:8787}/api/v1/openapi.json -o src/lib/engine-schema.d.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.0",
+    "next": "16.3.7",
+    "openapi-fetch": "^0.17.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "square": "46.0.0",
+    "viem": "^2.57.1",
+    "wagmi": "^2.19.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.59.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.7",
+    "openapi-typescript": "^7.13.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

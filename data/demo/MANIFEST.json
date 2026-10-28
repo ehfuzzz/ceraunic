@@ -1,0 +1,74 @@
+{
+ "bytes": {
+  "books_ins1.json.gz": 2694,
+  "cli.json.gz": 71033,
+  "he.json": 808,
+  "ladders.json.gz": 171460,
+  "priors.json": 5062,
+  "rain.json.gz": 65634,
+  "weather.json.gz": 30108
+ },
+ "counts": {
+  "books": 24,
+  "candles": 51563,
+  "cliSites": {
+   "EWR": 166,
+   "FLL": 165,
+   "JFK": 166,
+   "LGA": 166,
+   "MDW": 166,
+   "MIA": 166,
+   "NYC": 166,
+   "OPF": 164,
+   "ORD": 166,
+   "TTN": 166
+  },
+  "ladderDays": {
+   "KXHIGHCHI": 76,
+   "KXHIGHMIA": 76,
+   "KXHIGHNY": 76
+  },
+  "rainLadderDays": {
+   "KXRAIN-CHI": 71,
+   "KXRAIN-MIA": 71,
+   "KXRAIN-NYC": 71
+  },
+  "rainPrecipDays": {
+   "MIA": 166,
+   "NYC": 166,
+   "ORD": 166
+  },
+  "rungs": 1368,
+  "weatherRows": {
+   "EWR": 1364,
+   "MDW": 1365,
+   "MIA": 1356,
+   "NYC": 1363,
+   "TTN": 1366
+  }
+ },
+ "prehistoryDays": 90,
+ "sha256": {
+  "books_ins1.json.gz": "3d75c0af20e1375b948276ba7f31ae3de62351d140fd4713b35b4b3750a6d212",
+  "cli.json.gz": "e14a858c33a7643b1462bc8f2a187aaa14709df853fa2ff1b8b65f72c6c6bce1",
+  "he.json": "66827216ce27111ed899021b5a256b65021bceb2d94cc77743ba061a12a4dbd3",
+  "ladders.json.gz": "300eb81f6e6fd1be0dc83edbb81c577e03a506c7a059042ed3c17fc75057123b",
+  "priors.json": "62b54fbc4ad2cc1eea9f0b8ba57bfe385c6ac5c124609b74041aed6434c2b4f2",
+  "rain.json.gz": "97e5092135f7d44c2381579a975bbc567bb0de7ff98115e03c3cd29f53da1262",
+  "weather.json.gz": "cd870d8028fd178d6dbfa93170f2aec958aaf922e2f8152c057e45b49d89c480"
+ },
+ "sources": {
+  "books_ins1": "prior/hl-mm-ins/reports/ins1/books.json (2026-09-29 snapshot), reference only",
+  "cli": "NWS CLI via IEM (data/raw/iem/cli/*_cli.csv, column high) for NYC/EWR/TTN/MDW/MIA; IEM ASOS daily.py max_temp_f (data/raw/iem/{LGA,JFK,ORD,FLL,OPF}.csv) as the CLI stand-in for the other location sites (docs/CONVENTIONS.md section 8). vintageHash = sha256 of the source CSV row.",
+  "he": "reports/eval-06/results.json",
+  "ladders": "Kalshi KXHIGHNY/KXHIGHCHI/KXHIGHMIA markets + hourly candles (data/cache/kalshi/{markets,candles}.parquet); candle ts = end_period_ts; ask/bid dollars -> cents half up. No recorded books in the window: hedge fills use the candle rule (SPEC 7.2).",
+  "priors": "reports/eval-06/priors.json",
+  "rain": "Kalshi KXRAIN daily '> 0 in' binaries for NYC/CHI/MIA (data/cache/kalshi/kxrain_{markets,candles}.parquet, scripts/pull_kxrain.py) + NWS CLI daily precip at CLINYC/CLIORD/CLIMIA (data/raw/iem/cli, data/cache/eval03/cli/ORD_2026.csv); trace kept as a flag; vintageHash = sha256 of the CSV row.",
+  "weather": "NWS CLI via IEM: high (F), precip (in, T = 0), snow (in, T = 0, M = null)"
+ },
+ "weatherFrom": "2023-01-01",
+ "window": [
+  "2026-07-15",
+  "2026-09-28"
+ ]
+}

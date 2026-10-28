@@ -1,0 +1,838 @@
+{
+ "_meta": {
+  "doNotRegenerateFromSolidity": true,
+  "generator": "wi.engine.parity (scripts/engine_fixture_run.py)",
+  "spec": "SPEC 9, 14",
+  "tolerance": "exact integer equality",
+  "what": "oracle acceptance predicates P1-P8, finalize and void timing (CLI windows 12h/24h/72h); revert names from contracts/src/OracleAdapter.sol; engineOnly cases are checks the chain cannot make (vintageHash is not signed) and Foundry should skip"
+ },
+ "cases": [
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "TooEarly",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "final",
+     "value": 30
+    },
+    {
+     "revert": "AlreadyFinal",
+     "revision": 0,
+     "status": "final",
+     "value": 30
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "post_at_fetch_then_finalize",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "finalize",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786449599,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "finalize",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786449600,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "finalize",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786449600,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "IndexNotActive",
+     "revision": -1,
+     "status": "none",
+     "value": 0
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P1_inactive_index",
+   "steps": [
+    {
+     "active": false,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "AsOfBeforeFetch",
+     "revision": -1,
+     "status": "none",
+     "value": 0
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P3_asof_before_fetch",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363199,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "AsOfInFuture",
+     "revision": -1,
+     "status": "none",
+     "value": 0
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P4_asof_in_future",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363201,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "ReportStale",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P5_report_stale",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786449599,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 1786406400,
+     "op": "post",
+     "revision": 1,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786492801,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "WindowClosed",
+     "revision": -1,
+     "status": "none",
+     "value": 0
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P6_window_closed",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786366800,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786449600,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "RevisionNotNewer",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "",
+     "revision": 2,
+     "status": "posted",
+     "value": 31
+    },
+    {
+     "revert": "RevisionNotNewer",
+     "revision": 2,
+     "status": "posted",
+     "value": 31
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P7_revision_not_newer",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363260,
+     "value": 31,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 2,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363260,
+     "value": 31,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 1,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363320,
+     "value": 32,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "BadSigner",
+     "revision": -1,
+     "status": "none",
+     "value": 0
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P8_bad_signer",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001006",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": 50
+    },
+    {
+     "revert": "",
+     "revision": 1,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "",
+     "revision": 1,
+     "status": "final",
+     "value": 30
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "revision_corrects_transcription",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 50,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 1,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786374000,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "finalize",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786449600,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": true,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "VintageChanged",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "revision_with_new_vintage_rejected_engine_only",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 1,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786366800,
+     "value": 33,
+     "vintageHash": "0x2222222222222222222222222222222222222222222222222222222222222222"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": -70
+    },
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "final",
+     "value": -70
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "negative_value_basis",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": -70,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "finalize",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786449600,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "final",
+     "value": 30
+    },
+    {
+     "revert": "AlreadyFinal",
+     "revision": 0,
+     "status": "final",
+     "value": 30
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "P2_post_after_final",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "finalize",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786449600,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+     "active": true,
+     "asOf": 1786449600,
+     "op": "post",
+     "revision": 1,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786449601,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "NothingPosted",
+     "revision": -1,
+     "status": "none",
+     "value": 0
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "finalize_nothing_posted",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "finalize",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786449600,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "TooEarly",
+     "revision": -1,
+     "status": "none",
+     "value": 0
+    },
+    {
+     "revert": "",
+     "revision": -1,
+     "status": "void",
+     "value": 0
+    },
+    {
+     "revert": "DayVoided",
+     "revision": -1,
+     "status": "void",
+     "value": 0
+    },
+    {
+     "revert": "DayVoided",
+     "revision": -1,
+     "status": "void",
+     "value": 0
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "void_rules",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "void",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786708799,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "void",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786708800,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "void",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786708800,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+     "active": true,
+     "asOf": 1786708800,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786708801,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  },
+  {
+   "config": {
+    "disputeWindow": 86400,
+    "fetchLag": 43200,
+    "voidGrace": 259200
+   },
+   "day": 20674,
+   "engineOnly": false,
+   "expected": [
+    {
+     "revert": "",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    },
+    {
+     "revert": "AlreadyPosted",
+     "revision": 0,
+     "status": "posted",
+     "value": 30
+    }
+   ],
+   "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+   "maxReportAge": 86400,
+   "name": "void_refused_after_post",
+   "steps": [
+    {
+     "active": true,
+     "asOf": 1786363200,
+     "op": "post",
+     "revision": 0,
+     "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+     "ts": 1786363200,
+     "value": 30,
+     "vintageHash": "0x1111111111111111111111111111111111111111111111111111111111111111"
+    },
+    {
+     "active": true,
+     "asOf": 0,
+     "op": "void",
+     "revision": 0,
+     "signer": "0x0000000000000000000000000000000000001001",
+     "ts": 1786708800,
+     "value": 0,
+     "vintageHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+   ],
+   "windows": {
+    "fetchAt": 1786363200,
+    "finalizeAt": 1786449600,
+    "voidAt": 1786708800
+   }
+  }
+ ]
+}

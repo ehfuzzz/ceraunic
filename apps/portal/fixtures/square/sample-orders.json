@@ -1,0 +1,1592 @@
+{
+  "orders": [
+    {
+      "id": "9i9COy0af9aOMUfKEpcMGYOu3zB",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T03:57:56.000Z",
+      "updated_at": "2025-08-27T04:00:00.000Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1328,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 108,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T04:00:00.000Z",
+      "line_items": [
+        {
+          "uid": "9i9COy0a0",
+          "catalog_object_id": "VARNYC0008",
+          "name": "Cookie",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 395,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 395,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 395,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "9i9COy0a1",
+          "catalog_object_id": "VARNYC0007",
+          "name": "Affogato",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 825,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HPB70yY1dnaym4zumUkLyPKx64S",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-28T03:58:01.999Z",
+      "updated_at": "2025-08-28T03:59:59.999Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1302,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 106,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 179,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-28T03:59:59.999Z",
+      "line_items": [
+        {
+          "uid": "HPB70yY10",
+          "name": "Custom Amount",
+          "quantity": "1",
+          "item_type": "CUSTOM_AMOUNT",
+          "base_price_money": {
+            "amount": 621,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 621,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 621,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "HPB70yY11",
+          "catalog_object_id": "VARNYC0005",
+          "name": "Latte",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 575,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 575,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 575,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Nnhs0gfwnNppoSbcxkyi85McoQV",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T23:24:17.802Z",
+      "updated_at": "2025-08-27T23:28:42.802Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1198,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 98,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 275,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T23:28:42.802Z",
+      "line_items": [
+        {
+          "uid": "Nnhs0gfw0",
+          "catalog_object_id": "VARNYC0005",
+          "name": "Latte",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 575,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 575,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 575,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "Nnhs0gfw1",
+          "catalog_object_id": "VARNYC0006",
+          "name": "Iced coffee",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 525,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 525,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 525,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Xbt59Kh4oBr3x4fuS6IfqKaAYxl",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T13:49:28.018Z",
+      "updated_at": "2025-08-27T13:50:46.018Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1388,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 113,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 128,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T13:50:46.018Z",
+      "line_items": [
+        {
+          "uid": "Xbt59Kh40",
+          "catalog_object_id": "VARNYC0004",
+          "name": "Drip coffee",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 375,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 750,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 750,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "Xbt59Kh41",
+          "catalog_object_id": "VARNYC0006",
+          "name": "Iced coffee",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 525,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 525,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 525,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "A3UFS8I7OLyFbp6ocqI5UzQsZB5",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T11:50:26.014Z",
+      "updated_at": "2025-08-27T11:51:47.014Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1143,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 93,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T11:51:47.014Z",
+      "line_items": [
+        {
+          "uid": "A3UFS8I70",
+          "catalog_object_id": "VARNYC0006",
+          "name": "Iced coffee",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 525,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 1050,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 1050,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OEDSIV1TKs42JFhguQafeUH3NW6",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T18:11:34.662Z",
+      "updated_at": "2025-08-27T18:15:21.662Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1252,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 102,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 173,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T18:15:21.662Z",
+      "line_items": [
+        {
+          "uid": "OEDSIV1T0",
+          "catalog_object_id": "VARNYC0005",
+          "name": "Latte",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 575,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 1150,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 1150,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "KzYAjACeiooEt5VQ6wH3yRt5te8",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T17:31:34.860Z",
+      "updated_at": "2025-08-27T17:33:52.860Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 626,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 51,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 144,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T17:33:52.860Z",
+      "line_items": [
+        {
+          "uid": "KzYAjACe0",
+          "catalog_object_id": "VARNYC0005",
+          "name": "Latte",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 575,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 575,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 575,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "WVXot530EDkCA7gDYNWFGzi7y3F",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T18:41:04.033Z",
+      "updated_at": "2025-08-27T18:44:08.033Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1470,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 120,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T18:44:08.033Z",
+      "line_items": [
+        {
+          "uid": "WVXot5300",
+          "catalog_object_id": "VARNYC0002",
+          "name": "Double scoop",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 675,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 675,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 675,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "WVXot5301",
+          "catalog_object_id": "VARNYC0002",
+          "name": "Double scoop",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 675,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 675,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 675,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "EMDuMVPJ1D3jM3OgkCLspc3gQHS",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T12:56:17.531Z",
+      "updated_at": "2025-08-27T13:01:16.531Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 2793,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 228,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 385,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T13:01:16.531Z",
+      "line_items": [
+        {
+          "uid": "EMDuMVPJ0",
+          "catalog_object_id": "VARNYC0007",
+          "name": "Affogato",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 825,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "EMDuMVPJ1",
+          "catalog_object_id": "VARNYC0008",
+          "name": "Cookie",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 395,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 790,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 790,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "EMDuMVPJ2",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 950,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GoYV0xqKKcpzjUGOvxSwgVGSF8a",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T12:36:09.154Z",
+      "updated_at": "2025-08-27T12:37:30.154Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 2014,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 164,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T12:37:30.154Z",
+      "line_items": [
+        {
+          "uid": "GoYV0xqK0",
+          "catalog_object_id": "VARNYC0009",
+          "name": "Milkshake",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 925,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 1850,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 1850,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "VnYFyTdXPirgZUkHodDGf73wf0I",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T23:36:33.951Z",
+      "updated_at": "2025-08-27T23:37:56.951Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1851,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 151,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T23:37:56.951Z",
+      "line_items": [
+        {
+          "uid": "VnYFyTdX0",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 950,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "VnYFyTdX1",
+          "catalog_object_id": "VARNYC0004",
+          "name": "Drip coffee",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 375,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 750,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 750,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8L7b7M9CjMgsg54MbomImb5ZKs1",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T19:38:32.420Z",
+      "updated_at": "2025-08-27T19:42:33.420Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1464,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 119,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T19:42:33.420Z",
+      "line_items": [
+        {
+          "uid": "8L7b7M9C0",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 950,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "8L7b7M9C1",
+          "catalog_object_id": "VARNYC0008",
+          "name": "Cookie",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 395,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 395,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 395,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ZYqPWadgGt89E5bUKX4pIFozcBC",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T22:25:28.706Z",
+      "updated_at": "2025-08-27T22:27:49.706Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1089,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 89,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T22:27:49.706Z",
+      "line_items": [
+        {
+          "uid": "ZYqPWadg0",
+          "catalog_object_id": "VARNYC0006",
+          "name": "Iced coffee",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 525,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 525,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 525,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "ZYqPWadg1",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 475,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "XKWdlRu58m3nnZ9SkwLUlRNqboz",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T19:44:08.243Z",
+      "updated_at": "2025-08-27T19:45:47.243Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 3974,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 324,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T19:45:47.243Z",
+      "line_items": [
+        {
+          "uid": "XKWdlRu50",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 950,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "XKWdlRu51",
+          "catalog_object_id": "VARNYC0002",
+          "name": "Double scoop",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 675,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 1350,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 1350,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "XKWdlRu52",
+          "catalog_object_id": "VARNYC0002",
+          "name": "Double scoop",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 675,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 1350,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 1350,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BPtGp181RDmzxhHpu1ri6kyzRzd",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T21:51:26.967Z",
+      "updated_at": "2025-08-27T21:55:46.967Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1247,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 102,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T21:55:46.967Z",
+      "line_items": [
+        {
+          "uid": "BPtGp1810",
+          "catalog_object_id": "VARNYC0004",
+          "name": "Drip coffee",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 375,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 750,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 750,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "BPtGp1811",
+          "catalog_object_id": "VARNYC0008",
+          "name": "Cookie",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 395,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 395,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 395,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "DxD0mQViqbXA1MZhZYVxsUGgOe0",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T14:03:01.321Z",
+      "updated_at": "2025-08-27T14:07:04.321Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 1796,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 146,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T14:07:04.321Z",
+      "line_items": [
+        {
+          "uid": "DxD0mQVi0",
+          "catalog_object_id": "VARNYC0007",
+          "name": "Affogato",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 825,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "DxD0mQVi1",
+          "catalog_object_id": "VARNYC0007",
+          "name": "Affogato",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 825,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "La0JPvdJJ5L5jSB7PEpcVSt4GO9",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T22:21:21.639Z",
+      "updated_at": "2025-08-27T22:23:07.639Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 517,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 42,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T22:23:07.639Z",
+      "line_items": [
+        {
+          "uid": "La0JPvdJ0",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 475,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OOvzrRDmFm028kJ2AWHKt9j1kL6",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T14:15:33.551Z",
+      "updated_at": "2025-08-27T14:17:11.551Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 2069,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 169,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 190,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T14:17:11.551Z",
+      "line_items": [
+        {
+          "uid": "OOvzrRDm0",
+          "catalog_object_id": "VARNYC0009",
+          "name": "Milkshake",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 925,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 925,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 925,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "OOvzrRDm1",
+          "catalog_object_id": "VARNYC0003",
+          "name": "Sundae",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 975,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 975,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 975,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Zc7PEEbybJ2tsq4Eqz0l1TS0gr6",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T21:51:17.613Z",
+      "updated_at": "2025-08-27T21:55:55.613Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 898,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 73,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T21:55:55.613Z",
+      "line_items": [
+        {
+          "uid": "Zc7PEEby0",
+          "catalog_object_id": "VARNYC0007",
+          "name": "Affogato",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 825,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HLh3iiAWJb4SUzC40thn5iP7yd4",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T13:58:32.791Z",
+      "updated_at": "2025-08-27T13:59:49.791Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 408,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 33,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T13:59:49.791Z",
+      "line_items": [
+        {
+          "uid": "HLh3iiAW0",
+          "catalog_object_id": "VARNYC0004",
+          "name": "Drip coffee",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 375,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 375,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 375,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "VHVzl6xiDXHK9zIqAlkj8XNQdXj",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T20:56:11.337Z",
+      "updated_at": "2025-08-27T20:57:56.337Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 898,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 73,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T20:57:56.337Z",
+      "line_items": [
+        {
+          "uid": "VHVzl6xi0",
+          "catalog_object_id": "VARNYC0007",
+          "name": "Affogato",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 825,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "BqWXanAYAXNYQGtCKDC9wxS83IB",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T13:00:33.298Z",
+      "updated_at": "2025-08-27T13:04:55.298Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 898,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 73,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T13:04:55.298Z",
+      "line_items": [
+        {
+          "uid": "BqWXanAY0",
+          "catalog_object_id": "VARNYC0007",
+          "name": "Affogato",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 825,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 825,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Lsb1WtS7tRM5l8CjKOvW5O8OCew",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T14:05:49.177Z",
+      "updated_at": "2025-08-27T14:08:07.177Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 2450,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 200,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T14:08:07.177Z",
+      "line_items": [
+        {
+          "uid": "Lsb1WtS70",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 950,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 950,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "Lsb1WtS71",
+          "catalog_object_id": "VARNYC0009",
+          "name": "Milkshake",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 925,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 925,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 925,
+            "currency": "USD"
+          }
+        },
+        {
+          "uid": "Lsb1WtS72",
+          "catalog_object_id": "VARNYC0004",
+          "name": "Drip coffee",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 375,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 375,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 375,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8veRdTkvTcPOxUInhZqZzFj2Bhq",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T21:24:02.243Z",
+      "updated_at": "2025-08-27T21:26:26.243Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 2123,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 173,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 390,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T21:26:26.243Z",
+      "line_items": [
+        {
+          "uid": "8veRdTkv0",
+          "catalog_object_id": "VARNYC0003",
+          "name": "Sundae",
+          "variation_name": "Regular",
+          "quantity": "2",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 975,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 1950,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 1950,
+            "currency": "USD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "U8qEGuEUVawCit0GA39SIyNYk0S",
+      "location_id": "LFIXNYC000001",
+      "created_at": "2025-08-27T12:49:53.158Z",
+      "updated_at": "2025-08-27T12:53:25.158Z",
+      "state": "COMPLETED",
+      "version": 4,
+      "source": {
+        "name": "Square POS"
+      },
+      "total_money": {
+        "amount": 517,
+        "currency": "USD"
+      },
+      "total_tax_money": {
+        "amount": 42,
+        "currency": "USD"
+      },
+      "total_tip_money": {
+        "amount": 95,
+        "currency": "USD"
+      },
+      "total_discount_money": {
+        "amount": 0,
+        "currency": "USD"
+      },
+      "closed_at": "2025-08-27T12:53:25.158Z",
+      "line_items": [
+        {
+          "uid": "U8qEGuEU0",
+          "catalog_object_id": "VARNYC0001",
+          "name": "Single scoop",
+          "variation_name": "Regular",
+          "quantity": "1",
+          "item_type": "ITEM",
+          "base_price_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "gross_sales_money": {
+            "amount": 475,
+            "currency": "USD"
+          },
+          "total_money": {
+            "amount": 475,
+            "currency": "USD"
+          }
+        }
+      ]
+    }
+  ]
+}

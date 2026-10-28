@@ -1,0 +1,38 @@
+code,iem_id,iem_name,iem_lat,iem_lon,ghcn_id,note,ghcn_prcp
+NYC,NYC,NEW YORK CITY,40.779,-73.96925,USW00094728,"research id, 0.01 km from IEM coords",True
+EWR,EWR,Newark Intl,40.68272,-74.16932,USW00014734,"research id, 0.01 km from IEM coords",True
+TTN,TTN,TRENTON/MERCER CO.,40.27682,-74.81588,USW00014792,"research id, 0.01 km from IEM coords",True
+MDW,MDW,CHICAGO,41.78597,-87.75242,USW00014819,"research id, 0.31 km from IEM coords",True
+MIA,MIA,MIAMI INTL AIRPORT,25.78805,-80.31693,USW00012839,"research id, 0.01 km from IEM coords",True
+ORD,ORD,Chicago OHare,41.9602,-87.9316,USW00094846,"research id, 0.01 km from IEM coords",True
+LGA,LGA,New York/LaGuardia,40.77945,-73.88028,USW00014732,"research id, 0.01 km from IEM coords",True
+JFK,JFK,NEW YORK/JF KENNEDY,40.63861,-73.76222,USW00094789,"research id, 0.16 km from IEM coords",True
+FLL,FLL,Fort Lauderdale - Hollywood,26.07871176,-80.16223087,USW00012849,"research id, 0.02 km from IEM coords",True
+OPF,OPF,MIAMI/OPA LOCKA,25.91017,-80.28283,USW00012882,"research id, 0.01 km from IEM coords",True
+PBI,DJT,WEST PALM BEACH,26.6847,-80.0994,USW00012844,"research id, 0.04 km from IEM coords",True
+TEB,TEB,TETERBORO AIRPORT,40.85899,-74.05616,USW00094741,"research id, 0.01 km from IEM coords",True
+HPN,HPN,WHITE PLAINS,41.06694,-73.7075,USW00094745,"research id, 0.59 km from IEM coords",True
+FRG,FRG,FARMINGDALE/REPUBLC,40.72878,-73.41341,USW00054787,"research id, 0.67 km from IEM coords",True
+ISP,ISP,ISLIP/MACARTHUR,40.79389,-73.10167,USW00004781,"research id, 0.02 km from IEM coords",True
+CDW,CDW,CALDWELL/ESSEX CO.,40.87639,-74.28306,USW00054743,"research id, 0.02 km from IEM coords",True
+PWK,PWK,PALWAUKEE,42.12083,-87.90472,USW00004838,"research id, 0.00 km from IEM coords",True
+DPA,DPA,CHICAGO/DUPAGE,41.90778,-88.24861,USW00094892,"research id, 1.28 km from IEM coords",True
+UGN,UGN,Waukegan,42.42545326,-87.86330075,USW00014880,"research id, 0.02 km from IEM coords",True
+TMB,TMB,MIAMI/KENDALL-TAMIA,25.64227,-80.43467,USW00012888,"research id, 0.01 km from IEM coords",True
+HWO,HWO,HOLLYWOOD/N. PERRY,25.99955,-80.24119,USW00092809,"research id, 0.02 km from IEM coords",True
+MMU,MMU,MORRISTOWN MUNI,40.79935,-74.41487,,no candidate,False
+SMQ,SMQ,Somerville,40.62389,-74.66944,USW00054785,coordinate match USW00054785 0.06km 1999-2026,True
+GYY,GYY,GARY REGIONAL,41.61628,-87.41278,,no candidate,False
+LOT,LOT,ROMEOVILLE/CHI,41.60811,-88.09619,USC00117457,coordinate match USC00117457 1.03km 1997-2026,True
+HST,HST,HOMESTEAD AFB,25.48844,-80.38367,USW00012826,coordinate match USW00012826 0.57km 1956-2026,True
+FXE,FXE,FORT LAUDERDALE,26.2,-80.17,USW00012885,coordinate match USW00012885 0.78km 1998-2026,True
+JRB,JRB,Manhattan - Wall Street,40.7012,-74.009,,no candidate,False
+DYL,DYL,DOYLESTOWN AIRPORT,40.33305,-75.12234,USW00054786,coordinate match USW00054786 0.31km 1999-2026,True
+PNE,PNE,PHILADELPHIA NE,40.0789,-75.01335,USW00094732,coordinate match USW00094732 0.00km 1945-2026,True
+VAY,VAY,SOUTH JERSEY REGIONAL AIRPORT,39.94289,-74.84572,USW00093780,coordinate match USW00093780 0.48km 1997-2026,True
+WRI,WRI,MCGUIRE AFB,40.01558,-74.59171,USW00014706,coordinate match USW00014706 0.72km 1949-2026,True
+BLM,BLM,BELMAR-FARMDALE,40.18,-74.13,,no candidate,False
+JOLIET,,JOLIET,41.55,-88.0833,USW00014834,extra USW within ~70 km of a settlement station (inventory search),True
+LAKEHURST,,LAKEHURST AP,40.0333,-74.3167,USW00014780,extra USW within ~70 km of a settlement station (inventory search),True
+PHL,,PHILA INTL AP,39.8733,-75.2269,USW00013739,extra USW within ~70 km of a settlement station (inventory search),True
+POMPANO,,POMPANO BEACH AIRPARK,26.2464,-80.1111,USW00092805,extra USW within ~70 km of a settlement station (inventory search),True

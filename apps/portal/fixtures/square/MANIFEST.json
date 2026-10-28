@@ -1,0 +1,86 @@
+{
+  "generator": "apps/portal/scripts/gen-square-fixtures.ts + src/lib/sales/square/generate.ts",
+  "generator_version": 1,
+  "generator_sha256": "fe768c45e6328ab80898445c98db77535234849b9a45985ab19ec750bfaf84c5",
+  "square_version": "2026-09-16",
+  "seed": 20260930,
+  "window": {
+    "start": "2025-08-27",
+    "end": "2026-09-30"
+  },
+  "local_dates": 400,
+  "truth_rows": 1200,
+  "zero_days_omitted_from_csv_export": 11,
+  "tmax_source": "official_daily.parquet (NWS CLI high_f), stations NYC/MDW/MIA; 4 of 1200 rows carried forward from the previous day (missing or null upstream)",
+  "planted_betas": {
+    "LFIXNYC000001": {
+      "beta": 0.012,
+      "tref": 70
+    },
+    "LFIXCHI000002": {
+      "beta": -0.006,
+      "tref": 60
+    },
+    "LFIXMIA000003": {
+      "beta": -0.004,
+      "tref": 84
+    }
+  },
+  "total_orders_in_stream": 108857,
+  "planted_total": {
+    "saleOrders": 106663,
+    "open": 1062,
+    "canceled": 500,
+    "returnOrders": 461,
+    "giftCardLines": 315,
+    "giftCardOnlyOrders": 171,
+    "customAmountLines": 3356,
+    "edgeTimeOrders": 2378,
+    "ambiguousHourOrders": 12
+  },
+  "planted_by_location": {
+    "LFIXNYC000001": {
+      "saleOrders": 38948,
+      "open": 386,
+      "canceled": 175,
+      "returnOrders": 171,
+      "giftCardLines": 110,
+      "giftCardOnlyOrders": 67,
+      "customAmountLines": 1298,
+      "edgeTimeOrders": 796,
+      "ambiguousHourOrders": 4
+    },
+    "LFIXCHI000002": {
+      "saleOrders": 32375,
+      "open": 307,
+      "canceled": 147,
+      "returnOrders": 134,
+      "giftCardLines": 82,
+      "giftCardOnlyOrders": 42,
+      "customAmountLines": 978,
+      "edgeTimeOrders": 786,
+      "ambiguousHourOrders": 4
+    },
+    "LFIXMIA000003": {
+      "saleOrders": 35340,
+      "open": 369,
+      "canceled": 178,
+      "returnOrders": 156,
+      "giftCardLines": 123,
+      "giftCardOnlyOrders": 62,
+      "customAmountLines": 1080,
+      "edgeTimeOrders": 796,
+      "ambiguousHourOrders": 4
+    }
+  },
+  "order_stream_sha256": "bef3eb91b8fae78216651c414547b8cf11e7291099093f4465b038759ec9537c",
+  "file_sha256": {
+    "params.json": "e16cdbf6b2b37acb5eac6e7360aa22498e9e34ea7855b0dd10d29838e851c556",
+    "station-tmax.csv": "daa20a84606897222f9a1caf1b0d28391b5356ac5e61689798e100577f52c6bf",
+    "locations.json": "58a02184e3ea62518ef306e8efd67ea208759b90d6b5f5a95ed68f9a552ddbb7",
+    "catalog.json": "cec3611204973a515ff45c5abb86cf8223e128d50d00232087cf9aec0656bc74",
+    "sample-orders.json": "57017bcc48e22e11ca0e73cfe2f179ca31d9b064c325c38ec9fdadafc7da0718",
+    "truth-daily.csv": "21ff2ec76b96f250bd22ee3498ab09fc1dd46e86ec872436b5013685fb6976e3",
+    "csv-export.csv": "891f85f86b50a6d51114a199f68391ecc2bccac8bc6d0ee790f1867b507de12d"
+  }
+}

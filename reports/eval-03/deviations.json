@@ -1,0 +1,36 @@
+[
+ {
+  "utc": "2026-09-30T15:51:37Z",
+  "what": "G1-P and G1-P* (PRISM per-cell) cannot be computed at HPN, FRG (NYC), SMQ (EWR, TTN), LOM, CKZ (TTN), PWK, DPA, JOT (MDW) and FXE (MIA) for temperature, nor at HPN, FRG, SMQ, PWK, DPA, FXE for rain: Phase 1 kept only 40 km PRISM discs around each settlement station, and PRISM refuses a second download of the same file inside 24 h (the whole archive was pulled 2026-09-30 13:20-15:36Z). Those pairs are left out of the G1-P/G1-P* pooled statistics, and G1-N is also reported on the same reduced pair set so the two grids compare like for like. Pre-freeze version: every pair. Fill: re-pull PRISM after 2026-10-01 15:40Z with a wider disc and re-run.",
+  "pre_freeze": "all 37 temperature / 26 rain pairs",
+  "status": "RESOLVED 2026-10-02",
+  "resolved_utc": "2026-10-02T08:27:30Z",
+  "resolution": "The original text above is kept as logged. On 2026-10-02 (06:21-08:27Z) scripts/phase3_repull.sh pulled the PRISM cell containing each of the 9 points (reports/eval-03/repull_points.json; 2008 daily files, 2024-01-01..2026-09-30, each requested once; cells kept in data/cache/prism_days_extra) and re-ran eval03.py --all. G1-P and G1-P* now run on all 37 temperature and all 26 rain pairs (were 27 and 19), so bakeoff_matched_prism_pairs now holds the full pair set. The 46 G1-P / G1-P* pairs already evaluated (27 temperature, 19 rain) did not move (their per-pair values are identical); only the new pairs were added. What changed: rain G1-P pooled median dHE +0.186 [0.085, 0.274] -> +0.229 [0.119, 0.318], HE 0.864 -> 0.808; rain winner unchanged (G1-P), survivors unchanged (G1-P, R-A); G1-P vs R-A HE diff +0.168 [0.082, 0.259] -> +0.112 [0.032, 0.238]; G1-P vs the runner-up P-A-IDW +0.119 [0.045, 0.251] -> +0.062 [-0.008, 0.229] (CI now includes 0); rain G1-P* P1 False -> True (still fails P3, continuity only); temperature G1-P dHE +0.061 unchanged (CI [0.044, 0.075]), still fails P1 and P3, nothing survives; temperature runner-up G1-P -> P-A-IDW (G1-P now has the highest HE, 0.875). Vintage check: the fresh files matched the Phase 1 disc cache at every disc cell on every day except 2026-09-26 (tmax and ppt; Phase 1 had release 1, the re-pull got release 2), which is outside the train and test windows. Full table: var/phase3-repull/changes.tsv; write-up: .planning/phases/03-geography-residual-bakeoff/03-REPULL-SUMMARY.md."
+ },
+ {
+  "utc": "2026-09-30T15:51:37Z",
+  "what": "PRISM .stn.csv contamination is measured on the single station list Phase 1 kept (2026-07-15, tmax and ppt), not as a share of test days; the other daily lists were discarded with the grid zips and cannot be re-downloaded inside 24 h.",
+  "pre_freeze": "share of test days on which each truth station appears in .stn.csv"
+ },
+ {
+  "utc": "2026-09-30T15:51:37Z",
+  "what": "Station-value rule extended per 03-PLAN: at a non-CLI station with a GHCN-D USW record, IEM is compared with GHCN-D and replaced by GHCN-D if they differ on more than 2 % of days (same thresholds as the CLI check). Stations with neither (JRB, MMU, GYY, LOM, CKZ, IGQ, 06C; BLM in the outer ring) stay on IEM, unchecked.",
+  "pre_freeze": "IEM at every non-CLI station"
+ },
+ {
+  "utc": "2026-09-30T16:03:41Z",
+  "what": "Data-quality result (before any HE): every checked station fails the 2 % tmax check (IEM 0.4-0.9 F low on 39-68 % of days before 2025-10, 0-9 % after), so all CLI stations use CLI tmax and all non-CLI stations with a USW record use GHCN-D tmax; precip stays on IEM everywhere (0-1.5 % mismatch). The GHCN-D records for HST, WRI and JOT are empty in 2024 (train coverage 0 %), so these three have no train data. Frozen PC1 fits therefore give zero weight to any input with less than 50 % train coverage (HST in the MIA network, WRI in the TTN network) instead of dropping every train day. Decided before any HE was computed.",
+  "pre_freeze": "PC1 fitted on train days with all inputs present"
+ },
+ {
+  "utc": "2026-09-30T16:03:41Z",
+  "what": "Added one post-hoc descriptive sensitivity, never gating: test window restricted to 2025-10-01..2026-08-31, the period in which IEM equals the CLI (CONVENTIONS section 8). Reason: seven stations have neither CLI nor GHCN-D (JRB, MMU, GYY, LOM, CKZ, IGQ, 06C) and stay on IEM, which is biased low before 2025-10 at every station where it could be checked.",
+  "pre_freeze": "not in the sensitivity list"
+ },
+ {
+  "utc": "2026-10-02T09:27:02Z",
+  "what": "Data gap, not yet filled: the Phase 1 PRISM disc cache has no tmax file for label 2026-08-01 (CLI day 2026-07-31), so every design that uses the PRISM cell at S (G1-P, G1-P*, R-P) drops that one test day for temperature. The 2026-10-02 re-pull fetched that file for the 9 extra cells only; filling the discs needs one more download of the same file, and PRISM allows at most 2 downloads of a file per Pacific-time day and threatens IP blocks, so it was left for 2026-10-03. Fill: after 2026-10-03T08:33Z (PRISM's Pacific-day reset is 07:00Z, but the puller's own 24 h gate holds this file until 08:24:38Z; `pull_grids.py prism --dry-run` shows the plan without network) run `uv run python scripts/pull_grids.py prism` once, then `uv run python scripts/eval03.py --all`, and compare results.json before and after (the same pull also fetches ppt and tmax 2026-09-30, outside the windows).",
+  "pre_freeze": "every test day present for every design",
+  "status": "OPEN"
+ }
+]

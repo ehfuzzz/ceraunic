@@ -1,0 +1,252 @@
+{
+  "generator_version": 1,
+  "seed": 20260930,
+  "square_version": "2026-09-16",
+  "window": {
+    "start": "2025-08-27",
+    "end": "2026-09-30"
+  },
+  "dow_sun0": [
+    1.25,
+    0.85,
+    0.88,
+    0.92,
+    0.98,
+    1.12,
+    1.35
+  ],
+  "holidays": {
+    "2026-01-01": 0.6,
+    "2026-07-04": 1.3,
+    "2025-12-24": 0.7
+  },
+  "closed_all": [
+    "2025-11-27",
+    "2025-12-25"
+  ],
+  "ambiguous_date": "2025-11-02",
+  "noise": {
+    "open": 0.01,
+    "canceled": 0.005,
+    "returns": 0.004,
+    "gift_only": 0.0015,
+    "gift_line": 0.0015,
+    "custom_amount": 0.02,
+    "tip_prob": 0.35,
+    "discount_prob": 0.1
+  },
+  "line_count_p": [
+    0.55,
+    0.33,
+    0.12
+  ],
+  "qty2_p": 0.3,
+  "locations": [
+    {
+      "id": "LFIXNYC000001",
+      "key": "NYC",
+      "name": "Fixture Scoops Midtown",
+      "business": "ice cream + coffee",
+      "timezone": "America/New_York",
+      "lat": 40.7648,
+      "lon": -73.9808,
+      "postal_code": "10019",
+      "address_line_1": "1 Fixture Ave",
+      "locality": "New York",
+      "state": "NY",
+      "station": "NYC",
+      "base": 95,
+      "amp": 0.2,
+      "beta": 0.012,
+      "tref": 70,
+      "tax_rate": 0.08875,
+      "closed_ranges": [],
+      "items": [
+        {
+          "name": "Single scoop",
+          "category": "Scoops",
+          "price_cents": 475
+        },
+        {
+          "name": "Double scoop",
+          "category": "Scoops",
+          "price_cents": 675
+        },
+        {
+          "name": "Sundae",
+          "category": "Scoops",
+          "price_cents": 975
+        },
+        {
+          "name": "Drip coffee",
+          "category": "Coffee",
+          "price_cents": 375
+        },
+        {
+          "name": "Latte",
+          "category": "Coffee",
+          "price_cents": 575
+        },
+        {
+          "name": "Iced coffee",
+          "category": "Coffee",
+          "price_cents": 525
+        },
+        {
+          "name": "Affogato",
+          "category": "Extras",
+          "price_cents": 825
+        },
+        {
+          "name": "Cookie",
+          "category": "Extras",
+          "price_cents": 395
+        },
+        {
+          "name": "Milkshake",
+          "category": "Extras",
+          "price_cents": 925
+        }
+      ]
+    },
+    {
+      "id": "LFIXCHI000002",
+      "key": "CHI",
+      "name": "Fixture Bakehouse Midway",
+      "business": "coffee + bakery",
+      "timezone": "America/Chicago",
+      "lat": 41.7868,
+      "lon": -87.7522,
+      "postal_code": "60629",
+      "address_line_1": "2 Fixture St",
+      "locality": "Chicago",
+      "state": "IL",
+      "station": "MDW",
+      "base": 80,
+      "amp": 0.1,
+      "beta": -0.006,
+      "tref": 60,
+      "tax_rate": 0.1025,
+      "closed_ranges": [
+        [
+          "2026-02-09",
+          "2026-02-13"
+        ]
+      ],
+      "items": [
+        {
+          "name": "Drip coffee",
+          "category": "Coffee",
+          "price_cents": 375
+        },
+        {
+          "name": "Latte",
+          "category": "Coffee",
+          "price_cents": 550
+        },
+        {
+          "name": "Cold brew",
+          "category": "Coffee",
+          "price_cents": 525
+        },
+        {
+          "name": "Croissant",
+          "category": "Bakery",
+          "price_cents": 450
+        },
+        {
+          "name": "Muffin",
+          "category": "Bakery",
+          "price_cents": 425
+        },
+        {
+          "name": "Scone",
+          "category": "Bakery",
+          "price_cents": 475
+        },
+        {
+          "name": "Egg sandwich",
+          "category": "Breakfast",
+          "price_cents": 875
+        },
+        {
+          "name": "Bagel",
+          "category": "Breakfast",
+          "price_cents": 525
+        },
+        {
+          "name": "Breakfast burrito",
+          "category": "Breakfast",
+          "price_cents": 975
+        }
+      ]
+    },
+    {
+      "id": "LFIXMIA000003",
+      "key": "MIA",
+      "name": "Fixture Juice Bar Miami",
+      "business": "juice + cafe",
+      "timezone": "America/New_York",
+      "lat": 25.7959,
+      "lon": -80.287,
+      "postal_code": "33126",
+      "address_line_1": "3 Fixture Blvd",
+      "locality": "Miami",
+      "state": "FL",
+      "station": "MIA",
+      "base": 85,
+      "amp": 0.05,
+      "beta": -0.004,
+      "tref": 84,
+      "tax_rate": 0.07,
+      "closed_ranges": [],
+      "items": [
+        {
+          "name": "Orange juice",
+          "category": "Juice",
+          "price_cents": 600
+        },
+        {
+          "name": "Green juice",
+          "category": "Juice",
+          "price_cents": 850
+        },
+        {
+          "name": "Acai bowl",
+          "category": "Juice",
+          "price_cents": 975
+        },
+        {
+          "name": "Cortadito",
+          "category": "Cafe",
+          "price_cents": 375
+        },
+        {
+          "name": "Cafe con leche",
+          "category": "Cafe",
+          "price_cents": 475
+        },
+        {
+          "name": "Empanada",
+          "category": "Cafe",
+          "price_cents": 525
+        },
+        {
+          "name": "Mango smoothie",
+          "category": "Smoothie",
+          "price_cents": 750
+        },
+        {
+          "name": "Berry smoothie",
+          "category": "Smoothie",
+          "price_cents": 775
+        },
+        {
+          "name": "Protein smoothie",
+          "category": "Smoothie",
+          "price_cents": 925
+        }
+      ]
+    }
+  ]
+}

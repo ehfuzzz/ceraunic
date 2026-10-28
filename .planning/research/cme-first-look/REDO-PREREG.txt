@@ -1,0 +1,121 @@
+CME WEATHER PREMIUM REDO - PRE-REGISTRATION
+Written 2026-10-24 17:55 ET, before any redo number was computed.
+Honesty note: this is NOT blind. The section-8 numbers (CME-KALSHI-WEATHER-FACTS.md) and both reviews were read first. What is fixed here, before running, is every definition below.
+The original pre-registration is CME-KALSHI-WEATHER-FACTS.md section 7(b); changes to it are listed under DEVIATIONS.
+
+QUESTION (owner): does the CME settle reflect how the weather turns out, or the participants' need to hedge?
+
+DATA
+- Databento GLBX.MDP3 statistics + trades, 26 US monthly HDD/CDD roots, existing pull 2022-10-01..2026-10-24.
+  Only records received before 2026-10-23 17:00Z are loaded. Only contracts whose month ended by 2026-09-30.
+- Outcome: NOAA RCC-ACIS (GHCN-Daily) daily max/min, index = sum over the month of max(0, 65 - (max+min)/2) (HDD)
+  or max(0, (max+min)/2 - 65) (CDD). Every day of the month must be present. If ACIS is incomplete, fall back to the
+  CME final settle record (final flag, received Mon-Fri) for a trade date >= 2 business days after month end; else drop.
+- Forecast: IEM archive of NWS GFS extended MOS (MEX), 00Z and 12Z runs, same 13 stations.
+
+CONTRACT-DAY VALIDITY
+- Keep a (contract, trade date) only if it has at least one settle record received Mon-Fri (Chicago time) with the
+  "actual" flag. This drops Sunday-snapshot-only days. Price = final-flag settle if present, else latest received.
+
+CLASSES (pre-expiry, trade date <= month end)
+- A (trade class, primary): cleared volume > 0 AND trade date in [month start - 15 d, month end] AND settle differs
+  from the previous valid settle of the same contract, with that previous settle at most 5 calendar days earlier.
+- B (window mark): in the window, cleared volume = 0. Used at the fixed leads.
+- A-gx (secondary): days with Globex prints; price = Globex VWAP; any lead.
+- C (out-of-window marks): descriptive only.
+
+FIXED LEADS
+- L = 7 and L = 1 (MOS benchmark); L = 15 and 30 secondary (trend baseline only).
+- Row = latest valid settle with trade date in [month end - L - 2, month end - L]. Actual leads are reported.
+
+INFORMATION CUTOFF (assessment date T = the row's trade date)
+- Observations: only days <= T-1.
+- Climatology: sample windows (same calendar day +-3 d) must all be dated < T. 10-yr = the 10 latest sample years.
+- Trend climatology: 30 sample years; warming slope = OLS on annual means of the 30 complete calendar years before
+  T's calendar year; each sample year shifted by slope x (target year - sample year).
+- MOS: day T's max and days T+1..T+6 max/min from the 00Z run of day T; day T's min from the 12Z run of day T-1
+  (24 h projection). Missing run -> the run 12 h older (projection shifted); still missing -> climatology for that
+  day. Counts reported. Assertion in code: no observation dated >= T enters any baseline.
+
+BENCHMARKS (same rows, same T)
+- (i) known-to-date + 10-yr climatology.
+- (ii) PRE-REGISTERED: known-to-date + MOS for days T..T+6 + 10-yr climatology after.
+  Daily DD from MOS = E[max(0, +-(65 - m))] with m ~ N((max+min)/2, s_k), s_k = 2.5 + 0.5k F, k = days ahead 0..6.
+  Sensitivity: point plug-in (s = 0); trend climatology instead of 10-yr after day 6.
+- (iii) trend baseline: known-to-date + trend climatology.
+
+STATISTICS
+- e = price - outcome (sign flipped vs 7b; e > 0 = futures buyers paid more than the outcome).
+- d = price - benchmark.
+- Row-weighted mean; SE = CR1 cluster-robust SE of that same row-weighted mean, clusters = season
+  (HDD season = Oct..Apr, named by the October year; CDD season = calendar year). Month-clustered SE also shown.
+- 95% CI = mean +- t(G-1, 0.975) SE. MDE (80% power, 5% two-sided) = (t(G-1,0.975) + t(G-1,0.80)) x SE,
+  normal 2.8 x SE also shown. G < 20 clusters: no z or t statistic is printed; results are "direction only".
+- RMSE of price and of each benchmark vs outcome on the same rows.
+- Primary sample: pre-registered cities Chicago (H2/K2), New York (H4/K4), Cincinnati (H3/K3). Secondary: 13 cities.
+
+VERDICT RULE (7b, unchanged except the sign convention)
+- "hedging pressure": class-A mean(e) has the same sign in >= 2 of 3 cities AND the pooled 95% CI of mean(e)
+  excludes 0 AND |mean(price - bench ii)| >= 2 SE.
+- "prices the outcome": |mean(e)| <= 1 SE AND RMSE(price) <= RMSE(bench ii).
+- otherwise "inconclusive". Also applied to the class-B marks at L = 7 and L = 1.
+
+"LEAN COLD" SENTENCE (old: CDD trades -8.9 vs trend, 3.7 SE)
+- Survives only if, on fixed class A (13 cities, CDD), the 95% season-cluster CI of mean(price - trend baseline)
+  excludes 0 AND the sign matches in >= 2 of the 3 pre-registered cities. Otherwise withdrawn.
+
+DEVIATIONS from 7(b) known now
+1. Trade class tightened (in window + settle moved), snapshot-only days dropped (reviews F1, F2).
+2. Outcome = ACIS index instead of the CME final (19 extracted finals wrong, F3/A5).
+3. Clusters = season, not month (F4, A3).
+4. Benchmark (ii) uses GFS extended MOS (MEX), not NBM: the NBM text archive is shorter and the brief allowed either.
+5. The 2010-22 extension is not run (data thin before mid-2024, F2; would need a re-pull).
+6. The 13-city pool and the trend baseline are additions, reported as secondary.
+
+RESUME ADDENDUM, 2026-10-24T22:39:23Z (before redo scoring)
+- Preserve the earlier preregistration, including its supplied timestamp; that timestamp was not verified by this worker.
+- Receipt discipline: a daily assessment is the end of trade date T in America/Chicago. Only actual, weekday
+  settlement records received by then qualify; retain receipt and event timestamps. Prefer final-flag then latest
+  qualifying record. Daily volume uses the same receipt cutoff. Drop delayed records, do not backdate them.
+- All displayed assessment timestamps are UTC. T itself is a station/calendar date used to align daily weather.
+- Incomplete ACIS outcome OR accrued observations => drop from every paired comparison. Do not use a CME fallback;
+  this is more conservative than the earlier preregistration and avoids silently mixing outcome definitions.
+- Contract universe: delivery months Oct 2022 through Sep 2026, with a qualifying pre-expiry settlement and complete
+  ACIS month. No need to require a post-expiry CME record. Report coverage by season and reconcile to the old sample.
+- MOS n_x valid at 00Z D+1 is daytime maximum for D; n_x at 12Z D is morning minimum for D. The 00Z T run therefore
+  supplies max T and both extrema on later days; min T comes from 12Z T-1. Reject 999/missing values. Runtime is a
+  model initialization timestamp, not an archived publication receipt. Early runs leave a conservative availability
+  buffer, but exact historical publication latency is not verified. MEX daytime/nighttime extrema need not equal
+  calendar-day ACIS extrema: keep this basis limitation explicit.
+- Forecast comparisons use early-day MOS, while the settlement can see intraday weather. Report a hindsight
+  diagnostic replacing day T's MOS DD with observed day T DD (not a deployable or historically available baseline).
+  A settlement RMSE advantage alone cannot establish incremental skill at the same information timestamp.
+- Report both fixed-lead class A+B and class B alone; label fixed-lead class A cells with tiny samples. Pooled
+  class-A days at all qualifying leads are secondary to the original fixed-lead design.
+- Restrict the primary fixed-lead panel to seasons 2022-23..2025-26 (HDD October-year 2022..2025, CDD 2023..2026).
+  Secondary 13-city coverage includes CDD October-2022 fragments and labels them explicitly.
+- The original hedging-pressure rule is applied as a diagnostic only: fewer than 20 independent season clusters
+  cannot establish a general hedging-premium conclusion. The old lean-cold claim is withdrawn regardless (rank-12
+  synthesis instruction); show its corrected estimate without reviving the old interpretation.
+- Daily feed-fidelity replaces intrasecond book metrics in this weather lane: retain all eligible raw daily
+  records until documented final/prelim selection, report raw/eligible/selected counts, receipt lag and day gaps.
+  Updates/s, size-only retention, order-book depth, race blocks, and clock/react-to-print baselines are inapplicable
+  to monthly settlement forecasts. No order-book recorder or sealed Kalshi data is used.
+- Before scoring, corruption risks to check: future observations alter an earlier baseline; missing accrued days
+  counted as zero; a Sunday snapshot backdated to Friday; weighting mismatch in season SE; MOS max/min date slip.
+
+2026-10-24T22:44:13Z — reporting-lag correction (before inspecting scored redo results)
+The raw audit found positive cleared-volume records commonly arrive on the next calendar day (median receipt
+37.7 hours after reference-date midnight). The first implementation's same-day volume cutoff is therefore
+withdrawn. Use the latest pre-seal cleared volume for the EX-POST class label only, with no volume entering
+the baseline or price. Missing volume means no reported positive volume, not verified zero activity. Keep the
+same-day cutoff for settlement prices. The first implementation is superseded and not used for conclusions.
+Write the raw-feed audit artifact before computing the final scored comparisons. An implementation-only
+speedup uses date-ordinal lookups in climatology, retaining the explicit observation cutoff.
+
+2026-10-24T22:44:54Z — data-completeness clarification, before successful scored output
+The first pass failed an overly strict implementation assertion on the warming fit: Burbank has only
+13..17 complete annual observations within the trailing 30-calendar-year window, not 20. Use the available
+complete years (minimum 10; otherwise drop the trend comparison), never fill a partial year with future
+observations. Other stations have 28..30, Cincinnati 29..30. This affects the secondary trend sensitivity;
+MOS and 10-year climatology do not use the annual trend fit. Disclose the shorter Burbank history.

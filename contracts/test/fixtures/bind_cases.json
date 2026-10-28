@@ -1,0 +1,267 @@
+{
+ "_meta": {
+  "doNotRegenerateFromSolidity": true,
+  "generator": "wi.engine.parity (scripts/engine_fixture_run.py)",
+  "spec": "SPEC 6.3, 14",
+  "tolerance": "exact integer equality",
+  "what": "bind/downsizing: boundUnits = h ? mulDiv(units, fill, h) : units; keptPremium, refund, keptFee, toPool, senior/junior split"
+ },
+ "cases": [
+  {
+   "expected": {
+    "boundUnits": 6,
+    "juniorPremium": 3120000,
+    "keptFee": 300000,
+    "refund": 0,
+    "seniorPremium": 780000,
+    "toPool": 3900000
+   },
+   "fee": 300000,
+   "fill": 0,
+   "h": 0,
+   "premium": 4200000,
+   "seniorPremiumBps": 2000,
+   "units": 6
+  },
+  {
+   "expected": {
+    "boundUnits": 6,
+    "juniorPremium": 3120000,
+    "keptFee": 300000,
+    "refund": 0,
+    "seniorPremium": 780000,
+    "toPool": 3900000
+   },
+   "fee": 300000,
+   "fill": 6,
+   "h": 6,
+   "premium": 4200000,
+   "seniorPremiumBps": 2000,
+   "units": 6
+  },
+  {
+   "expected": {
+    "boundUnits": 3,
+    "juniorPremium": 1560000,
+    "keptFee": 150000,
+    "refund": 2100000,
+    "seniorPremium": 390000,
+    "toPool": 1950000
+   },
+   "fee": 300000,
+   "fill": 3,
+   "h": 6,
+   "premium": 4200000,
+   "seniorPremiumBps": 2000,
+   "units": 6
+  },
+  {
+   "expected": {
+    "boundUnits": 0,
+    "juniorPremium": 0,
+    "keptFee": 0,
+    "refund": 4200000,
+    "seniorPremium": 0,
+    "toPool": 0
+   },
+   "fee": 300000,
+   "fill": 0,
+   "h": 6,
+   "premium": 4200000,
+   "seniorPremiumBps": 2000,
+   "units": 6
+  },
+  {
+   "expected": {
+    "boundUnits": 2,
+    "juniorPremium": 225750,
+    "keptFee": 3527,
+    "refund": 714287,
+    "seniorPremium": 56437,
+    "toPool": 282187
+   },
+   "fee": 12345,
+   "fill": 2,
+   "h": 5,
+   "premium": 1000001,
+   "seniorPremiumBps": 2000,
+   "units": 7
+  },
+  {
+   "expected": {
+    "boundUnits": 58,
+    "juniorPremium": 26997068,
+    "keptFee": 174000,
+    "refund": 1169667,
+    "seniorPremium": 6749266,
+    "toPool": 33746334
+   },
+   "fee": 180000,
+   "fill": 57,
+   "h": 58,
+   "premium": 35090001,
+   "seniorPremiumBps": 2000,
+   "units": 60
+  },
+  {
+   "expected": {
+    "boundUnits": 1,
+    "juniorPremium": 465467,
+    "keptFee": 3000,
+    "refund": 34505168,
+    "seniorPremium": 116366,
+    "toPool": 581833
+   },
+   "fee": 180000,
+   "fill": 1,
+   "h": 58,
+   "premium": 35090001,
+   "seniorPremiumBps": 2000,
+   "units": 60
+  },
+  {
+   "expected": {
+    "boundUnits": 2,
+    "juniorPremium": 1,
+    "keptFee": 0,
+    "refund": 1,
+    "seniorPremium": 0,
+    "toPool": 1
+   },
+   "fee": 1,
+   "fill": 5,
+   "h": 7,
+   "premium": 2,
+   "seniorPremiumBps": 2000,
+   "units": 3
+  },
+  {
+   "expected": {
+    "boundUnits": 1,
+    "juniorPremium": 0,
+    "keptFee": 999999,
+    "refund": 0,
+    "seniorPremium": 0,
+    "toPool": 0
+   },
+   "fee": 999999,
+   "fill": 1,
+   "h": 1,
+   "premium": 999999,
+   "seniorPremiumBps": 2000,
+   "units": 1
+  },
+  {
+   "expected": {
+    "boundUnits": 25,
+    "juniorPremium": 5390475,
+    "keptFee": 75000,
+    "refund": 0,
+    "seniorPremium": 0,
+    "toPool": 5390475
+   },
+   "fee": 75000,
+   "fill": 0,
+   "h": 0,
+   "premium": 5465475,
+   "seniorPremiumBps": 0,
+   "units": 25
+  },
+  {
+   "expected": {
+    "boundUnits": 8,
+    "juniorPremium": 0,
+    "keptFee": 24000,
+    "refund": 3716523,
+    "seniorPremium": 1724952,
+    "toPool": 1724952
+   },
+   "fee": 75000,
+   "fill": 13,
+   "h": 40,
+   "premium": 5465475,
+   "seniorPremiumBps": 10000,
+   "units": 25
+  },
+  {
+   "expected": {
+    "boundUnits": 9,
+    "juniorPremium": 4307040,
+    "keptFee": 16200,
+    "refund": 600000,
+    "seniorPremium": 1076760,
+    "toPool": 5383800
+   },
+   "fee": 18000,
+   "fill": 10,
+   "h": 11,
+   "premium": 6000000,
+   "seniorPremiumBps": 2000,
+   "units": 10
+  },
+  {
+   "expected": {
+    "boundUnits": 333333,
+    "juniorPremium": 32921510815,
+    "keptFee": 333333,
+    "refund": 82304567161,
+    "seniorPremium": 8230377703,
+    "toPool": 41151888518
+   },
+   "fee": 1000003,
+   "fill": 333333,
+   "h": 999999,
+   "premium": 123456789012,
+   "seniorPremiumBps": 2000,
+   "units": 1000000
+  },
+  {
+   "expected": {
+    "boundUnits": 8,
+    "juniorPremium": 7,
+    "keptFee": 0,
+    "refund": 5,
+    "seniorPremium": 1,
+    "toPool": 8
+   },
+   "fee": 0,
+   "fill": 2,
+   "h": 3,
+   "premium": 13,
+   "seniorPremiumBps": 2000,
+   "units": 13
+  },
+  {
+   "expected": {
+    "boundUnits": 9223372036854775824,
+    "juniorPremium": 422158660273984490206616933132,
+    "keptFee": 618970019642690138523303936,
+    "refund": 633825300114114699648839981085,
+    "seniorPremium": 211047669820487521502722999568,
+    "toPool": 633206330094472011709339932700
+   },
+   "fee": 1237940039285380274899124225,
+   "fill": 576460752303423489,
+   "h": 1152921504606846976,
+   "premium": 1267650600228229401496703217721,
+   "seniorPremiumBps": 3333,
+   "units": 18446744073709551616
+  },
+  {
+   "expected": {
+    "boundUnits": 3,
+    "juniorPremium": 2397600,
+    "keptFee": 3000,
+    "refund": 2000000,
+    "seniorPremium": 599400,
+    "toPool": 2997000
+   },
+   "fee": 5000,
+   "fill": 3,
+   "h": 4,
+   "premium": 5000000,
+   "seniorPremiumBps": 2000,
+   "units": 5
+  }
+ ]
+}

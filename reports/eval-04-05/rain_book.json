@@ -1,0 +1,2022 @@
+{
+ "prereg": "reports/eval-04-05/PREREG-rain.md",
+ "prereg_frozen_utc": "2026-09-30T18:45:48Z",
+ "seed": 20260930,
+ "netting": {
+  "central": {
+   "NYC": -0.0,
+   "EWR": 0.003027750448477752,
+   "TTN": -0.0,
+   "MDW": 0.013584896562258897,
+   "MIA": -0.0,
+   "pooled": 0.0030884522388953057
+  },
+  "null": {
+   "NYC": -0.0,
+   "EWR": -0.0,
+   "TTN": -0.0,
+   "MDW": -0.0,
+   "MIA": -0.0,
+   "pooled": 0.0
+  },
+  "null_c": -3.7835420312417996,
+  "central_p0.5": {
+   "NYC": 0.04689622833319371,
+   "EWR": -0.0,
+   "TTN": -0.0,
+   "MDW": 0.0038763030393685854,
+   "MIA": -0.0,
+   "pooled": 0.01918054182453945
+  },
+  "central_p10": {
+   "NYC": 0.0065275388323767294,
+   "EWR": 0.0028747283066345025,
+   "TTN": 0.0013859914132097351,
+   "MDW": 0.006240139576521092,
+   "MIA": 0.017712676236168845,
+   "pooled": 0.006911436704309417
+  },
+  "central_p2_persist": {
+   "NYC": 0.008423436630892126,
+   "EWR": 0.005801943586567499,
+   "TTN": -0.0,
+   "MDW": 0.025300053481137653,
+   "MIA": 0.005142748194012616,
+   "pooled": 0.010349949862333258
+  },
+  "ensemble": {
+   "NYC": {
+    "p10": 0.0,
+    "p50": 0.05297742669494727,
+    "p90": 0.2520777848948512,
+    "share_ge_0p25": 0.103
+   },
+   "EWR": {
+    "p10": 0.004052165022592398,
+    "p50": 0.04533559468397315,
+    "p90": 0.14821061771583618,
+    "share_ge_0p25": 0.007
+   },
+   "TTN": {
+    "p10": 0.0,
+    "p50": 0.047449191119063365,
+    "p90": 0.22908808681216947,
+    "share_ge_0p25": 0.078
+   },
+   "MDW": {
+    "p10": 0.013510017704709141,
+    "p50": 0.06776285611221326,
+    "p90": 0.21332621722579617,
+    "share_ge_0p25": 0.059
+   },
+   "MIA": {
+    "p10": 0.0,
+    "p50": 0.04679665485053241,
+    "p90": 0.22349098603099593,
+    "share_ge_0p25": 0.075
+   },
+   "pooled": {
+    "p10": 0.003627828802832369,
+    "p50": 0.05546497013383577,
+    "p90": 0.21675253829672966,
+    "share_ge_0p25": 0.069
+   }
+  },
+  "leftover": {
+   "NYC": {
+    "businesses": 1008,
+    "L_units": 134337.96927081898,
+    "S_units": -0.0,
+    "leftover_units_per_day": 134337.96927081898,
+    "max_payout_per_day_usd": 134337.96927081898,
+    "max_payout_per_week_station_leg_usd": 940365.7848957329
+   },
+   "EWR": {
+    "businesses": 319,
+    "L_units": 36198.72644024553,
+    "S_units": 54.88344178963472,
+    "leftover_units_per_day": 36143.8429984559,
+    "max_payout_per_day_usd": 36143.8429984559,
+    "max_payout_per_week_station_leg_usd": 253006.9009891913
+   },
+   "TTN": {
+    "businesses": 166,
+    "L_units": 23506.255515318317,
+    "S_units": -0.0,
+    "leftover_units_per_day": 23506.255515318317,
+    "max_payout_per_day_usd": 23506.255515318317,
+    "max_payout_per_week_station_leg_usd": 164543.78860722823
+   },
+   "MDW": {
+    "businesses": 455,
+    "L_units": 55869.50326855906,
+    "S_units": 382.0860109121438,
+    "leftover_units_per_day": 55487.41725764692,
+    "max_payout_per_day_usd": 55487.41725764692,
+    "max_payout_per_week_station_leg_usd": 388411.92080352845
+   },
+   "MIA": {
+    "businesses": 244,
+    "L_units": 32620.438560624327,
+    "S_units": -0.0,
+    "leftover_units_per_day": 32620.438560624327,
+    "max_payout_per_day_usd": 32620.438560624327,
+    "max_payout_per_week_station_leg_usd": 228343.0699243703
+   }
+  },
+  "R1": {
+   "stations_ge_0p25": 0,
+   "verdict": "NOT MATERIAL"
+  },
+  "residual_cell_level_pooled": 0.003147564656613001
+ },
+ "history": {
+  "long_missing_station_days": {
+   "NYC": 0,
+   "EWR": 0,
+   "TTN": 0,
+   "MDW": 0,
+   "MIA": 0
+  },
+  "long_days": 9862
+ },
+ "cells": {
+  "NYC": {
+   "businesses": 1008,
+   "cells_with_business": 133,
+   "businesses_in_S_cell": 30,
+   "cells_in_19_footprint": 100,
+   "weekly_r_sd": 0.6823107774932142,
+   "weekly_r_mean": 0.17287862513426422
+  },
+  "EWR": {
+   "businesses": 319,
+   "cells_with_business": 87,
+   "businesses_in_S_cell": 10,
+   "cells_in_19_footprint": 70,
+   "weekly_r_sd": 0.57288248943758,
+   "weekly_r_mean": 0.02142857142857143
+  },
+  "TTN": {
+   "businesses": 166,
+   "cells_with_business": 71,
+   "businesses_in_S_cell": 0,
+   "cells_in_19_footprint": 50,
+   "weekly_r_sd": 0.6281236006383376,
+   "weekly_r_mean": 0.027062374245472837
+  },
+  "MDW": {
+   "businesses": 455,
+   "cells_with_business": 119,
+   "businesses_in_S_cell": 0,
+   "cells_in_19_footprint": 99,
+   "weekly_r_sd": 0.7198593261519687,
+   "weekly_r_mean": -0.0687875150060024
+  },
+  "MIA": {
+   "businesses": 244,
+   "cells_with_business": 66,
+   "businesses_in_S_cell": 0,
+   "cells_in_19_footprint": 66,
+   "weekly_r_sd": 0.8838367575153633,
+   "weekly_r_mean": -0.034523809523809526
+  }
+ },
+ "kalshi_sample": {
+  "settled": 829,
+  "valid_at_T24": 726,
+  "by_station": {
+   "NYC": {
+    "days": 519,
+    "first": "2025-01-04",
+    "last": "2026-09-28"
+   },
+   "EWR": {
+    "days": 33,
+    "first": "2026-08-27",
+    "last": "2026-09-28"
+   },
+   "TTN": {
+    "days": 33,
+    "first": "2026-08-27",
+    "last": "2026-09-28"
+   },
+   "MDW": {
+    "days": 71,
+    "first": "2026-07-15",
+    "last": "2026-09-28"
+   },
+   "MIA": {
+    "days": 70,
+    "first": "2026-07-15",
+    "last": "2026-09-28"
+   }
+  },
+  "invalid_or_missing_quote": 103
+ },
+ "depth_proxy": {
+  "rule": "10 % of the median volume traded before the T-24h cutoff per settled market",
+  "contracts_per_city_day": {
+   "NYC": 44,
+   "EWR": 144,
+   "TTN": 160,
+   "MDW": 170,
+   "MIA": 186
+  },
+  "median_vol_pre_cutoff": {
+   "NYC": 449.35,
+   "EWR": 1444.6799999999998,
+   "TTN": 1604.8,
+   "MDW": 1706.97,
+   "MIA": 1869.675
+  },
+  "median_total_volume": {
+   "NYC": 6957.74,
+   "EWR": 9776.49,
+   "TTN": 9088.75,
+   "MDW": 17981.73,
+   "MIA": 30543.620000000003
+  },
+  "monthly_nyc_ladder_book_median_within_3c": 550
+ },
+ "charges_per_unit": {
+  "NYC/station": {
+   "sell": 0.002945700450335551,
+   "buy": 0.0028224636689029377
+  },
+  "NYC/residual": {
+   "sell": 0.0011870447756513285,
+   "buy": 0.0008593596064668504
+  },
+  "EWR/station": {
+   "sell": 0.002975796179972614,
+   "buy": 0.0029119811036272696
+  },
+  "EWR/residual": {
+   "sell": 0.0007252851069572847,
+   "buy": 0.0009613393340468907
+  },
+  "TTN/station": {
+   "sell": 0.002839630634652859,
+   "buy": 0.002812441108574579
+  },
+  "TTN/residual": {
+   "sell": 0.000754448096437841,
+   "buy": 0.0011139002799921214
+  },
+  "MDW/station": {
+   "sell": 0.0025839912727456922,
+   "buy": 0.0027141850982985937
+  },
+  "MDW/residual": {
+   "sell": 0.0007005376293102982,
+   "buy": 0.0013130425252792846
+  },
+  "MIA/station": {
+   "sell": 0.002804496395405063,
+   "buy": 0.0027417160161259365
+  },
+  "MIA/residual": {
+   "sell": 0.0012208168793510258,
+   "buy": 0.00144746174733176
+  }
+ },
+ "lookahead_check": {
+  "markets_checked": 20,
+  "moved": 0
+ },
+ "auction": {
+  "NYC/station": {
+   "days": 519,
+   "hedger_fill_share": 0.7176841810460981,
+   "clearing_minus_fair_cents": 0.7237394957983192,
+   "no_trade_share": 0.08285163776493257,
+   "house_net_short_mean": 96400.77456647399,
+   "hedge_units_mean": 40.35452793834297,
+   "capacity_binding_share": 0.007707129094412331,
+   "unfilled_hedger_share": 0.2823158189539019
+  },
+  "NYC/residual": {
+   "markets": 11352,
+   "hedger_fill_share": 0.0224178470459958,
+   "capacity_binding_share": 0.0,
+   "no_trade_share": 0.4611522198731501,
+   "clearing_minus_fair_cents_traded": 0.36161900429760685
+  },
+  "EWR/station": {
+   "days": 33,
+   "hedger_fill_share": 0.6676335623965308,
+   "clearing_minus_fair_cents": 0.5909090909090908,
+   "no_trade_share": 0.0,
+   "house_net_short_mean": 24099.060606060608,
+   "hedge_units_mean": 122.18181818181819,
+   "capacity_binding_share": 0.0,
+   "unfilled_hedger_share": 0.3323664376034692
+  },
+  "EWR/residual": {
+   "markets": 7396,
+   "hedger_fill_share": 0.01862409680867488,
+   "capacity_binding_share": 0.0,
+   "no_trade_share": 0.6583288263926447,
+   "clearing_minus_fair_cents_traded": 0.23135518765493965
+  },
+  "TTN/station": {
+   "days": 33,
+   "hedger_fill_share": 0.7438918481524145,
+   "clearing_minus_fair_cents": 0.6499999999999997,
+   "no_trade_share": 0.09090909090909091,
+   "house_net_short_mean": 17494.848484848484,
+   "hedge_units_mean": 145.45454545454547,
+   "capacity_binding_share": 0.0,
+   "unfilled_hedger_share": 0.2561081518475855
+  },
+  "TTN/residual": {
+   "markets": 6106,
+   "hedger_fill_share": 0.01785787476125288,
+   "capacity_binding_share": 0.0,
+   "no_trade_share": 0.6390435637078283,
+   "clearing_minus_fair_cents_traded": 0.23334688841411402
+  },
+  "MDW/station": {
+   "days": 71,
+   "hedger_fill_share": 0.6732962581069668,
+   "clearing_minus_fair_cents": 0.8450704225352113,
+   "no_trade_share": 0.0,
+   "house_net_short_mean": 37060.01408450704,
+   "hedge_units_mean": 158.0281690140845,
+   "capacity_binding_share": 0.0,
+   "unfilled_hedger_share": 0.3267037418930332
+  },
+  "MDW/residual": {
+   "markets": 10234,
+   "hedger_fill_share": 0.03656650211815276,
+   "capacity_binding_share": 0.0,
+   "no_trade_share": 0.4368770764119601,
+   "clearing_minus_fair_cents_traded": 0.35591551316297787
+  },
+  "MIA/station": {
+   "days": 70,
+   "hedger_fill_share": 0.9189014426341544,
+   "clearing_minus_fair_cents": 0.7000000000000004,
+   "no_trade_share": 0.0,
+   "house_net_short_mean": 29964.457142857143,
+   "hedge_units_mean": 186.0,
+   "capacity_binding_share": 0.0,
+   "unfilled_hedger_share": 0.08109855736584559
+  },
+  "MIA/residual": {
+   "markets": 5676,
+   "hedger_fill_share": 0.03171707299535216,
+   "capacity_binding_share": 0.0,
+   "no_trade_share": 0.38143058491895704,
+   "clearing_minus_fair_cents_traded": 0.4063705386318272
+  }
+ },
+ "depth": {
+  "by_city": {
+   "NYC": {
+    "observed_days": 519,
+    "mean_net_short_contracts": 96400.77456647399,
+    "demand_units_per_day": -134337.96927081898,
+    "depth_proxy": 44,
+    "ratio": 0.0004661269601004573,
+    "participation_supported_pct": 0.0009322539202009146
+   },
+   "EWR": {
+    "observed_days": 33,
+    "mean_net_short_contracts": 24099.060606060608,
+    "demand_units_per_day": -36143.8429984559,
+    "depth_proxy": 144,
+    "ratio": 0.005994756491199832,
+    "participation_supported_pct": 0.011989512982399664
+   },
+   "TTN": {
+    "observed_days": 33,
+    "mean_net_short_contracts": 17494.848484848484,
+    "demand_units_per_day": -23506.255515318317,
+    "depth_proxy": 160,
+    "ratio": 0.009172985987217018,
+    "participation_supported_pct": 0.018345971974434036
+   },
+   "MDW": {
+    "observed_days": 71,
+    "mean_net_short_contracts": 37060.01408450704,
+    "demand_units_per_day": -55487.417257646914,
+    "depth_proxy": 170,
+    "ratio": 0.004605961552274746,
+    "participation_supported_pct": 0.009211923104549493
+   },
+   "MIA": {
+    "observed_days": 70,
+    "mean_net_short_contracts": 29964.457142857143,
+    "demand_units_per_day": -32620.438560624323,
+    "depth_proxy": 186,
+    "ratio": 0.006239642490722341,
+    "participation_supported_pct": 0.012479284981444683
+   }
+  },
+  "R4": {
+   "cities_ge_0p5": 0,
+   "verdict": "THE HOUSE CARRIES IT"
+  }
+ },
+ "full_hedge_cost": {
+  "mean_daily_usd": -9308.104315992292,
+  "note": "hedge P&L minus the same contracts at mid (spread + fee) per day, observed run, uncapped hedge"
+ },
+ "kalshi_cost": {
+  "half_spread": {
+   "EWR": 0.014696969696969698,
+   "MDW": 0.03774647887323944,
+   "MIA": 0.030571428571428562,
+   "NYC": 0.07124277456647399,
+   "TTN": 0.015606060606060606
+  },
+  "half_spread_pooled": 0.05894628099173554,
+  "fee_per_contract": {
+   "EWR": 0.008521825396825397,
+   "MDW": 0.009119429590017826,
+   "MIA": 0.01196620583717358,
+   "NYC": 0.007997039724980903,
+   "TTN": 0.008835416666666667
+  },
+  "fee_per_contract_pooled": 0.009300577606635071,
+  "ask_over_payout": 1.2052786885245903
+ },
+ "markouts": {
+  "proxy": {
+   "n_days": 519,
+   "mean": 2531.5834296724465,
+   "ci95": [
+    -800.138830924856,
+    5537.087353564542
+   ],
+   "median": 693.9499999999999,
+   "p10": -44606.849999999984,
+   "p1": -83304.892,
+   "worst_day": -83311.65000000001,
+   "worst_5day": -202524.39,
+   "worst_30day": -373300.86,
+   "win_rate": 0.5067437379576107,
+   "total": 1313891.7999999998,
+   "max_drawdown": 557587.2299999997,
+   "worst_day_over_mean": -32.908909508378095,
+   "share_pnl_from_5_worst_days": -0.31702658468528383
+  },
+  "none": {
+   "n_days": 519,
+   "mean": 2542.7929865125243,
+   "ci95": [
+    -794.4091546242776,
+    5550.672434489396
+   ],
+   "median": 696.3,
+   "p10": -44616.70799999999,
+   "p1": -83332.91279999999,
+   "worst_day": -83333.25,
+   "worst_5day": -202590.15000000002,
+   "worst_30day": -373362.06999999995,
+   "win_rate": 0.5067437379576107,
+   "total": 1319709.56,
+   "max_drawdown": 557577.8199999996,
+   "worst_day_over_mean": -32.772329655625136,
+   "share_pnl_from_5_worst_days": -0.3157256207191528
+  },
+  "full": {
+   "n_days": 519,
+   "mean": -8549.542601156068,
+   "ci95": [
+    -10548.433696050097,
+    -6620.8877798651265
+   ],
+   "median": -3250.7200000000025,
+   "p10": -27496.869999999995,
+   "p1": -57915.873,
+   "worst_day": -62802.2,
+   "worst_5day": -233391.83000000002,
+   "worst_30day": -848519.37,
+   "win_rate": 0.0,
+   "total": -4437212.609999999,
+   "max_drawdown": 4398024.730000003,
+   "worst_day_over_mean": 7.345679521090156,
+   "share_pnl_from_5_worst_days": 0.06818091594668933
+  },
+  "residual_weekly": {
+   "n_days": 86,
+   "mean": 341.607142857144,
+   "ci95": [
+    -5.078488787374299,
+    617.1843995016621
+   ],
+   "median": 719.4178571428579,
+   "p10": -2169.5671428571422,
+   "p1": -3720.9972857142848,
+   "worst_day": -4767.509999999999,
+   "worst_5day": -6869.209999999995,
+   "worst_30day": -8804.541428571394,
+   "win_rate": 0.6046511627906976,
+   "total": 29378.214285714388,
+   "max_drawdown": 10991.92428571426,
+   "worst_day_over_mean": -13.956119184526871,
+   "share_pnl_from_5_worst_days": -0.6237180612455757
+  },
+  "residual_weekly_RA": {
+   "n_days": 86,
+   "mean": 425.30565614617944,
+   "ci95": [
+    -176.28506083887075,
+    1155.93621366279
+   ],
+   "median": 411.1557142857141,
+   "p10": -2664.267857142855,
+   "p1": -4790.141285714289,
+   "worst_day": -7004.8114285714255,
+   "worst_5day": -13149.060000000009,
+   "worst_30day": -16195.53714285715,
+   "win_rate": 0.6046511627906976,
+   "total": 36576.28642857143,
+   "max_drawdown": 23958.894285714294,
+   "worst_day_over_mean": -16.470064122927724,
+   "share_pnl_from_5_worst_days": -0.58756085934757
+  }
+ },
+ "book": {
+  "station": {
+   "NYC/1": {
+    "units": -93210.2564102564,
+    "fill_units": -93248.61538461539,
+    "price": 0.3833333333333334,
+    "source": "observed (39 days)"
+   },
+   "NYC/2": {
+    "units": -105135.03846153847,
+    "fill_units": -105175.65384615384,
+    "price": 0.4453846153846154,
+    "source": "observed (52 days)"
+   },
+   "NYC/3": {
+    "units": -109821.71111111112,
+    "fill_units": -109865.71111111112,
+    "price": 0.5324444444444445,
+    "source": "observed (45 days)"
+   },
+   "NYC/4": {
+    "units": -116491.08510638298,
+    "fill_units": -116535.08510638298,
+    "price": 0.5357446808510637,
+    "source": "observed (47 days)"
+   },
+   "NYC/5": {
+    "units": -110631.4375,
+    "fill_units": -110674.52083333333,
+    "price": 0.523125,
+    "source": "observed (48 days)"
+   },
+   "NYC/6": {
+    "units": -103381.17073170732,
+    "fill_units": -103425.17073170732,
+    "price": 0.44268292682926824,
+    "source": "observed (41 days)"
+   },
+   "NYC/7": {
+    "units": -99536.78723404255,
+    "fill_units": -99578.91489361702,
+    "price": 0.45574468085106384,
+    "source": "observed (47 days)"
+   },
+   "NYC/8": {
+    "units": -81407.88333333333,
+    "fill_units": -81446.01666666666,
+    "price": 0.36599999999999994,
+    "source": "observed (60 days)"
+   },
+   "NYC/9": {
+    "units": -79277.35087719298,
+    "fill_units": -79315.94736842105,
+    "price": 0.4078947368421052,
+    "source": "observed (57 days)"
+   },
+   "NYC/10": {
+    "units": -74485.9,
+    "fill_units": -74518.16666666667,
+    "price": 0.31333333333333335,
+    "source": "observed (30 days)"
+   },
+   "NYC/11": {
+    "units": -89594.92307692308,
+    "fill_units": -89632.15384615384,
+    "price": 0.40576923076923077,
+    "source": "observed (26 days)"
+   },
+   "NYC/12": {
+    "units": -85084.62962962964,
+    "fill_units": -85122.11111111111,
+    "price": 0.38555555555555565,
+    "source": "observed (27 days)"
+   },
+   "EWR/1": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/2": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/3": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/4": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/5": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/6": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/7": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/8": {
+    "units": -30961.8,
+    "fill_units": -31105.8,
+    "price": 0.572,
+    "source": "observed (5 days)"
+   },
+   "EWR/9": {
+    "units": -22729.571428571428,
+    "fill_units": -22847.85714285714,
+    "price": 0.41464285714285726,
+    "source": "observed (28 days)"
+   },
+   "EWR/10": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/11": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "EWR/12": {
+    "units": -23976.878787878784,
+    "fill_units": -24099.060606060604,
+    "price": 0.4384848484848485,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/1": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/2": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/3": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/4": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/5": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/6": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/7": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/8": {
+    "units": -19476.6,
+    "fill_units": -19636.6,
+    "price": 0.45199999999999996,
+    "source": "observed (5 days)"
+   },
+   "TTN/9": {
+    "units": -16969.535714285714,
+    "fill_units": -17112.39285714286,
+    "price": 0.4028571428571429,
+    "source": "observed (28 days)"
+   },
+   "TTN/10": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/11": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "TTN/12": {
+    "units": -17349.39393939394,
+    "fill_units": -17494.848484848484,
+    "price": 0.41030303030303034,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/1": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/2": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/3": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/4": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/5": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/6": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/7": {
+    "units": -42849.166666666664,
+    "fill_units": -43019.166666666664,
+    "price": 0.41916666666666663,
+    "source": "observed (12 days)"
+   },
+   "MDW/8": {
+    "units": -40286.354838709674,
+    "fill_units": -40445.3870967742,
+    "price": 0.47483870967741937,
+    "source": "observed (31 days)"
+   },
+   "MDW/9": {
+    "units": -30606.214285714286,
+    "fill_units": -30758.0,
+    "price": 0.3464285714285714,
+    "source": "observed (28 days)"
+   },
+   "MDW/10": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/11": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MDW/12": {
+    "units": -36901.98591549296,
+    "fill_units": -37060.01408450704,
+    "price": 0.41478873239436626,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/1": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/2": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/3": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/4": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/5": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/6": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/7": {
+    "units": -30363.272727272728,
+    "fill_units": -30549.272727272728,
+    "price": 0.5672727272727273,
+    "source": "observed (11 days)"
+   },
+   "MIA/8": {
+    "units": -29193.516129032258,
+    "fill_units": -29379.516129032258,
+    "price": 0.5503225806451612,
+    "source": "observed (31 days)"
+   },
+   "MIA/9": {
+    "units": -30196.321428571428,
+    "fill_units": -30382.321428571428,
+    "price": 0.7260714285714286,
+    "source": "observed (28 days)"
+   },
+   "MIA/10": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/11": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   },
+   "MIA/12": {
+    "units": -29778.457142857143,
+    "fill_units": -29964.457142857143,
+    "price": 0.6232857142857144,
+    "source": "ratio x demand (Phase 4 D4 rule)"
+   }
+  },
+  "residual_units_by_station_month": {
+   "NYC/1": -2788.877551020408,
+   "NYC/2": -2877.973214285714,
+   "NYC/3": -2934.1285714285714,
+   "NYC/4": -3159.0535714285716,
+   "NYC/5": -2796.1428571428573,
+   "NYC/6": -2795.809523809524,
+   "NYC/7": -2996.901785714286,
+   "NYC/8": -3254.592857142857,
+   "NYC/9": -2998.589285714286,
+   "NYC/10": -2968.875,
+   "NYC/11": -2680.2285714285713,
+   "NYC/12": -2356.875,
+   "EWR/1": -521.2142857142857,
+   "EWR/2": -480.33035714285717,
+   "EWR/3": -634.8857142857142,
+   "EWR/4": -676.9196428571429,
+   "EWR/5": -616.4444444444445,
+   "EWR/6": -609.9126984126984,
+   "EWR/7": -611.1607142857143,
+   "EWR/8": -598.5142857142857,
+   "EWR/9": -522.3571428571429,
+   "EWR/10": -555.0,
+   "EWR/11": -583.2285714285714,
+   "EWR/12": -613.875,
+   "TTN/1": -529.3163265306123,
+   "TTN/2": -441.0357142857143,
+   "TTN/3": -414.50714285714287,
+   "TTN/4": -401.2232142857143,
+   "TTN/5": -409.26190476190476,
+   "TTN/6": -426.07936507936506,
+   "TTN/7": -353.75,
+   "TTN/8": -371.70714285714286,
+   "TTN/9": -405.19642857142856,
+   "TTN/10": -408.98214285714283,
+   "TTN/11": -464.95714285714286,
+   "TTN/12": -466.4642857142857,
+   "MDW/1": -1572.1224489795918,
+   "MDW/2": -1589.919642857143,
+   "MDW/3": -1461.857142857143,
+   "MDW/4": -1516.2767857142858,
+   "MDW/5": -1542.2142857142858,
+   "MDW/6": -1447.0,
+   "MDW/7": -1409.1607142857142,
+   "MDW/8": -1316.057142857143,
+   "MDW/9": -1265.3214285714287,
+   "MDW/10": -1424.1785714285713,
+   "MDW/11": -1541.0285714285715,
+   "MDW/12": -1677.4642857142858,
+   "MIA/1": -1108.142857142857,
+   "MIA/2": -1027.3660714285713,
+   "MIA/3": -1007.85,
+   "MIA/4": -1022.9732142857143,
+   "MIA/5": -1025.2539682539682,
+   "MIA/6": -1004.7301587301587,
+   "MIA/7": -978.3571428571429,
+   "MIA/8": -994.9571428571429,
+   "MIA/9": -1010.2678571428571,
+   "MIA/10": -1046.25,
+   "MIA/11": -1179.557142857143,
+   "MIA/12": -1141.607142857143
+  }
+ },
+ "corr_station_residual_weekly_joint": 0.27021382010435957,
+ "D1_absorb_all": {
+  "ratio30": 1.0845488839727828,
+  "ratio153": 1.1042664655640815,
+  "corr_station_residual_weekly": 0.26774360681090853,
+  "residual_units_per_week": {
+   "NYC": -130039.49329101518,
+   "EWR": -35128.041262323335,
+   "TTN": -23506.255515318313,
+   "MDW": -55487.41725764693,
+   "MIA": -32620.438560624323
+  }
+ },
+ "capital": {
+  "station_long_1999_2025": {
+   "fc_per_day": 110099.88173671307,
+   "notional_per_day": 204589.77012406837,
+   "H30": {
+    "H": 30,
+    "C": 1469320.633258353,
+    "ES99": 988037.7774266105,
+    "ES95_junior": 767066.0022621404,
+    "worst_window": 1469320.633258353,
+    "FC": 3302996.452101392,
+    "binding": "worst_window",
+    "n_hist_windows": 9833,
+    "n_days": 9862,
+    "CPC_notional": 0.2393929785064229
+   },
+   "H153": {
+    "H": 153,
+    "C": 3005520.9226183705,
+    "ES99": 2185822.8667368083,
+    "ES95_junior": 1707841.5285670487,
+    "worst_window": 3005520.9226183705,
+    "FC": 16845281.9057171,
+    "binding": "worst_window",
+    "n_hist_windows": 9710,
+    "n_days": 9862,
+    "CPC_notional": 0.0960161770889146
+   }
+  },
+  "station_joint": {
+   "fc_per_day": 110099.88173671307,
+   "notional_per_day": 204589.77012406837,
+   "H30": {
+    "H": 30,
+    "C": 1080005.5345441457,
+    "ES99": 1075329.060159089,
+    "ES95_junior": 834092.2495040394,
+    "worst_window": 1080005.5345441457,
+    "FC": 3302996.452101392,
+    "binding": "worst_window",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.17596277889639078
+   },
+   "H153": {
+    "H": 153,
+    "C": 2501536.0695872763,
+    "ES99": 2501536.0695872763,
+    "ES95_junior": 1954871.3221791112,
+    "worst_window": 1582699.3949299261,
+    "FC": 16845281.9057171,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.07991557418357638
+   }
+  },
+  "two_leg_joint": {
+   "fc_per_day": 116469.86296495814,
+   "notional_per_day": 217428.81765335784,
+   "H30": {
+    "H": 30,
+    "C": 1081899.1316614929,
+    "ES99": 1076271.6544582455,
+    "ES95_junior": 834942.3679388908,
+    "worst_window": 1081899.1316614929,
+    "FC": 3494095.888948744,
+    "binding": "worst_window",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.16586257874156954
+   },
+   "H153": {
+    "H": 153,
+    "C": 2505199.1467623794,
+    "ES99": 2505199.1467623794,
+    "ES95_junior": 1957438.9397023523,
+    "worst_window": 1583749.3481824766,
+    "FC": 17819889.033638597,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.07530671789117824
+   }
+  },
+  "two_leg_long_scaled": {
+   "H30": 1471896.8249783067,
+   "H153": 3009922.0005099853,
+   "ratio30": 1.0017533216791767,
+   "ratio153": 1.0014643311442266
+  },
+  "sens_RA_two_leg_joint": {
+   "fc_per_day": 116067.00446723947,
+   "notional_per_day": 216600.2132930026,
+   "H30": {
+    "H": 30,
+    "C": 1084633.5826237304,
+    "ES99": 1074608.358860715,
+    "ES95_junior": 833539.3437154894,
+    "worst_window": 1084633.5826237304,
+    "FC": 3482010.1340171844,
+    "binding": "worst_window",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.16691790005403626
+   },
+   "H153": {
+    "H": 153,
+    "C": 2500835.5139834876,
+    "ES99": 2500835.5139834876,
+    "ES95_junior": 1954313.822080424,
+    "worst_window": 1561915.4521513209,
+    "FC": 17758251.68348764,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.07546313047551771
+   }
+  },
+  "sens_RA_two_leg_long": {
+   "fc_per_day": 116067.00446723947,
+   "notional_per_day": 216600.2132930026,
+   "H30": {
+    "H": 30,
+    "C": 1472794.112987427,
+    "ES99": 987066.0135847691,
+    "ES95_junior": 765885.943154261,
+    "worst_window": 1472794.112987427,
+    "FC": 3482010.1340171844,
+    "binding": "worst_window",
+    "n_hist_windows": 9833,
+    "n_days": 9862,
+    "CPC_notional": 0.22665322602046986
+   },
+   "H153": {
+    "H": 153,
+    "C": 2988329.883138395,
+    "ES99": 2182679.420546766,
+    "ES95_junior": 1705268.6495623742,
+    "worst_window": 2988329.883138395,
+    "FC": 17758251.68348764,
+    "binding": "worst_window",
+    "n_hist_windows": 9710,
+    "n_days": 9862,
+    "CPC_notional": 0.09017335471054506
+   }
+  },
+  "sens_19pair_two_leg_joint": {
+   "fc_per_day": 115313.9715432121,
+   "notional_per_day": 215076.11796987336,
+   "H30": {
+    "H": 30,
+    "C": 1080580.5096461866,
+    "ES99": 1075997.341057409,
+    "ES95_junior": 834740.1763292444,
+    "worst_window": 1080580.5096461866,
+    "FC": 3459419.146296363,
+    "binding": "worst_window",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.16747257046263472
+   },
+   "H153": {
+    "H": 153,
+    "C": 2504406.5383122135,
+    "ES99": 2504406.5383122135,
+    "ES95_junior": 1956914.2290072353,
+    "worst_window": 1583443.439388542,
+    "FC": 17643037.64611145,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.07610640520924772
+   }
+  },
+  "sens_MaySep_station_long": {
+   "fc_per_day": 109551.87514035888,
+   "notional_per_day": 205041.3374387237,
+   "H30": {
+    "H": 30,
+    "C": 1278408.4463794292,
+    "ES99": 970213.2119141249,
+    "ES95_junior": 746783.0694429441,
+    "worst_window": 1278408.4463794292,
+    "FC": 3286556.2542107664,
+    "binding": "worst_window",
+    "n_hist_windows": 3348,
+    "n_days": 4131,
+    "CPC_notional": 0.20782938412138147
+   },
+   "H153": {
+    "H": 153,
+    "C": 2320607.721935468,
+    "ES99": 2176062.568564538,
+    "ES95_junior": 1656564.2766865718,
+    "worst_window": 2320607.721935468,
+    "FC": 16761436.896474909,
+    "binding": "worst_window",
+    "n_hist_windows": 27,
+    "n_days": 4131,
+    "CPC_notional": 0.07397225808740693
+   }
+  },
+  "sens_MaySep_station_joint": {
+   "fc_per_day": 109551.87514035888,
+   "notional_per_day": 205041.3374387237,
+   "H30": {
+    "H": 30,
+    "C": 917239.1679405434,
+    "ES99": 917239.1679405434,
+    "ES95_junior": 742292.7385246115,
+    "worst_window": 860321.7260187267,
+    "FC": 3286556.2542107664,
+    "binding": "ES99",
+    "n_hist_windows": 342,
+    "n_days": 429,
+    "CPC_notional": 0.14911451180174157
+   },
+   "H153": {
+    "H": 153,
+    "C": 2416256.5503771817,
+    "ES99": 2416256.5503771817,
+    "ES95_junior": 1933600.4013801208,
+    "worst_window": 497001.36980281014,
+    "FC": 16761436.896474909,
+    "binding": "ES99",
+    "n_hist_windows": 2,
+    "n_days": 429,
+    "CPC_notional": 0.07702118348585707
+   }
+  },
+  "sens_MaySep_two_leg_joint": {
+   "fc_per_day": 115851.88046844592,
+   "notional_per_day": 217745.23354983484,
+   "H30": {
+    "H": 30,
+    "C": 915845.2902454193,
+    "ES99": 915845.2902454193,
+    "ES95_junior": 741012.2411920232,
+    "worst_window": 855333.3763376042,
+    "FC": 3475556.4140533777,
+    "binding": "ES99",
+    "n_hist_windows": 342,
+    "n_days": 429,
+    "CPC_notional": 0.140201352947306
+   },
+   "H153": {
+    "H": 153,
+    "C": 2411322.1863345085,
+    "ES99": 2411322.1863345085,
+    "ES95_junior": 1928888.9993915262,
+    "worst_window": 486826.82865485153,
+    "FC": 17725337.711672224,
+    "binding": "ES99",
+    "n_hist_windows": 2,
+    "n_days": 429,
+    "CPC_notional": 0.07237942925657433
+   }
+  },
+  "sens_hedge_none_station_long": {
+   "fc_per_day": 110439.60360834676,
+   "notional_per_day": 205244.4761308022,
+   "H30": {
+    "H": 30,
+    "C": 1472510.9274716228,
+    "ES99": 990460.1435045641,
+    "ES95_junior": 768912.9058990589,
+    "worst_window": 1472510.9274716228,
+    "FC": 3313188.108250403,
+    "binding": "worst_window",
+    "n_hist_windows": 9833,
+    "n_days": 9862,
+    "CPC_notional": 0.23914747187206348
+   },
+   "H153": {
+    "H": 153,
+    "C": 3013113.8271470265,
+    "ES99": 2191082.2027466744,
+    "ES95_junior": 1712033.5038091457,
+    "worst_window": 3013113.8271470265,
+    "FC": 16897259.352077056,
+    "binding": "worst_window",
+    "n_hist_windows": 9710,
+    "n_days": 9862,
+    "CPC_notional": 0.09595169037946175
+   }
+  },
+  "sens_hedge_full_station_long": {
+   "fc_per_day": 0.0,
+   "notional_per_day": 0.0,
+   "H30": {
+    "H": 30,
+    "C": 0.0,
+    "ES99": 0.0,
+    "ES95_junior": 0.0,
+    "worst_window": -0.0,
+    "FC": 0.0,
+    "binding": "FC",
+    "n_hist_windows": 9833,
+    "n_days": 9862,
+    "CPC_notional": null
+   },
+   "H153": {
+    "H": 153,
+    "C": 0.0,
+    "ES99": 0.0,
+    "ES95_junior": 0.0,
+    "worst_window": -0.0,
+    "FC": 0.0,
+    "binding": "FC",
+    "n_hist_windows": 9710,
+    "n_days": 9862,
+    "CPC_notional": null
+   }
+  },
+  "sens_hedge_none_two_leg_joint": {
+   "fc_per_day": 116809.58483659184,
+   "notional_per_day": 218083.52366009168,
+   "H30": {
+    "H": 30,
+    "C": 1083826.1675825166,
+    "ES99": 1078452.0789524096,
+    "ES95_junior": 836578.2508740646,
+    "worst_window": 1083826.1675825166,
+    "FC": 3504287.5450977553,
+    "binding": "worst_window",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.16565918558673948
+   },
+   "H153": {
+    "H": 153,
+    "C": 2509134.8721631775,
+    "ES99": 2509134.8721631775,
+    "ES95_junior": 1959975.8452351796,
+    "worst_window": 1584895.597975882,
+    "FC": 17871866.47999855,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.07519859388105142
+   }
+  },
+  "sens_hedge_full_two_leg_joint": {
+   "fc_per_day": 6369.981228245077,
+   "notional_per_day": 12839.047529289464,
+   "H30": {
+    "H": 30,
+    "C": 10522.781184005506,
+    "ES99": 10522.781184005506,
+    "ES95_junior": 7791.023889435533,
+    "worst_window": 9174.814810090707,
+    "FC": 191099.4368473523,
+    "binding": "ES99",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.02731973473888956
+   },
+   "H153": {
+    "H": 153,
+    "C": 23220.374859343614,
+    "ES99": 23220.374859343614,
+    "ES95_junior": 17602.72646222424,
+    "worst_window": 17562.416666666664,
+    "FC": 974607.1279214968,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.011820748820907386
+   }
+  },
+  "D1_absorb_all_two_leg_joint": {
+   "fc_per_day": 385108.904112264,
+   "notional_per_day": 758153.0618979266,
+   "H30": {
+    "H": 30,
+    "C": 1171318.797174282,
+    "ES99": 1171318.797174282,
+    "ES95_junior": 906573.0681003185,
+    "worst_window": 1164874.334375738,
+    "FC": 11553267.12336792,
+    "binding": "ES99",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.05149878285536232
+   },
+   "H153": {
+    "H": 153,
+    "C": 2762362.394044206,
+    "ES99": 2762362.394044206,
+    "ES95_junior": 2144626.357954197,
+    "worst_window": 1676739.772208117,
+    "FC": 58921662.32917639,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.023813998884376127
+   }
+  },
+  "D1_absorb_all_19pair_two_leg_joint": {
+   "fc_per_day": 342310.9544532031,
+   "notional_per_day": 671183.8350411743,
+   "H30": {
+    "H": 30,
+    "C": 1140771.383783221,
+    "ES99": 1140771.383783221,
+    "ES95_junior": 884877.920114743,
+    "worst_window": 1122237.9163264232,
+    "FC": 10269328.633596094,
+    "binding": "ES99",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.05665469102133742
+   },
+   "H153": {
+    "H": 153,
+    "C": 2688709.1419956028,
+    "ES99": 2688709.1419956028,
+    "ES95_junior": 2092840.2375669691,
+    "worst_window": 1585422.2046941426,
+    "FC": 52373576.03134008,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.02618248749227741
+   }
+  },
+  "D1_absorb_all_MaySep_two_leg_joint": {
+   "fc_per_day": 384560.8975159105,
+   "notional_per_day": 758604.6292125799,
+   "H30": {
+    "H": 30,
+    "C": 938743.934871527,
+    "ES99": 938743.934871527,
+    "ES95_junior": 749955.3477135465,
+    "worst_window": 817417.390605999,
+    "FC": 11536826.925477315,
+    "binding": "ES99",
+    "n_hist_windows": 342,
+    "n_days": 429,
+    "CPC_notional": 0.04124871282185245
+   },
+   "H153": {
+    "H": 153,
+    "C": 2401275.478205377,
+    "ES99": 2401275.478205377,
+    "ES95_junior": 1899523.5337453573,
+    "worst_window": 121439.41737201289,
+    "FC": 58837817.31993431,
+    "binding": "ES99",
+    "n_hist_windows": 2,
+    "n_days": 429,
+    "CPC_notional": 0.0206887888160574
+   }
+  },
+  "D1_absorb_all_RA_two_leg_joint": {
+   "fc_per_day": 389350.626164783,
+   "notional_per_day": 768781.6173297971,
+   "H30": {
+    "H": 30,
+    "C": 1247695.5716084517,
+    "ES99": 1067044.8759041755,
+    "ES95_junior": 820578.1207862821,
+    "worst_window": 1247695.5716084517,
+    "FC": 11680518.784943491,
+    "binding": "worst_window",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.05409839601966821
+   },
+   "H153": {
+    "H": 153,
+    "C": 2438971.6685691345,
+    "ES99": 2438971.6685691345,
+    "ES95_junior": 1903920.0683162287,
+    "worst_window": 1356696.4850216117,
+    "FC": 59570645.8032118,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.02073539603249775
+   }
+  },
+  "D1_absorb_all_RA_two_leg_long": {
+   "fc_per_day": 389350.626164783,
+   "notional_per_day": 768781.6173297971,
+   "H30": {
+    "H": 30,
+    "C": 1619200.4467355218,
+    "ES99": 1018047.0728915693,
+    "ES95_junior": 797267.4886250488,
+    "worst_window": 1619200.4467355218,
+    "FC": 11680518.784943491,
+    "binding": "worst_window",
+    "n_hist_windows": 9833,
+    "n_days": 9862,
+    "CPC_notional": 0.07020634599976854
+   },
+   "H153": {
+    "H": 153,
+    "C": 2942411.6781606097,
+    "ES99": 2267195.660462156,
+    "ES95_junior": 1763944.7138456968,
+    "worst_window": 2942411.6781606097,
+    "FC": 59570645.8032118,
+    "binding": "worst_window",
+    "n_hist_windows": 9710,
+    "n_days": 9862,
+    "CPC_notional": 0.025015490021292604
+   }
+  },
+  "D1_absorb_all_residual_only_joint": {
+   "fc_per_day": 275009.02237555094,
+   "notional_per_day": 553563.2917738582,
+   "H30": {
+    "H": 30,
+    "C": 387064.9923238036,
+    "ES99": 387064.9923238036,
+    "ES95_junior": 289334.45995023655,
+    "worst_window": 300273.9484414664,
+    "FC": 8250270.671266528,
+    "binding": "ES99",
+    "n_hist_windows": 945,
+    "n_days": 974,
+    "CPC_notional": 0.023307481913132796
+   },
+   "H153": {
+    "H": 153,
+    "C": 855260.0038751088,
+    "ES99": 855260.0038751088,
+    "ES95_junior": 651861.309786323,
+    "worst_window": 628636.388207387,
+    "FC": 42076380.42345929,
+    "binding": "ES99",
+    "n_hist_windows": 822,
+    "n_days": 974,
+    "CPC_notional": 0.010098094922330915
+   }
+  }
+ },
+ "R2": {
+  "CPC": 0.16586257874156954,
+  "C30": 1081899.1316614929,
+  "verdict": "LEVERAGE HOLDS"
+ },
+ "R3": {
+  "ratio": 1.0017533216791767,
+  "verdict": "RESIDUAL CHEAP TO CARRY"
+ },
+ "junior": {
+  "J0": 834942.3679388908,
+  "S0": 246956.76372260205,
+  "observed_all_year": {
+   "spec_t10": {
+    "2025": {
+     "station_days": 254,
+     "residual_markets": 24174,
+     "station_premium": 12617877.74,
+     "station_rm": 172822.61499999993,
+     "station_payouts": 11743486.0,
+     "residual_pnl": 31166.96428571434,
+     "hedge_pnl": -1581.78,
+     "senior": 2520119.0957000004,
+     "treasury": 17282.261499999993,
+     "junior_pnl": -1633424.432914284,
+     "junior_return": -1.9563319525232596
+    },
+    "2026": {
+     "station_days": 472,
+     "residual_markets": 16590,
+     "station_premium": 21972569.819999997,
+     "station_rm": 220870.91500000053,
+     "station_payouts": 21527252.0,
+     "residual_pnl": -1788.749999999955,
+     "hedge_pnl": -4235.98,
+     "senior": 4390096.5457,
+     "treasury": 22087.091500000053,
+     "junior_pnl": -3972890.5472000013,
+     "junior_return": -4.758281169761858
+    }
+   },
+   "spec_t20": {
+    "2025": {
+     "station_days": 254,
+     "residual_markets": 24174,
+     "station_premium": 12617877.74,
+     "station_rm": 172822.61499999993,
+     "station_payouts": 11743486.0,
+     "residual_pnl": 31166.96428571434,
+     "hedge_pnl": -1581.78,
+     "senior": 2516662.6434000004,
+     "treasury": 34564.52299999999,
+     "junior_pnl": -1647250.242114286,
+     "junior_return": -1.9728909507618226
+    },
+    "2026": {
+     "station_days": 472,
+     "residual_markets": 16590,
+     "station_premium": 21972569.819999997,
+     "station_rm": 220870.91500000053,
+     "station_payouts": 21527252.0,
+     "residual_pnl": -1788.749999999955,
+     "hedge_pnl": -4235.98,
+     "senior": 4385679.1274,
+     "treasury": 44174.18300000011,
+     "junior_pnl": -3990560.2204000014,
+     "junior_return": -4.779443915693196
+    }
+   },
+   "margin_t10": {
+    "2025": {
+     "station_days": 254,
+     "residual_markets": 24174,
+     "station_premium": 12617877.74,
+     "station_rm": 172822.61499999993,
+     "station_payouts": 11743486.0,
+     "residual_pnl": 31166.96428571434,
+     "hedge_pnl": -1581.78,
+     "senior": 31108.070699999993,
+     "treasury": 17282.261499999993,
+     "junior_pnl": 855586.5920857163,
+     "junior_return": 1.0247253282855764
+    },
+    "2026": {
+     "station_days": 472,
+     "residual_markets": 16590,
+     "station_premium": 21972569.819999997,
+     "station_rm": 220870.91500000053,
+     "station_payouts": 21527252.0,
+     "residual_pnl": -1788.749999999955,
+     "hedge_pnl": -4235.98,
+     "senior": 39756.7647000001,
+     "treasury": 22087.091500000053,
+     "junior_pnl": 377449.23379999824,
+     "junior_return": 0.45206621234439937
+    }
+   },
+   "margin_t20": {
+    "2025": {
+     "station_days": 254,
+     "residual_markets": 24174,
+     "station_premium": 12617877.74,
+     "station_rm": 172822.61499999993,
+     "station_payouts": 11743486.0,
+     "residual_pnl": 31166.96428571434,
+     "hedge_pnl": -1581.78,
+     "senior": 27651.618399999996,
+     "treasury": 34564.52299999999,
+     "junior_pnl": 841760.7828857144,
+     "junior_return": 1.0081663300470132
+    },
+    "2026": {
+     "station_days": 472,
+     "residual_markets": 16590,
+     "station_premium": 21972569.819999997,
+     "station_rm": 220870.91500000053,
+     "station_payouts": 21527252.0,
+     "residual_pnl": -1788.749999999955,
+     "hedge_pnl": -4235.98,
+     "senior": 35339.34640000009,
+     "treasury": 44174.18300000011,
+     "junior_pnl": 359779.56059999816,
+     "junior_return": 0.4309034664130618
+    }
+   }
+  },
+  "observed_MaySep": {
+   "spec_t10": {
+    "2025": {
+     "station_days": 107,
+     "residual_markets": 10428,
+     "station_premium": 4872333.49,
+     "station_rm": 79424.50499999993,
+     "station_payouts": 4580192.0,
+     "residual_pnl": 11886.092857142885,
+     "hedge_pnl": -631.1399999999999,
+     "senior": 972878.2079,
+     "treasury": 7942.450499999994,
+     "junior_pnl": -677424.215542857,
+     "junior_return": -0.8113424848892534
+    },
+    "2026": {
+     "station_days": 353,
+     "residual_markets": 8532,
+     "station_premium": 12779033.5,
+     "station_rm": 173523.9600000002,
+     "station_payouts": 12427772.0,
+     "residual_pnl": 2383.537142857168,
+     "hedge_pnl": -3977.9,
+     "senior": 2552336.2208000002,
+     "treasury": 17352.39600000002,
+     "junior_pnl": -2220021.479657142,
+     "junior_return": -2.658891876738042
+    }
+   },
+   "spec_t20": {
+    "2025": {
+     "station_days": 107,
+     "residual_markets": 10428,
+     "station_premium": 4872333.49,
+     "station_rm": 79424.50499999993,
+     "station_payouts": 4580192.0,
+     "residual_pnl": 11886.092857142885,
+     "hedge_pnl": -631.1399999999999,
+     "senior": 971289.7178000002,
+     "treasury": 15884.900999999987,
+     "junior_pnl": -683778.1759428567,
+     "junior_return": -0.8189525435519667
+    },
+    "2026": {
+     "station_days": 353,
+     "residual_markets": 8532,
+     "station_premium": 12779033.5,
+     "station_rm": 173523.9600000002,
+     "station_payouts": 12427772.0,
+     "residual_pnl": 2383.537142857168,
+     "hedge_pnl": -3977.9,
+     "senior": 2548865.7416000003,
+     "treasury": 34704.79200000004,
+     "junior_pnl": -2233903.3964571417,
+     "junior_return": -2.6755180743452707
+    }
+   },
+   "margin_t10": {
+    "2025": {
+     "station_days": 107,
+     "residual_markets": 10428,
+     "station_premium": 4872333.49,
+     "station_rm": 79424.50499999993,
+     "station_payouts": 4580192.0,
+     "residual_pnl": 11886.092857142885,
+     "hedge_pnl": -631.1399999999999,
+     "senior": 14296.41089999999,
+     "treasury": 7942.450499999994,
+     "junior_pnl": 281157.5814571433,
+     "junior_return": 0.3367389082808182
+    },
+    "2026": {
+     "station_days": 353,
+     "residual_markets": 8532,
+     "station_premium": 12779033.5,
+     "station_rm": 173523.9600000002,
+     "station_payouts": 12427772.0,
+     "residual_pnl": 2383.537142857168,
+     "hedge_pnl": -3977.9,
+     "senior": 31234.31280000004,
+     "treasury": 17352.39600000002,
+     "junior_pnl": 301080.4283428579,
+     "junior_return": 0.3606002520702051
+    }
+   },
+   "margin_t20": {
+    "2025": {
+     "station_days": 107,
+     "residual_markets": 10428,
+     "station_premium": 4872333.49,
+     "station_rm": 79424.50499999993,
+     "station_payouts": 4580192.0,
+     "residual_pnl": 11886.092857142885,
+     "hedge_pnl": -631.1399999999999,
+     "senior": 12707.92079999999,
+     "treasury": 15884.900999999987,
+     "junior_pnl": 274803.6210571431,
+     "junior_return": 0.3291288496181043
+    },
+    "2026": {
+     "station_days": 353,
+     "residual_markets": 8532,
+     "station_premium": 12779033.5,
+     "station_rm": 173523.9600000002,
+     "station_payouts": 12427772.0,
+     "residual_pnl": 2383.537142857168,
+     "hedge_pnl": -3977.9,
+     "senior": 27763.833600000038,
+     "treasury": 34704.79200000004,
+     "junior_pnl": 287198.51154285815,
+     "junior_return": 0.34397405446297596
+    }
+   }
+  },
+  "model_MaySep": {
+   "season": "MaySep",
+   "n_days": 153,
+   "station_years": [
+    1999,
+    2025
+   ],
+   "residual_years": [
+    2024,
+    2025
+   ],
+   "splits": {
+    "spec_t10": {
+     "median": -3.4676792012484206,
+     "p05_1in20": -5.138428200553969,
+     "p01": -5.797466525966945,
+     "worst": -7.952215769687452,
+     "share_negative": 0.9998,
+     "three_season_sum_p05": -13.272741613411442,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": -3.5224944008409835,
+     "hist_worst": -6.428551848914797,
+     "hist_worst_year": 2018,
+     "senior_mean": 3027345.0710229315,
+     "treasury_mean": 13086.781468170659
+    },
+    "spec_t20": {
+     "median": -3.480120627612159,
+     "p05_1in20": -5.150965346624226,
+     "p01": -5.810332012314304,
+     "worst": -7.965581250636168,
+     "share_negative": 0.9998,
+     "three_season_sum_p05": -13.3102160170463,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": -3.5349840932252703,
+     "hist_worst": -6.441491418628239,
+     "hist_worst_year": 2018,
+     "senior_mean": 3024727.714729297,
+     "treasury_mean": 26173.562936341317
+    },
+    "margin_t10": {
+     "median": 0.12417941691909867,
+     "p05_1in20": -1.4749966651893487,
+     "p01": -2.1149479322417313,
+     "worst": -4.120141577367242,
+     "share_negative": 0.4474,
+     "three_season_sum_p05": -2.3619819552899837,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": 0.07023870148144179,
+     "hist_worst": -2.6583880687968966,
+     "hist_worst_year": 2018,
+     "senior_mean": 23556.206642707188,
+     "treasury_mean": 13086.781468170659
+    },
+    "margin_t20": {
+     "median": 0.11167094229608887,
+     "p05_1in20": -1.4873238536477256,
+     "p01": -2.12760891897195,
+     "worst": -4.133507058315955,
+     "share_negative": 0.4519,
+     "three_season_sum_p05": -2.4003180758878617,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": 0.057749009097155246,
+     "hist_worst": -2.6713276385103386,
+     "hist_worst_year": 2018,
+     "senior_mean": 20938.850349073058,
+     "treasury_mean": 26173.562936341317
+    }
+   },
+   "mean_components_per_season": {
+    "prem": 15149812.136582825,
+    "rm": 130867.81468170657,
+    "pay": 15017277.204963205,
+    "hedge": -3860.2594104981213,
+    "res": 7545.907648704936
+   }
+  },
+  "model_year": {
+   "season": "year",
+   "n_days": 365,
+   "station_years": [
+    1999,
+    2025
+   ],
+   "residual_years": [
+    2024,
+    2025
+   ],
+   "splits": {
+    "spec_t10": {
+     "median": -8.021258516990525,
+     "p05_1in20": -10.609995636250856,
+     "p01": -11.613498668122244,
+     "worst": -14.025414181582596,
+     "share_negative": 1.0,
+     "three_season_sum_p05": -28.534535298403625,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": -7.658271807391099,
+     "hist_worst": -13.549151224723614,
+     "hist_worst_year": 2018,
+     "senior_mean": 6992487.859799173,
+     "treasury_mean": 34275.94012823021
+    },
+    "spec_t20": {
+     "median": -8.05385352682531,
+     "p05_1in20": -10.643159164620577,
+     "p01": -11.646305738954835,
+     "worst": -14.057726002094148,
+     "share_negative": 1.0,
+     "three_season_sum_p05": -28.633381024650436,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": -7.691084003105442,
+     "hist_worst": -13.581603378216359,
+     "hist_worst_year": 2018,
+     "senior_mean": 6985632.671773526,
+     "treasury_mean": 68551.88025646043
+    },
+    "margin_t10": {
+     "median": 0.2774082402799858,
+     "p05_1in20": -2.213585615889882,
+     "p01": -3.172047805231184,
+     "worst": -5.530696761813594,
+     "share_negative": 0.4292,
+     "three_season_sum_p05": -3.4574862887186772,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": 0.6143084859125346,
+     "hist_worst": -4.988661202882037,
+     "hist_worst_year": 2018,
+     "senior_mean": 61696.692230814384,
+     "treasury_mean": 34275.94012823021
+    },
+    "margin_t20": {
+     "median": 0.24467563560275996,
+     "p05_1in20": -2.2463123007851262,
+     "p01": -3.2046992001606305,
+     "worst": -5.563008582325145,
+     "share_negative": 0.4378,
+     "three_season_sum_p05": -3.556641046912856,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": 0.5814962901981907,
+     "hist_worst": -5.021113356374783,
+     "hist_worst_year": 2018,
+     "senior_mean": 54841.504205168356,
+     "treasury_mean": 68551.88025646043
+    }
+   },
+   "mean_components_per_season": {
+    "prem": 34996715.23912408,
+    "rm": 342759.4012823021,
+    "pay": 34659551.69127134,
+    "hedge": -9088.483377666764,
+    "res": 5076.966005509562
+   }
+  },
+  "D1_absorb_all_model_MaySep": {
+   "season": "MaySep",
+   "n_days": 153,
+   "station_years": [
+    1999,
+    2025
+   ],
+   "residual_years": [
+    2024,
+    2025
+   ],
+   "splits": {
+    "spec_t10": {
+     "median": -2.928231980612334,
+     "p05_1in20": -4.511701369664246,
+     "p01": -5.1121901048702005,
+     "worst": -7.006612486584815,
+     "share_negative": 0.999,
+     "three_season_sum_p05": -11.503699118286013,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": -2.9696320693136062,
+     "hist_worst": -5.646074346763551,
+     "hist_worst_year": 2018,
+     "senior_mean": 3027345.0710229315,
+     "treasury_mean": 13086.781468170659
+    },
+    "spec_t20": {
+     "median": -2.9398929234958873,
+     "p05_1in20": -4.522703643195852,
+     "p01": -5.124104321165505,
+     "worst": -7.0189219260603855,
+     "share_negative": 0.9991,
+     "three_season_sum_p05": -11.538187805423256,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": -2.9811349185610654,
+     "hist_worst": -5.657991527360246,
+     "hist_worst_year": 2018,
+     "senior_mean": 3024727.714729297,
+     "treasury_mean": 26173.562936341317
+    },
+    "margin_t10": {
+     "median": 0.3827607130943942,
+     "p05_1in20": -1.134834205254845,
+     "p01": -1.730577315018607,
+     "worst": -3.4773204605621584,
+     "share_negative": 0.339,
+     "three_season_sum_p05": -1.4579103773533462,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": 0.33922982982851896,
+     "hist_worst": -2.173801029969249,
+     "hist_worst_year": 2018,
+     "senior_mean": 23556.206642707188,
+     "treasury_mean": 13086.781468170659
+    },
+    "margin_t20": {
+     "median": 0.37131597427960933,
+     "p05_1in20": -1.146377177236486,
+     "p01": -1.742068695444404,
+     "worst": -3.4896299000377264,
+     "share_negative": 0.3427,
+     "three_season_sum_p05": -1.4928321226818655,
+     "rule_1in20_positive_over_3y": false,
+     "hist_station_years_median": 0.32772698058105976,
+     "hist_worst": -2.1857182105659443,
+     "hist_worst_year": 2018,
+     "senior_mean": 20938.850349073058,
+     "treasury_mean": 26173.562936341317
+    }
+   },
+   "mean_components_per_season": {
+    "prem": 15149812.136582825,
+    "rm": 130867.81468170657,
+    "pay": 15017277.204963205,
+    "hedge": -3860.2594104981213,
+    "res": 253770.79074499296
+   },
+   "J0": 906573.0681003185
+  }
+ },
+ "R5": {
+  "spec_t10": {
+   "three_season_sum_p05": -13.272741613411442,
+   "verdict": "FAIL"
+  },
+  "spec_t20": {
+   "three_season_sum_p05": -13.3102160170463,
+   "verdict": "FAIL"
+  },
+  "margin_t10": {
+   "three_season_sum_p05": -2.3619819552899837,
+   "verdict": "FAIL"
+  },
+  "margin_t20": {
+   "three_season_sum_p05": -2.4003180758878617,
+   "verdict": "FAIL"
+  }
+ },
+ "deviations": [
+  "D1 (2026-09-30T18:52:06Z, after the first full run at 18:50Z): under the frozen limits (mu_r +/- l*MAD_r, l <= 0.25, MAD ~0.5 wet days) a hedger's residual premium is under one tick of the 14-wide scalar ($0.14 per unit-week), so only 2-4 % of residual units fill and the primary two-leg book is almost the station leg alone. Added a residual 'absorb-all' sensitivity: the house takes every business's residual units (q_r = -sum h per cell, like Phase 4 D4(b)); capital, R3 ratio and junior reported for it alongside the primary. Also: clearing - fair is now averaged over markets that traded, and the no-trade share is reported (first run averaged over no-trade markets too). The primary rules and verdicts are unchanged."
+ ],
+ "written_utc": "2026-09-30T18:57:45Z",
+ "runtime_s": 26.2,
+ "lines": {
+  "evaluation_s7_paragraph": "Rain as a weekly two-leg book (wet-day cover; station leg = daily Kalshi rain binaries, residual = PRISM per-cell spread; `reports/eval-04-05/rain_book.json`). Almost nothing nets: 0.003 of units cancel (`netting.central.pooled`), because nearly every sector loses on wet days. At 2 % participation the pool is short $282k of payout per wet day across the five cities (`netting.leftover.<ST>.leftover_units_per_day`), and Kalshi's daily rain markets can absorb about 700 contracts a day against about 205,000 needed (`depth.by_city.<ST>.depth_proxy`, `.mean_net_short_contracts`; a volume proxy, no order-book history), so the house carries it. The 30-day capital is $1.08M on the 2024-26 window (`capital.two_leg_joint.H30.C`; Phase 4's heat book: $412k, `handoff.C30_usd`), 0.17 of 30-day notional (`R2.CPC`), and $1.47M for the station leg on 1999-2025 (`capital.station_long_1999_2025.H30.C`); the season (153-day) figure is $2.51M (`capital.two_leg_joint.H153.C`). The residual leg adds little capital: \u00d71.00 as priced (`R3.ratio`), \u00d71.08 if the house wrote every residual unit (`D1_absorb_all.ratio30`). With senior paid out of margin, the junior's median May-Sep season is +12 % and the 1-in-20 season -147 % (`junior.model_MaySep.splits.margin_t10`), so the three-season test fails (`R5.margin_t10`).",
+  "memo_line": "Rain cover doesn't net and Kalshi's daily rain markets are about 300 times too thin to lay it off, so a rain book is the pool's own risk: about $1.08M of 30-day capital at 2 % take-up, and the junior loses money in a bad year."
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "written_utc": "2026-09-30T13:48:54Z",
+ "source": "reports/eval-04-05/results.json",
+ "for_phases": [
+  7,
+  14,
+  16
+ ],
+ "caveats": [
+  "sector priors LOW confidence; netting collapses under the shrink-to-common null",
+  "capital tail = worst historical 30-day window on 26 joint seasons (1999-2025, both legs) / 64 (station leg only)",
+  "persistence-forecast pricing in scenarios is conservative vs Kalshi (backtest: 1 exceedance in 599 days)",
+  "Kalshi hedge capped at 5 units per city-day; the pool carries the rest"
+ ],
+ "capital_per_usd_cover_H30": {
+  "per_usd_pool_notional_both_legs": 0.12640462404347008,
+  "per_usd_pool_notional_station_leg_only": 0.2511068383079124,
+  "per_usd_pool_notional_clim_priced_both_legs": 0.17691056776152925,
+  "per_usd_pool_notional_clim_priced_station_only": 0.36023916857559185,
+  "per_usd_gross_hedger_cover": 0.06679960215103901,
+  "C_over_full_collateral": 0.2480021063079913
+ },
+ "C30_usd": 412108.7605436506,
+ "ES99_30d_usd": 269429.73965880595,
+ "worst_window_30d_usd": 412108.7605436506,
+ "junior_ES95_30d_usd": 206315.29814495792,
+ "junior_share": 0.5006331286740627,
+ "capital_H": {
+  "H1": {
+   "C": 34799.70178900634,
+   "ES99": 32203.096620217362,
+   "worst_window": 34799.70178900634,
+   "FC": 55390.49199738878,
+   "junior": 29849.6980849214
+  },
+  "H5": {
+   "C": 127530.08420624596,
+   "ES99": 106524.20468999611,
+   "worst_window": 127530.08420624596,
+   "FC": 276952.4599869439,
+   "junior": 85707.14564337205
+  },
+  "H30": {
+   "C": 412108.7605436506,
+   "ES99": 269429.73965880595,
+   "worst_window": 412108.7605436506,
+   "FC": 1661714.7599216634,
+   "junior": 206315.29814495792
+  }
+ },
+ "pool_book_per_day": {
+  "notional_usd": 108674.49500948844,
+  "full_collateral_usd": 55390.49199738878
+ },
+ "fee_income_per_usd_notional": {
+  "bps0": 0.0,
+  "bps10": 0.001,
+  "bps25": 0.0025,
+  "bps50": 0.005,
+  "cow50": 0.004024647054288988
+ },
+ "fee_income_per_season_usd": {
+  "bps0": 0.0,
+  "bps10": 22442.120000000003,
+  "bps25": 56105.3,
+  "bps50": 112210.6,
+  "cow50": 90321.61215
+ },
+ "netting_ratio": {
+  "central": {
+   "NYC": 0.35644726095877705,
+   "EWR": 0.21051830048042233,
+   "TTN": 0.13015569055967596,
+   "MDW": 0.31997580667461084,
+   "MIA": 0.649089889886244,
+   "pooled": 0.3963883642260093
+  },
+  "null": {
+   "NYC": 0.01315368364630866,
+   "EWR": 0.010542773452726343,
+   "TTN": 0.004604649249788525,
+   "MDW": 0.01398601619893205,
+   "MIA": 0.054400912168931614,
+   "pooled": 0.019457936594014028
+  },
+  "ensemble_p10_p50_p90": {
+   "NYC": [
+    0.1851220181399299,
+    0.3424628191091733,
+    0.5343663208365913
+   ],
+   "EWR": [
+    0.117437692520981,
+    0.23120763355541218,
+    0.37738782014882266
+   ],
+   "TTN": [
+    0.06444038149010549,
+    0.13792657069065878,
+    0.23613522490666758
+   ],
+   "MDW": [
+    0.1577178083100374,
+    0.30782376852407595,
+    0.5003741466383879
+   ],
+   "MIA": [
+    0.3890953211127246,
+    0.5829600788151917,
+    0.8069074966912699
+   ],
+   "pooled": [
+    0.21578628182318296,
+    0.3764020163068888,
+    0.564499871763638
+   ]
+  }
+ },
+ "house_markout_mean_daily_usd": {
+  "primary": 1154.4824179187544,
+  "resid_trailing5": 384.13732053422314
+ },
+ "revision": {
+  "cli_share": 0.0,
+  "nclimgrid_prelim_D5_vs_scaled_tmax_moves": 0.6436392209398186,
+  "nclimgrid_wet_flag_flips": 0.029002215581203628
+ },
+ "margin_placeholders_for_phase7": {
+  "house_capacity_full_collateral_per_day_usd": 250000.0,
+  "kalshi_hedge_cap_units_per_city_day": 5,
+  "protocol_fee_bps_primary": 10
+ },
+ "excluded": "forecast-level risk of pricing before the forecast is known is NOT in the headline; it is the clim-priced sensitivity row"
+}

@@ -1,0 +1,15 @@
+# 16 SUMMARY: pitch narrative, two deck outlines, demo walkthrough (2026-09-30)
+**Shipped (reports/pitch/):** NARRATIVE.md (one page per audience + a shared proven / not proven / money-buys section); DECK-crypto.md and DECK-fintech.md (15 slides each: title, message, on-slide lines, evidence with source keys, visual file, speaker notes); DEMO-WALKTHROUGH.md (5-minute presenter notes in both orders, a do-not-say list, fallback screenshots). The decks were composed by a scratchpad script, so the 9 shared slides (S-A..S-I: station pays 0.95, day-ahead 0.37 and T1 fail, pool not netting, capital on two horizons + junior wipe-out, elasticity fail, what's built, scorecard, legal fork, ask) are byte-identical in both decks (checked). No git, no portal edits.
+**Checks:** banned-word grep (style-guide list + leverag/disrupt/effortless/allows us to) on all 4 files: **0 hits**. The only "stake to earn"/"yield" hit is the walkthrough's do-not-say line. Every evidence line names a results.json key, a PREREG threshold, a memo section or a phase SUMMARY (script-checked). All numbers were copied from EVALUATION.md Appendix B / M14 Appendix E; I spot-checked 12 values against the JSON.
+**Honesty choices:** every fail is on a slide in the same type as the passes (T1 price, −0.32, netting 1.9%, 0.36 capital, junior −144% / 3-season fail, T2 0.072/0.053). "Cheaper than bespoke" is marked unmeasured. Kalshi is named only as the hedge venue, and the §6.4 naming OK + data licence are on every deck header.
+**Deviation from plan wording:** the crypto brief said "evidence as proof of demand". The evidence proves no demand (no customers), so the crypto deck presents it as proof of what the payout and pool can do, and names demand as untested.
+**Pending placeholders (seat fills):**
+- `{{PORTAL_ALIAS}}`: S-F in both decks + walkthrough ×4 (Phase 13).
+- `{{DEMO_SALES_DAYS}}`, `{{DEMO_HE_SHOWN}}`, `{{DEMO_PREMIUM}}`, `{{DEMO_BALANCE_AFTER}}`: walkthrough, from reports/demo/DEMO-SCRIPT.md. That file was absent when I wrote this, so the walkthrough can't yet be checked against DEMO-SCRIPT numbers.
+- `{{TEAM_LINE}}`: ask slide S-I, both decks. The owner writes it; I invented no team facts.
+- **pending Phase 3** lines: S-D (residual design, `verdicts.winner.temperature`; two-leg capital re-run), S-G ×2 (residual winner temp/rain; geography `eval02.temperature.pooled_median_he0`), NARRATIVE ×1. There is no fig8_geography.png yet.
+**Flags for the seat:**
+1. The portal house-hedge card says "We buy the station-temperature ladder at Kalshi to back your cover". That is the wording counsel Q2 asks about. I flagged it in the walkthrough and left the portal untouched.
+2. The rain peril returns 422 in the API (S09 dev. 2). The fintech deck says rain is the proposed first pilot product, not a built one.
+3. The reports/portal/*.png screenshots are fixture-era (2025 dates, a made-up 8.00% senior rate, "Expected hedge fit 91%", staking "not live"). The visual notes say to crop them or swap in the Phase 13 screenshots.
+4. M14 Appendix E still says a 10-day unstake cooldown. The seat ruling says 12; the crypto slide 5 cites the ruling.

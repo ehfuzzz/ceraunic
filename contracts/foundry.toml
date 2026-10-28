@@ -1,0 +1,39 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+script = "script"
+solc_version = "0.8.37"
+evm_version = "cancun"          # HyperEVM = Cancun without blobs. Foundry 1.8.3 / solc 0.8.37 default to osaka (CLZ): never drop this.
+optimizer = true
+optimizer_runs = 200
+bytecode_hash = "ipfs"
+# No eth_rpc_url here: setting one makes `forge test` fork it. Scripts pass --rpc-url.
+fs_permissions = [
+  { access = "read-write", path = "./deployments" },
+  { access = "read", path = "./test/fixtures" },
+  { access = "read", path = "./broadcast" },
+]
+ignored_error_codes = [6335]    # OZ 5.7 internals: "`at` will be promoted to keyword"
+ignored_warnings_from = ["script", "test"]  # script/test contracts are never deployed on chain; size warnings there are noise
+
+[fuzz]
+runs = 1000
+
+[invariant]
+runs = 256
+depth = 100
+fail_on_revert = false
+show_metrics = false
+
+[rpc_endpoints]
+anvil = "http://127.0.0.1:8547"
+hyperevm_testnet = "${HYPEREVM_TESTNET_RPC}"
+
+# HyperEVM testnet (chain 998; forge names it hyperliquid-testnet). The owner runs every broadcast.
+[profile.hyperevm_testnet]
+chain_id = 998
+
+[lint]
+lint_on_build = false

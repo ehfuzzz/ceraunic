@@ -1,0 +1,679 @@
+{
+  "apiCalls": 49,
+  "auction": {
+    "auctionId": "auc_RES-LGA-NYC_2026-07-17",
+    "basisTenthsF": 19,
+    "conservation": {
+      "longLockedE6": 13800000,
+      "ok": true,
+      "shortLockedE6": 6200000
+    },
+    "day": "2026-07-17",
+    "filledQty": 20,
+    "fills": [
+      {
+        "orderId": "ord_000043",
+        "qty": 20,
+        "side": "buy",
+        "trader": "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955"
+      },
+      {
+        "orderId": "ord_000044",
+        "qty": 20,
+        "side": "sell",
+        "trader": "0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f"
+      }
+    ],
+    "orderCount": 8,
+    "poolFilledQty": 0,
+    "priceE6": 690000,
+    "status": "cleared"
+  },
+  "auctionsByStatus": {
+    "cleared": [
+      "auc_RES-LGA-NYC_2026-07-17",
+      "auc_RES-JFK-NYC_2026-07-17",
+      "auc_RES-EWR-NYC_2026-07-17",
+      "auc_RES-TTN-NYC_2026-07-17",
+      "auc_RES-ORD-MDW_2026-07-17",
+      "auc_RES-FLL-MIA_2026-07-17",
+      "auc_RES-OPF-MIA_2026-07-17",
+      "auc_RES-LGA-NYC_2026-07-18",
+      "auc_RES-JFK-NYC_2026-07-18",
+      "auc_RES-EWR-NYC_2026-07-18",
+      "auc_RES-TTN-NYC_2026-07-18",
+      "auc_RES-ORD-MDW_2026-07-18",
+      "auc_RES-FLL-MIA_2026-07-18",
+      "auc_RES-OPF-MIA_2026-07-18"
+    ],
+    "open": [
+      "auc_RES-LGA-NYC_2026-07-19",
+      "auc_RES-JFK-NYC_2026-07-19",
+      "auc_RES-EWR-NYC_2026-07-19",
+      "auc_RES-TTN-NYC_2026-07-19",
+      "auc_RES-ORD-MDW_2026-07-19",
+      "auc_RES-FLL-MIA_2026-07-19",
+      "auc_RES-OPF-MIA_2026-07-19"
+    ]
+  },
+  "events": {
+    "advance1": [
+      {
+        "detail": "house posted 0 orders for 2026-07-16",
+        "kind": "house_cutoff",
+        "ts": "2026-07-16T02:20:00Z"
+      },
+      {
+        "detail": "auctions for 2026-07-16 cleared (0 units); policies bound",
+        "kind": "public_cutoff",
+        "ts": "2026-07-16T03:00:00Z"
+      },
+      {
+        "detail": "KXHIGHMIA 2026-07-16: station leg hedged, cost $26.51, shortfall 141 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-16T04:59:00Z"
+      },
+      {
+        "detail": "KXHIGHNY 2026-07-16: station leg hedged, cost $0.00, shortfall 0 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-16T04:59:00Z"
+      },
+      {
+        "detail": "KXHIGHCHI 2026-07-16: station leg hedged, cost $22.07, shortfall 268 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-16T05:59:00Z"
+      },
+      {
+        "detail": "pool epoch",
+        "kind": "epoch",
+        "ts": "2026-07-16T12:30:00Z"
+      },
+      {
+        "detail": "residual auctions for 2026-07-17 open (7 pairs)",
+        "kind": "markets_open",
+        "ts": "2026-07-16T14:00:00Z"
+      },
+      {
+        "detail": "house posted 42 orders for 2026-07-17",
+        "kind": "markets_open",
+        "ts": "2026-07-16T14:05:00Z"
+      }
+    ],
+    "advance2": [
+      {
+        "detail": "house posted 0 orders for 2026-07-17",
+        "kind": "house_cutoff",
+        "ts": "2026-07-17T02:20:00Z"
+      },
+      {
+        "detail": "auctions for 2026-07-17 cleared (20 units); policies bound",
+        "kind": "public_cutoff",
+        "ts": "2026-07-17T03:00:00Z"
+      },
+      {
+        "detail": "KXHIGHMIA 2026-07-17: station leg hedged, cost $23.86, shortfall 141 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-17T04:59:00Z"
+      },
+      {
+        "detail": "KXHIGHNY 2026-07-17: station leg hedged, cost $0.00, shortfall 0 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-17T04:59:00Z"
+      },
+      {
+        "detail": "KXRAIN-CHI 2026-07-17: station leg hedged, cost $19.63, shortfall 0 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-17T05:00:00Z"
+      },
+      {
+        "detail": "KXHIGHCHI 2026-07-17: station leg hedged, cost $13.62, shortfall 119 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-17T05:59:00Z"
+      },
+      {
+        "detail": "20 index values posted for 2026-07-16",
+        "kind": "oracle_fetch",
+        "ts": "2026-07-17T12:00:00Z"
+      },
+      {
+        "detail": "KXHIGHCHI 2026-07-16: Kalshi result, hedge paid $13.00",
+        "kind": "hedge",
+        "ts": "2026-07-17T12:01:13Z"
+      },
+      {
+        "detail": "KXHIGHMIA 2026-07-16: Kalshi result, hedge paid $30.00",
+        "kind": "hedge",
+        "ts": "2026-07-17T12:01:13Z"
+      },
+      {
+        "detail": "KXHIGHNY 2026-07-16: Kalshi result, hedge paid $0.00",
+        "kind": "hedge",
+        "ts": "2026-07-17T12:01:13Z"
+      },
+      {
+        "detail": "pool epoch",
+        "kind": "epoch",
+        "ts": "2026-07-17T12:30:00Z"
+      },
+      {
+        "detail": "residual auctions for 2026-07-18 open (7 pairs)",
+        "kind": "markets_open",
+        "ts": "2026-07-17T14:00:00Z"
+      },
+      {
+        "detail": "house posted 42 orders for 2026-07-18",
+        "kind": "markets_open",
+        "ts": "2026-07-17T14:05:00Z"
+      },
+      {
+        "detail": "house posted 0 orders for 2026-07-18",
+        "kind": "house_cutoff",
+        "ts": "2026-07-18T02:20:00Z"
+      },
+      {
+        "detail": "auctions for 2026-07-18 cleared (0 units); policies bound",
+        "kind": "public_cutoff",
+        "ts": "2026-07-18T03:00:00Z"
+      },
+      {
+        "detail": "KXHIGHMIA 2026-07-18: station leg hedged, cost $4.79, shortfall 44 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-18T04:59:00Z"
+      },
+      {
+        "detail": "KXHIGHNY 2026-07-18: station leg hedged, cost $0.00, shortfall 0 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-18T04:59:00Z"
+      },
+      {
+        "detail": "KXHIGHCHI 2026-07-18: station leg hedged, cost $15.17, shortfall 119 contracts",
+        "kind": "hedge",
+        "ts": "2026-07-18T05:59:00Z"
+      },
+      {
+        "detail": "20 index values posted for 2026-07-17",
+        "kind": "oracle_fetch",
+        "ts": "2026-07-18T12:00:00Z"
+      },
+      {
+        "detail": "20 values final for 2026-07-16; 4 policy-days settled",
+        "kind": "finalize",
+        "ts": "2026-07-18T12:00:00Z"
+      },
+      {
+        "detail": "KXHIGHCHI 2026-07-17: Kalshi result, hedge paid $30.00",
+        "kind": "hedge",
+        "ts": "2026-07-18T12:01:03Z"
+      },
+      {
+        "detail": "KXHIGHMIA 2026-07-17: Kalshi result, hedge paid $30.00",
+        "kind": "hedge",
+        "ts": "2026-07-18T12:01:03Z"
+      },
+      {
+        "detail": "KXHIGHNY 2026-07-17: Kalshi result, hedge paid $0.00",
+        "kind": "hedge",
+        "ts": "2026-07-18T12:01:03Z"
+      },
+      {
+        "detail": "pool epoch",
+        "kind": "epoch",
+        "ts": "2026-07-18T12:30:00Z"
+      },
+      {
+        "detail": "residual auctions for 2026-07-19 open (7 pairs)",
+        "kind": "markets_open",
+        "ts": "2026-07-18T14:00:00Z"
+      },
+      {
+        "detail": "house posted 42 orders for 2026-07-19",
+        "kind": "markets_open",
+        "ts": "2026-07-18T14:05:00Z"
+      }
+    ]
+  },
+  "genesis": {
+    "juniorAssetsE6": 200000000000,
+    "seniorAssetsE6": 300000000000,
+    "simTime": "2026-07-15T20:00:00Z"
+  },
+  "houseMm": {
+    "capsUsed": {
+      "C1": 0.0255,
+      "C3": 0.0072,
+      "C4": 0.0143,
+      "C5": 0.0096
+    },
+    "hedges": [
+      {
+        "costE6": 22070000,
+        "day": "2026-07-16",
+        "payoutE6": 13000000,
+        "series": "KXHIGHCHI"
+      },
+      {
+        "costE6": 26510000,
+        "day": "2026-07-16",
+        "payoutE6": 30000000,
+        "series": "KXHIGHMIA"
+      },
+      {
+        "costE6": 0,
+        "day": "2026-07-16",
+        "payoutE6": 0,
+        "series": "KXHIGHNY"
+      },
+      {
+        "costE6": 13620000,
+        "day": "2026-07-17",
+        "payoutE6": 30000000,
+        "series": "KXHIGHCHI"
+      },
+      {
+        "costE6": 23860000,
+        "day": "2026-07-17",
+        "payoutE6": 30000000,
+        "series": "KXHIGHMIA"
+      },
+      {
+        "costE6": 0,
+        "day": "2026-07-17",
+        "payoutE6": 0,
+        "series": "KXHIGHNY"
+      },
+      {
+        "costE6": 19630000,
+        "day": "2026-07-17",
+        "payoutE6": null,
+        "series": "KXRAIN-CHI"
+      },
+      {
+        "costE6": 15170000,
+        "day": "2026-07-18",
+        "payoutE6": null,
+        "series": "KXHIGHCHI"
+      },
+      {
+        "costE6": 4790000,
+        "day": "2026-07-18",
+        "payoutE6": null,
+        "series": "KXHIGHMIA"
+      },
+      {
+        "costE6": 0,
+        "day": "2026-07-18",
+        "payoutE6": null,
+        "series": "KXHIGHNY"
+      }
+    ],
+    "inventory": [],
+    "pnlE6": -5580000,
+    "quotesOpen": 7
+  },
+  "houseMmAfterDay1": {
+    "houseQuoteOnAuction": {
+      "askBasisTenthsF": 23,
+      "askE6": 730000,
+      "bidBasisTenthsF": 15,
+      "bidE6": 650000,
+      "maxQty": 600
+    },
+    "quotesOpen": 7,
+    "tickQuotesPosted": 0,
+    "tradeQty": 20,
+    "traderBuyLimitE6": 730000,
+    "traderSellLimitE6": 650000
+  },
+  "merchants": {
+    "chi": {
+      "businessId": "biz_000002",
+      "cover": {
+        "capTenthsF": 100,
+        "endDay": "2026-07-22",
+        "path": "house-hedge",
+        "peril": "heat",
+        "startDay": "2026-07-16",
+        "strikeTenthsF": 900,
+        "units": 130
+      },
+      "heatBeta": -0.014261725231320186,
+      "heatSe": 0.003927508794186913,
+      "heatUsdPerDegF": 13.344237886349577,
+      "maxPayoutE6": 910000000,
+      "name": "Fixture Bakehouse Midway",
+      "origin": "own-shrunk",
+      "overridden": true,
+      "owner": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+      "paidOutE6": 13000000,
+      "policyId": "pol_000002",
+      "policyIdAtBuy": "pol_000002",
+      "policyStatus": "active",
+      "premiumE6": 334950000,
+      "quote": {
+        "feesE6": 19110000,
+        "heEstimate": 0.0724,
+        "maxPayoutE6": 910000000,
+        "perDayPremiumE6": [
+          47850000,
+          47850000,
+          47850000,
+          47850000,
+          47850000,
+          47850000,
+          47850000
+        ],
+        "premiumE6": 334950000,
+        "residualLegE6": 0,
+        "stationLegE6": 315840000
+      },
+      "rain": {
+        "cover": {
+          "capTenthsF": 1,
+          "endDay": "2026-07-22",
+          "path": "house-hedge",
+          "peril": "rain",
+          "startDay": "2026-07-16",
+          "strikeTenthsF": 0,
+          "units": 20
+        },
+        "days": [
+          "2026-07-16",
+          "2026-07-17",
+          "2026-07-18",
+          "2026-07-19",
+          "2026-07-20",
+          "2026-07-21",
+          "2026-07-22"
+        ],
+        "maxPayoutE6": 140000000,
+        "overridden": true,
+        "paidOutE6": 0,
+        "policyId": "pol_000004",
+        "policyIdAtBuy": "pol_000004",
+        "policyStatus": "active",
+        "premiumE6": 64120000,
+        "quote": {
+          "contracts": [
+            {
+              "askCents": 41,
+              "forDay": "2026-07-16",
+              "qty": 20,
+              "source": "wet-day-rate",
+              "ticker": "KXRAIN-26JUL16-CHI"
+            },
+            {
+              "askCents": 41,
+              "forDay": "2026-07-17",
+              "qty": 20,
+              "source": "wet-day-rate",
+              "ticker": "KXRAIN-26JUL17-CHI"
+            },
+            {
+              "askCents": 41,
+              "forDay": "2026-07-18",
+              "qty": 20,
+              "source": "wet-day-rate",
+              "ticker": "KXRAIN-26JUL18-CHI"
+            },
+            {
+              "askCents": 41,
+              "forDay": "2026-07-19",
+              "qty": 20,
+              "source": "wet-day-rate",
+              "ticker": "KXRAIN-26JUL19-CHI"
+            },
+            {
+              "askCents": 41,
+              "forDay": "2026-07-20",
+              "qty": 20,
+              "source": "wet-day-rate",
+              "ticker": "KXRAIN-26JUL20-CHI"
+            },
+            {
+              "askCents": 41,
+              "forDay": "2026-07-21",
+              "qty": 20,
+              "source": "wet-day-rate",
+              "ticker": "KXRAIN-26JUL21-CHI"
+            },
+            {
+              "askCents": 41,
+              "forDay": "2026-07-22",
+              "qty": 20,
+              "source": "wet-day-rate",
+              "ticker": "KXRAIN-26JUL22-CHI"
+            }
+          ],
+          "feesE6": 2940000,
+          "heEstimate": 0.8261,
+          "maxPayoutE6": 140000000,
+          "perDayPremiumE6": [
+            9160000,
+            9160000,
+            9160000,
+            9160000,
+            9160000,
+            9160000,
+            9160000
+          ],
+          "premiumE6": 64120000,
+          "stationLegE6": 61180000,
+          "tailE6": 0
+        },
+        "rainStation": "KORD",
+        "recommendation": {
+          "maxDailyPremiumE6": 576250,
+          "peril": "rain",
+          "rationale": [
+            "wet-day effect +4.7% of sales on a day with rain (your own history)",
+            "your sales do not fall on wet days; rain cover is shown at the smallest size",
+            "settles on the National Weather Service daily report for Chicago O'Hare; it pays on 0.01 in or more (a trace is no rain, as on Kalshi)",
+            "advisory only: the estimate is learned from public stand-in panels, not retail sales (Phase 5)"
+          ],
+          "unitsPerDay": 1
+        },
+        "settlements": [
+          {
+            "day": "2026-07-16",
+            "payoutE6": 0,
+            "status": "final",
+            "value": 0
+          }
+        ],
+        "units": 20
+      },
+      "recentMeanDailySalesCents": 93566.78571428571,
+      "recommendation": {
+        "capTenthsF": 100,
+        "endDay": "2026-07-22",
+        "maxDailyPremiumE6": 0,
+        "peril": "heat",
+        "startDay": "2026-07-16",
+        "strikeTenthsF": 750,
+        "unitsPerDay": 130
+      },
+      "refundedE6": 0,
+      "residualContractId": "",
+      "rowsIgnoredAfterSimDay": 78,
+      "rowsUsed": 315,
+      "salesFirst": "2025-08-27",
+      "salesLast": "2026-09-30",
+      "salesRowsSent": 393,
+      "salesRowsStored": 393,
+      "settlementStation": "KMDW",
+      "settlements": [
+        {
+          "day": "2026-07-16",
+          "payoutE6": 13000000,
+          "status": "final",
+          "value": 910
+        }
+      ],
+      "site": "MDW",
+      "squareLocationId": "LFIXCHI000002",
+      "usdcE6": 613930000
+    },
+    "mia": {
+      "businessId": "biz_000003",
+      "cover": {
+        "capTenthsF": 100,
+        "endDay": "2026-07-22",
+        "path": "house-hedge",
+        "peril": "heat",
+        "startDay": "2026-07-16",
+        "strikeTenthsF": 930,
+        "units": 230
+      },
+      "heatBeta": -0.017039905391766474,
+      "heatSe": 0.004105610537433767,
+      "heatUsdPerDegF": 22.749855974937482,
+      "maxPayoutE6": 1610000000,
+      "name": "Fixture Juice Bar Miami",
+      "origin": "own-shrunk",
+      "overridden": true,
+      "owner": "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+      "paidOutE6": 92000000,
+      "policyId": "pol_000003",
+      "policyIdAtBuy": "pol_000003",
+      "policyStatus": "active",
+      "premiumE6": 314497610,
+      "quote": {
+        "feesE6": 50072610,
+        "heEstimate": 0.0724,
+        "maxPayoutE6": 1610000000,
+        "perDayPremiumE6": [
+          44928230,
+          44928230,
+          44928230,
+          44928230,
+          44928230,
+          44928230,
+          44928230
+        ],
+        "premiumE6": 314497610,
+        "residualLegE6": 0,
+        "stationLegE6": 264425000
+      },
+      "recentMeanDailySalesCents": 133509.28571428574,
+      "recommendation": {
+        "capTenthsF": 100,
+        "endDay": "2026-07-22",
+        "maxDailyPremiumE6": 0,
+        "peril": "heat",
+        "startDay": "2026-07-16",
+        "strikeTenthsF": 750,
+        "unitsPerDay": 230
+      },
+      "refundedE6": 0,
+      "residualContractId": "",
+      "rowsIgnoredAfterSimDay": 78,
+      "rowsUsed": 318,
+      "salesFirst": "2025-08-27",
+      "salesLast": "2026-09-30",
+      "salesRowsSent": 398,
+      "salesRowsStored": 398,
+      "settlementStation": "KMIA",
+      "settlements": [
+        {
+          "day": "2026-07-16",
+          "payoutE6": 92000000,
+          "status": "final",
+          "value": 970
+        }
+      ],
+      "site": "MIA",
+      "squareLocationId": "LFIXMIA000003",
+      "usdcE6": 777502390
+    },
+    "nyc": {
+      "businessId": "biz_000001",
+      "cover": {
+        "capTenthsF": 100,
+        "endDay": "2026-07-22",
+        "path": "house-hedge",
+        "peril": "cold",
+        "startDay": "2026-07-16",
+        "strikeTenthsF": 750,
+        "units": 360
+      },
+      "heatBeta": 0.018557812455640255,
+      "heatSe": 0.0037176378019885582,
+      "heatUsdPerDegF": -35.688118210451684,
+      "maxPayoutE6": 2520000000,
+      "name": "Fixture Scoops Midtown",
+      "origin": "own-shrunk",
+      "overridden": false,
+      "owner": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "paidOutE6": 0,
+      "policyId": "pol_000001",
+      "policyIdAtBuy": "pol_000001",
+      "policyStatus": "active",
+      "premiumE6": 78120000,
+      "quote": {
+        "feesE6": 78120000,
+        "heEstimate": 0.0724,
+        "maxPayoutE6": 2520000000,
+        "perDayPremiumE6": [
+          11160000,
+          11160000,
+          11160000,
+          11160000,
+          11160000,
+          11160000,
+          11160000
+        ],
+        "premiumE6": 78120000,
+        "residualLegE6": 0,
+        "stationLegE6": 0
+      },
+      "recentMeanDailySalesCents": 192307.7857142857,
+      "recommendation": {
+        "capTenthsF": 100,
+        "endDay": "2026-07-22",
+        "maxDailyPremiumE6": 13950000,
+        "peril": "cold",
+        "startDay": "2026-07-16",
+        "strikeTenthsF": 750,
+        "unitsPerDay": 360
+      },
+      "refundedE6": 0,
+      "residualContractId": "",
+      "rowsIgnoredAfterSimDay": 78,
+      "rowsUsed": 320,
+      "salesFirst": "2025-08-27",
+      "salesLast": "2026-09-30",
+      "salesRowsSent": 398,
+      "salesRowsStored": 398,
+      "settlementStation": "KNYC",
+      "settlements": [
+        {
+          "day": "2026-07-16",
+          "payoutE6": 0,
+          "status": "final",
+          "value": 850
+        }
+      ],
+      "site": "NYC",
+      "squareLocationId": "LFIXNYC000001",
+      "usdcE6": 921880000
+    }
+  },
+  "origin": "https://wi-engine.vercel.app",
+  "pool": {
+    "freeE6": 489998984690,
+    "juniorAssetsE6": 200221056788,
+    "juniorShares": 200000000000000000,
+    "lockedE6": 10223070000,
+    "seniorAssetsE6": 300000997902,
+    "seniorRateBp": 30,
+    "seniorShares": 300000000000000000,
+    "utilizationBp": 204
+  },
+  "seedSeconds": 6.2,
+  "seededAt": "2026-09-30T19:19:53Z",
+  "simTime": "2026-07-18T20:00:00Z",
+  "traders": {
+    "buyer": 486200000,
+    "seller": 493800000
+  }
+}

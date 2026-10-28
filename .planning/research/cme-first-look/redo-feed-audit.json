@@ -1,0 +1,162 @@
+{
+  "mos_archive": [
+    {
+      "icao": "KATL",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KORD",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KCVG",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KLGA",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KDFW",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KPHL",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KPDX",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KIAH",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KSAC",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KMSP",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KBOS",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KLAS",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    },
+    {
+      "icao": "KBUR",
+      "rows": 44715,
+      "runs": 2981,
+      "duplicate_boundary_rows": 45,
+      "first_run": "2022-09-01 00:00:00+00:00",
+      "last_run": "2026-10-02 00:00:00+00:00"
+    }
+  ],
+  "corruption_checks": [
+    "future-weather perturbation invariant",
+    "missing accrual fails closed",
+    "unequal-cluster sandwich parity",
+    "MOS archived-card date alignment"
+  ],
+  "statistics": {
+    "raw_preseal_records": 3244836,
+    "expired_universe_records": 480772,
+    "raw_settlement_records": 445516,
+    "eligible_settlement_records": 349881,
+    "raw_contract_days": 165557,
+    "selected_contract_days": 125916,
+    "no_qualifying_actual_weekday_on_time_days": 39641,
+    "snapshot_only_days": 39641,
+    "receipt_lag_hours_p50_p99": [
+      22.63228957214389,
+      66.07332337977539
+    ],
+    "selection": "all eligible retained until final-flag then latest receipt selection; daily downsampling preregistered",
+    "selected_day_gap_p99": 4.0,
+    "missing_cleared_volume_days": 117266,
+    "exchange_to_receive_seconds_p50_p99": [
+      0.001041693,
+      0.14901423804999994
+    ],
+    "eligible_record_retention_before_daily_selection": 1.0
+  },
+  "class_counts": [
+    {
+      "cls": "A",
+      "rows": 215,
+      "contracts": 109,
+      "lots": 92659.0
+    },
+    {
+      "cls": "B",
+      "rows": 14806,
+      "contracts": 494,
+      "lots": 0.0
+    },
+    {
+      "cls": "C",
+      "rows": 109864,
+      "contracts": 460,
+      "lots": 95560.0
+    },
+    {
+      "cls": "excluded_activity_stale",
+      "rows": 45,
+      "contracts": 37,
+      "lots": 20811.0
+    }
+  ]
+}

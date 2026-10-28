@@ -1,0 +1,381 @@
+{
+ "what": "Truth-set points with no PRISM cell in the Phase 1 40 km discs (Phase 3 deviation 1)",
+ "existing_disc_radius_km": 40.0,
+ "n_points": 9,
+ "n_pairs_temperature": 10,
+ "n_pairs_rain": 7,
+ "covering_radius_km_by_settlement_station": {
+  "EWR": 42.44,
+  "MDW": 46.86,
+  "MIA": 49.09,
+  "NYC": 47.21,
+  "TTN": 41.78
+ },
+ "covering_radius_km": 50.0,
+ "covering_radius_extra_cells": 615,
+ "points": [
+  {
+   "id": "CKZ",
+   "name": "Pennridge",
+   "lat": 40.3891944,
+   "lon": -75.2904722,
+   "cell": {
+    "cell_id": "40.3750_-75.2917",
+    "i": 391,
+    "j": 1193,
+    "lat": 40.375,
+    "lon": -75.29166666666666,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "TTN",
+     "settlement_station": "TTN",
+     "station_lat": 40.27682,
+     "station_lon": -74.81588,
+     "dist_point_to_station_km": 42.12,
+     "dist_cell_centre_to_station_km": 41.78
+    }
+   ]
+  },
+  {
+   "id": "DPA",
+   "name": "DuPage",
+   "lat": 41.90778,
+   "lon": -88.24861,
+   "cell": {
+    "cell_id": "41.9167_-88.2500",
+    "i": 428,
+    "j": 882,
+    "lat": 41.91666666666666,
+    "lon": -88.25,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "MDW",
+     "settlement_station": "MDW",
+     "station_lat": 41.78597,
+     "station_lon": -87.75242,
+     "dist_point_to_station_km": 43.27,
+     "dist_cell_centre_to_station_km": 43.7
+    },
+    {
+     "variable": "rain",
+     "market": "MDW",
+     "settlement_station": "MDW",
+     "station_lat": 41.78597,
+     "station_lon": -87.75242,
+     "dist_point_to_station_km": 43.27,
+     "dist_cell_centre_to_station_km": 43.7
+    }
+   ]
+  },
+  {
+   "id": "FRG",
+   "name": "Farmingdale",
+   "lat": 40.72878,
+   "lon": -73.41341,
+   "cell": {
+    "cell_id": "40.7083_-73.4167",
+    "i": 399,
+    "j": 1238,
+    "lat": 40.70833333333333,
+    "lon": -73.41666666666666,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "NYC",
+     "settlement_station": "NYC",
+     "station_lat": 40.779,
+     "station_lon": -73.96925,
+     "dist_point_to_station_km": 47.15,
+     "dist_cell_centre_to_station_km": 47.21
+    },
+    {
+     "variable": "rain",
+     "market": "NYC",
+     "settlement_station": "NYC",
+     "station_lat": 40.779,
+     "station_lon": -73.96925,
+     "dist_point_to_station_km": 47.15,
+     "dist_cell_centre_to_station_km": 47.21
+    }
+   ]
+  },
+  {
+   "id": "FXE",
+   "name": "Fort Lauderdale Exec",
+   "lat": 26.2,
+   "lon": -80.17,
+   "cell": {
+    "cell_id": "26.2083_-80.1667",
+    "i": 51,
+    "j": 1076,
+    "lat": 26.20833333333333,
+    "lon": -80.16666666666666,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "MIA",
+     "settlement_station": "MIA",
+     "station_lat": 25.78805,
+     "station_lon": -80.31693,
+     "dist_point_to_station_km": 48.1,
+     "dist_cell_centre_to_station_km": 49.09
+    },
+    {
+     "variable": "rain",
+     "market": "MIA",
+     "settlement_station": "MIA",
+     "station_lat": 25.78805,
+     "station_lon": -80.31693,
+     "dist_point_to_station_km": 48.1,
+     "dist_cell_centre_to_station_km": 49.09
+    }
+   ]
+  },
+  {
+   "id": "HPN",
+   "name": "White Plains",
+   "lat": 41.06694,
+   "lon": -73.7075,
+   "cell": {
+    "cell_id": "41.0833_-73.7083",
+    "i": 408,
+    "j": 1231,
+    "lat": 41.08333333333333,
+    "lon": -73.70833333333334,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "NYC",
+     "settlement_station": "NYC",
+     "station_lat": 40.779,
+     "station_lon": -73.96925,
+     "dist_point_to_station_km": 38.84,
+     "dist_cell_centre_to_station_km": 40.32
+    },
+    {
+     "variable": "rain",
+     "market": "NYC",
+     "settlement_station": "NYC",
+     "station_lat": 40.779,
+     "station_lon": -73.96925,
+     "dist_point_to_station_km": 38.84,
+     "dist_cell_centre_to_station_km": 40.32
+    }
+   ]
+  },
+  {
+   "id": "JOT",
+   "name": "Joliet",
+   "lat": 41.51769,
+   "lon": -88.17561,
+   "cell": {
+    "cell_id": "41.5000_-88.1667",
+    "i": 418,
+    "j": 884,
+    "lat": 41.5,
+    "lon": -88.16666666666666,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "MDW",
+     "settlement_station": "MDW",
+     "station_lat": 41.78597,
+     "station_lon": -87.75242,
+     "dist_point_to_station_km": 46.11,
+     "dist_cell_centre_to_station_km": 46.86
+    }
+   ]
+  },
+  {
+   "id": "LOM",
+   "name": "Wings Field",
+   "lat": 40.13756,
+   "lon": -75.26514,
+   "cell": {
+    "cell_id": "40.1250_-75.2500",
+    "i": 385,
+    "j": 1194,
+    "lat": 40.125,
+    "lon": -75.25,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "TTN",
+     "settlement_station": "TTN",
+     "station_lat": 40.27682,
+     "station_lon": -74.81588,
+     "dist_point_to_station_km": 41.17,
+     "dist_cell_centre_to_station_km": 40.55
+    }
+   ]
+  },
+  {
+   "id": "PWK",
+   "name": "Palwaukee",
+   "lat": 42.12083,
+   "lon": -87.90472,
+   "cell": {
+    "cell_id": "42.1250_-87.9167",
+    "i": 433,
+    "j": 890,
+    "lat": 42.125,
+    "lon": -87.91666666666666,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "MDW",
+     "settlement_station": "MDW",
+     "station_lat": 41.78597,
+     "station_lon": -87.75242,
+     "dist_point_to_station_km": 39.31,
+     "dist_cell_centre_to_station_km": 40.07
+    },
+    {
+     "variable": "rain",
+     "market": "MDW",
+     "settlement_station": "MDW",
+     "station_lat": 41.78597,
+     "station_lon": -87.75242,
+     "dist_point_to_station_km": 39.31,
+     "dist_cell_centre_to_station_km": 40.07
+    }
+   ]
+  },
+  {
+   "id": "SMQ",
+   "name": "Somerville",
+   "lat": 40.62389,
+   "lon": -74.66944,
+   "cell": {
+    "cell_id": "40.6250_-74.6667",
+    "i": 397,
+    "j": 1208,
+    "lat": 40.625,
+    "lon": -74.66666666666666,
+    "inside_grid": true
+   },
+   "pairs": [
+    {
+     "variable": "temperature",
+     "market": "EWR",
+     "settlement_station": "EWR",
+     "station_lat": 40.68272,
+     "station_lon": -74.16932,
+     "dist_point_to_station_km": 42.69,
+     "dist_cell_centre_to_station_km": 42.44
+    },
+    {
+     "variable": "temperature",
+     "market": "TTN",
+     "settlement_station": "TTN",
+     "station_lat": 40.27682,
+     "station_lon": -74.81588,
+     "dist_point_to_station_km": 40.53,
+     "dist_cell_centre_to_station_km": 40.72
+    },
+    {
+     "variable": "rain",
+     "market": "EWR",
+     "settlement_station": "EWR",
+     "station_lat": 40.68272,
+     "station_lon": -74.16932,
+     "dist_point_to_station_km": 42.69,
+     "dist_cell_centre_to_station_km": 42.44
+    },
+    {
+     "variable": "rain",
+     "market": "TTN",
+     "settlement_station": "TTN",
+     "station_lat": 40.27682,
+     "station_lon": -74.81588,
+     "dist_point_to_station_km": 40.53,
+     "dist_cell_centre_to_station_km": 40.72
+    }
+   ]
+  }
+ ],
+ "cells": [
+  {
+   "cell_id": "26.2083_-80.1667",
+   "i": 51,
+   "j": 1076,
+   "lat": 26.20833333333333,
+   "lon": -80.16666666666666
+  },
+  {
+   "cell_id": "40.1250_-75.2500",
+   "i": 385,
+   "j": 1194,
+   "lat": 40.125,
+   "lon": -75.25
+  },
+  {
+   "cell_id": "40.3750_-75.2917",
+   "i": 391,
+   "j": 1193,
+   "lat": 40.375,
+   "lon": -75.29166666666666
+  },
+  {
+   "cell_id": "40.6250_-74.6667",
+   "i": 397,
+   "j": 1208,
+   "lat": 40.625,
+   "lon": -74.66666666666666
+  },
+  {
+   "cell_id": "40.7083_-73.4167",
+   "i": 399,
+   "j": 1238,
+   "lat": 40.70833333333333,
+   "lon": -73.41666666666666
+  },
+  {
+   "cell_id": "41.0833_-73.7083",
+   "i": 408,
+   "j": 1231,
+   "lat": 41.08333333333333,
+   "lon": -73.70833333333334
+  },
+  {
+   "cell_id": "41.5000_-88.1667",
+   "i": 418,
+   "j": 884,
+   "lat": 41.5,
+   "lon": -88.16666666666666
+  },
+  {
+   "cell_id": "41.9167_-88.2500",
+   "i": 428,
+   "j": 882,
+   "lat": 41.91666666666666,
+   "lon": -88.25
+  },
+  {
+   "cell_id": "42.1250_-87.9167",
+   "i": 433,
+   "j": 890,
+   "lat": 42.125,
+   "lon": -87.91666666666666
+  }
+ ],
+ "note": "A PRISM file is the whole CONUS grid, so pulling these cells means downloading every day file again (none of the Phase 1 per-day npz files holds them). `--points` keeps only these cells; `--radius-km 50` would keep 615 cells and covers the same points."
+}

@@ -1,0 +1,82 @@
+{
+  "locations": [
+    {
+      "id": "LFIXNYC000001",
+      "name": "Fixture Scoops Midtown",
+      "business_name": "Fixture Scoops Midtown",
+      "address": {
+        "address_line_1": "1 Fixture Ave",
+        "locality": "New York",
+        "administrative_district_level_1": "NY",
+        "postal_code": "10019",
+        "country": "US"
+      },
+      "timezone": "America/New_York",
+      "capabilities": [
+        "CREDIT_CARD_PROCESSING"
+      ],
+      "status": "ACTIVE",
+      "country": "US",
+      "language_code": "en-US",
+      "currency": "USD",
+      "merchant_id": "MLFIXTURE000001",
+      "type": "PHYSICAL",
+      "coordinates": {
+        "latitude": 40.7648,
+        "longitude": -73.9808
+      }
+    },
+    {
+      "id": "LFIXCHI000002",
+      "name": "Fixture Bakehouse Midway",
+      "business_name": "Fixture Bakehouse Midway",
+      "address": {
+        "address_line_1": "2 Fixture St",
+        "locality": "Chicago",
+        "administrative_district_level_1": "IL",
+        "postal_code": "60629",
+        "country": "US"
+      },
+      "timezone": "America/Chicago",
+      "capabilities": [
+        "CREDIT_CARD_PROCESSING"
+      ],
+      "status": "ACTIVE",
+      "country": "US",
+      "language_code": "en-US",
+      "currency": "USD",
+      "merchant_id": "MLFIXTURE000001",
+      "type": "PHYSICAL",
+      "coordinates": {
+        "latitude": 41.7868,
+        "longitude": -87.7522
+      }
+    },
+    {
+      "id": "LFIXMIA000003",
+      "name": "Fixture Juice Bar Miami",
+      "business_name": "Fixture Juice Bar Miami",
+      "address": {
+        "address_line_1": "3 Fixture Blvd",
+        "locality": "Miami",
+        "administrative_district_level_1": "FL",
+        "postal_code": "33126",
+        "country": "US"
+      },
+      "timezone": "America/New_York",
+      "capabilities": [
+        "CREDIT_CARD_PROCESSING"
+      ],
+      "status": "ACTIVE",
+      "country": "US",
+      "language_code": "en-US",
+      "currency": "USD",
+      "merchant_id": "MLFIXTURE000001",
+      "type": "PHYSICAL",
+      "coordinates": {
+        "latitude": 25.7959,
+        "longitude": -80.287
+      }
+    }
+  ]
+}

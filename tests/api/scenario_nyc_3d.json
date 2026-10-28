@@ -1,0 +1,974 @@
+{
+ "name": "scenario_nyc_3d",
+ "note": "09-LEDGER: runs against sim (and anvil, server-signed). The golden (golden/scenario_nyc_3d.json) is the sim run's money projection; anvil must match it exactly.",
+ "steps": [
+  {
+   "name": "create world",
+   "method": "POST",
+   "path": "/api/v1/sim/worlds",
+   "body": {
+    "template": "demo-5-cities"
+   },
+   "save": {
+    "world": "worldId"
+   }
+  },
+  {
+   "name": "clock",
+   "method": "GET",
+   "path": "/api/v1/sim/clock",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "create ice-cream business near LGA (loses on cool days)",
+   "method": "POST",
+   "path": "/api/v1/businesses",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "name": "Astoria Scoops",
+    "lat": 40.7769,
+    "lon": -73.874,
+    "zip": "11370",
+    "naics": "722515",
+    "owner": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"
+   },
+   "save": {
+    "bizA": "businessId"
+   }
+  },
+  {
+   "name": "create bookshop at Central Park (loses on hot days)",
+   "method": "POST",
+   "path": "/api/v1/businesses",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "name": "Museum Mile Books",
+    "lat": 40.7794,
+    "lon": -73.9632,
+    "zip": "10128",
+    "naics": "451211",
+    "owner": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc"
+   },
+   "save": {
+    "bizB": "businessId"
+   }
+  },
+  {
+   "name": "sales A (6 rows dated after the sim day are ignored)",
+   "method": "POST",
+   "path": "/api/v1/businesses/{{bizA}}/sales",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "source": "fixture",
+    "rows": [
+     {
+      "date": "2026-05-01",
+      "grossSalesCents": 120000,
+      "orderCount": 80
+     },
+     {
+      "date": "2026-05-02",
+      "grossSalesCents": 124444,
+      "orderCount": 81
+     },
+     {
+      "date": "2026-05-03",
+      "grossSalesCents": 127686,
+      "orderCount": 82
+     },
+     {
+      "date": "2026-05-04",
+      "grossSalesCents": 130171,
+      "orderCount": 83
+     },
+     {
+      "date": "2026-05-05",
+      "grossSalesCents": 131747,
+      "orderCount": 84
+     },
+     {
+      "date": "2026-05-06",
+      "grossSalesCents": 132312,
+      "orderCount": 85
+     },
+     {
+      "date": "2026-05-07",
+      "grossSalesCents": 131857,
+      "orderCount": 86
+     },
+     {
+      "date": "2026-05-08",
+      "grossSalesCents": 130476,
+      "orderCount": 87
+     },
+     {
+      "date": "2026-05-09",
+      "grossSalesCents": 128358,
+      "orderCount": 88
+     },
+     {
+      "date": "2026-05-10",
+      "grossSalesCents": 125770,
+      "orderCount": 89
+     },
+     {
+      "date": "2026-05-11",
+      "grossSalesCents": 123028,
+      "orderCount": 90
+     },
+     {
+      "date": "2026-05-12",
+      "grossSalesCents": 120463,
+      "orderCount": 91
+     },
+     {
+      "date": "2026-05-13",
+      "grossSalesCents": 118384,
+      "orderCount": 92
+     },
+     {
+      "date": "2026-05-14",
+      "grossSalesCents": 117047,
+      "orderCount": 93
+     },
+     {
+      "date": "2026-05-15",
+      "grossSalesCents": 116621,
+      "orderCount": 94
+     },
+     {
+      "date": "2026-05-16",
+      "grossSalesCents": 117179,
+      "orderCount": 95
+     },
+     {
+      "date": "2026-05-17",
+      "grossSalesCents": 118680,
+      "orderCount": 96
+     },
+     {
+      "date": "2026-05-18",
+      "grossSalesCents": 120980,
+      "orderCount": 80
+     },
+     {
+      "date": "2026-05-19",
+      "grossSalesCents": 123849,
+      "orderCount": 81
+     },
+     {
+      "date": "2026-05-20",
+      "grossSalesCents": 126989,
+      "orderCount": 82
+     },
+     {
+      "date": "2026-05-21",
+      "grossSalesCents": 130075,
+      "orderCount": 83
+     },
+     {
+      "date": "2026-05-22",
+      "grossSalesCents": 132786,
+      "orderCount": 84
+     },
+     {
+      "date": "2026-05-23",
+      "grossSalesCents": 134843,
+      "orderCount": 85
+     },
+     {
+      "date": "2026-05-24",
+      "grossSalesCents": 136036,
+      "orderCount": 86
+     },
+     {
+      "date": "2026-05-25",
+      "grossSalesCents": 136252,
+      "orderCount": 87
+     },
+     {
+      "date": "2026-05-26",
+      "grossSalesCents": 135485,
+      "orderCount": 88
+     },
+     {
+      "date": "2026-05-27",
+      "grossSalesCents": 133836,
+      "orderCount": 89
+     },
+     {
+      "date": "2026-05-28",
+      "grossSalesCents": 131503,
+      "orderCount": 90
+     },
+     {
+      "date": "2026-05-29",
+      "grossSalesCents": 128759,
+      "orderCount": 91
+     },
+     {
+      "date": "2026-05-30",
+      "grossSalesCents": 125921,
+      "orderCount": 92
+     },
+     {
+      "date": "2026-05-31",
+      "grossSalesCents": 123319,
+      "orderCount": 93
+     },
+     {
+      "date": "2026-06-01",
+      "grossSalesCents": 121254,
+      "orderCount": 94
+     },
+     {
+      "date": "2026-06-02",
+      "grossSalesCents": 119967,
+      "orderCount": 95
+     },
+     {
+      "date": "2026-06-03",
+      "grossSalesCents": 119616,
+      "orderCount": 96
+     },
+     {
+      "date": "2026-06-04",
+      "grossSalesCents": 120254,
+      "orderCount": 80
+     },
+     {
+      "date": "2026-06-05",
+      "grossSalesCents": 121825,
+      "orderCount": 81
+     },
+     {
+      "date": "2026-06-06",
+      "grossSalesCents": 124170,
+      "orderCount": 82
+     },
+     {
+      "date": "2026-06-07",
+      "grossSalesCents": 127045,
+      "orderCount": 83
+     },
+     {
+      "date": "2026-06-08",
+      "grossSalesCents": 130147,
+      "orderCount": 84
+     },
+     {
+      "date": "2026-06-09",
+      "grossSalesCents": 133149,
+      "orderCount": 85
+     },
+     {
+      "date": "2026-06-10",
+      "grossSalesCents": 135732,
+      "orderCount": 86
+     },
+     {
+      "date": "2026-06-11",
+      "grossSalesCents": 137626,
+      "orderCount": 87
+     },
+     {
+      "date": "2026-06-12",
+      "grossSalesCents": 138636,
+      "orderCount": 88
+     },
+     {
+      "date": "2026-06-13",
+      "grossSalesCents": 138663,
+      "orderCount": 89
+     },
+     {
+      "date": "2026-06-14",
+      "grossSalesCents": 137717,
+      "orderCount": 90
+     },
+     {
+      "date": "2026-06-15",
+      "grossSalesCents": 135914,
+      "orderCount": 91
+     },
+     {
+      "date": "2026-06-16",
+      "grossSalesCents": 133466,
+      "orderCount": 92
+     },
+     {
+      "date": "2026-06-17",
+      "grossSalesCents": 130655,
+      "orderCount": 93
+     },
+     {
+      "date": "2026-06-18",
+      "grossSalesCents": 127801,
+      "orderCount": 94
+     },
+     {
+      "date": "2026-06-19",
+      "grossSalesCents": 125231,
+      "orderCount": 95
+     },
+     {
+      "date": "2026-06-20",
+      "grossSalesCents": 123240,
+      "orderCount": 96
+     },
+     {
+      "date": "2026-06-21",
+      "grossSalesCents": 122059,
+      "orderCount": 80
+     },
+     {
+      "date": "2026-06-22",
+      "grossSalesCents": 121830,
+      "orderCount": 81
+     },
+     {
+      "date": "2026-06-23",
+      "grossSalesCents": 122588,
+      "orderCount": 82
+     },
+     {
+      "date": "2026-06-24",
+      "grossSalesCents": 124263,
+      "orderCount": 83
+     },
+     {
+      "date": "2026-06-25",
+      "grossSalesCents": 126681,
+      "orderCount": 84
+     },
+     {
+      "date": "2026-06-26",
+      "grossSalesCents": 129588,
+      "orderCount": 85
+     },
+     {
+      "date": "2026-06-27",
+      "grossSalesCents": 132673,
+      "orderCount": 86
+     },
+     {
+      "date": "2026-06-28",
+      "grossSalesCents": 135609,
+      "orderCount": 87
+     },
+     {
+      "date": "2026-06-29",
+      "grossSalesCents": 138084,
+      "orderCount": 88
+     },
+     {
+      "date": "2026-06-30",
+      "grossSalesCents": 139835,
+      "orderCount": 89
+     },
+     {
+      "date": "2026-07-01",
+      "grossSalesCents": 140681,
+      "orderCount": 90
+     },
+     {
+      "date": "2026-07-02",
+      "grossSalesCents": 140539,
+      "orderCount": 91
+     },
+     {
+      "date": "2026-07-03",
+      "grossSalesCents": 139435,
+      "orderCount": 92
+     },
+     {
+      "date": "2026-07-04",
+      "grossSalesCents": 137502,
+      "orderCount": 93
+     },
+     {
+      "date": "2026-07-05",
+      "grossSalesCents": 134962,
+      "orderCount": 94
+     },
+     {
+      "date": "2026-07-06",
+      "grossSalesCents": 132106,
+      "orderCount": 95
+     },
+     {
+      "date": "2026-07-07",
+      "grossSalesCents": 129258,
+      "orderCount": 96
+     },
+     {
+      "date": "2026-07-08",
+      "grossSalesCents": 126741,
+      "orderCount": 80
+     },
+     {
+      "date": "2026-07-09",
+      "grossSalesCents": 124843,
+      "orderCount": 81
+     },
+     {
+      "date": "2026-07-10",
+      "grossSalesCents": 123784,
+      "orderCount": 82
+     },
+     {
+      "date": "2026-07-11",
+      "grossSalesCents": 123688,
+      "orderCount": 83
+     },
+     {
+      "date": "2026-07-12",
+      "grossSalesCents": 124577,
+      "orderCount": 84
+     },
+     {
+      "date": "2026-07-13",
+      "grossSalesCents": 126363,
+      "orderCount": 85
+     },
+     {
+      "date": "2026-07-14",
+      "grossSalesCents": 128859,
+      "orderCount": 86
+     },
+     {
+      "date": "2026-07-15",
+      "grossSalesCents": 131799,
+      "orderCount": 87
+     },
+     {
+      "date": "2026-07-16",
+      "grossSalesCents": 134869,
+      "orderCount": 88
+     },
+     {
+      "date": "2026-07-17",
+      "grossSalesCents": 137742,
+      "orderCount": 89
+     },
+     {
+      "date": "2026-07-18",
+      "grossSalesCents": 140110,
+      "orderCount": 90
+     },
+     {
+      "date": "2026-07-19",
+      "grossSalesCents": 141722,
+      "orderCount": 91
+     },
+     {
+      "date": "2026-07-20",
+      "grossSalesCents": 142410,
+      "orderCount": 92
+     }
+    ]
+   }
+  },
+  {
+   "name": "elasticity A",
+   "method": "POST",
+   "path": "/api/v1/businesses/{{bizA}}/elasticity",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "elasticity B (no sales: sector prior)",
+   "method": "POST",
+   "path": "/api/v1/businesses/{{bizB}}/elasticity",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "recommendation B",
+   "method": "GET",
+   "path": "/api/v1/businesses/{{bizB}}/recommendation",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "faucet A",
+   "method": "POST",
+   "path": "/api/v1/faucet",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "address": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+    "amountE6": 5000000000
+   }
+  },
+  {
+   "name": "faucet B",
+   "method": "POST",
+   "path": "/api/v1/faucet",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "address": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+    "amountE6": 5000000000
+   }
+  },
+  {
+   "name": "faucet LP",
+   "method": "POST",
+   "path": "/api/v1/faucet",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "address": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+    "amountE6": 10000000000
+   }
+  },
+  {
+   "name": "faucet trader",
+   "method": "POST",
+   "path": "/api/v1/faucet",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "address": "0x14dC79964da2C08b23698b3d3cc7Ca32193d9955",
+    "amountE6": 2000000000
+   }
+  },
+  {
+   "name": "quote A house-hedge cool cover 3 days (LGA: station leg + residual leg)",
+   "method": "POST",
+   "path": "/api/v1/quotes",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "businessId": "{{bizA}}",
+    "peril": "cold",
+    "strikeTenthsF": 900,
+    "capTenthsF": 60,
+    "units": 12,
+    "startDay": "2026-07-16",
+    "endDay": "2026-07-18",
+    "path": "house-hedge"
+   },
+   "save": {
+    "quoteA": "quoteId"
+   }
+  },
+  {
+   "name": "quote B house-hedge heat cover 3 days (Central Park: station leg only)",
+   "method": "POST",
+   "path": "/api/v1/quotes",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "businessId": "{{bizB}}",
+    "peril": "heat",
+    "strikeTenthsF": 900,
+    "capTenthsF": 60,
+    "units": 6,
+    "startDay": "2026-07-16",
+    "endDay": "2026-07-18",
+    "path": "house-hedge"
+   },
+   "save": {
+    "quoteB": "quoteId"
+   }
+  },
+  {
+   "name": "quote A business-ladder (overlay: venue sells only the basis unit)",
+   "method": "POST",
+   "path": "/api/v1/quotes",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "businessId": "{{bizA}}",
+    "peril": "heat",
+    "strikeTenthsF": 900,
+    "capTenthsF": 60,
+    "units": 10,
+    "startDay": "2026-07-16",
+    "endDay": "2026-07-16",
+    "path": "business-ladder"
+   },
+   "save": {
+    "quoteA2": "quoteId"
+   }
+  },
+  {
+   "name": "quote B business-ladder (at the station: nothing to sell)",
+   "method": "POST",
+   "path": "/api/v1/quotes",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "businessId": "{{bizB}}",
+    "peril": "heat",
+    "strikeTenthsF": 900,
+    "capTenthsF": 60,
+    "units": 6,
+    "startDay": "2026-07-16",
+    "endDay": "2026-07-16",
+    "path": "business-ladder"
+   }
+  },
+  {
+   "name": "buy A",
+   "method": "POST",
+   "path": "/api/v1/policies",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-buy-a"
+   },
+   "body": {
+    "quoteId": "{{quoteA}}",
+    "holder": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"
+   }
+  },
+  {
+   "name": "buy A again, same key (replay, not a second policy)",
+   "method": "POST",
+   "path": "/api/v1/policies",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-buy-a"
+   },
+   "body": {
+    "quoteId": "{{quoteA}}",
+    "holder": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"
+   }
+  },
+  {
+   "name": "buy A, new key, same quote (quote already used)",
+   "method": "POST",
+   "path": "/api/v1/policies",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-buy-a-2"
+   },
+   "body": {
+    "quoteId": "{{quoteA}}",
+    "holder": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"
+   },
+   "expect": 409
+  },
+  {
+   "name": "buy B",
+   "method": "POST",
+   "path": "/api/v1/policies",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-buy-b"
+   },
+   "body": {
+    "quoteId": "{{quoteB}}",
+    "holder": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc"
+   }
+  },
+  {
+   "name": "buy A overlay",
+   "method": "POST",
+   "path": "/api/v1/policies",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-buy-a2"
+   },
+   "body": {
+    "quoteId": "{{quoteA2}}",
+    "holder": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65"
+   }
+  },
+  {
+   "name": "deposit senior",
+   "method": "POST",
+   "path": "/api/v1/pool/deposits",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-dep-s"
+   },
+   "body": {
+    "owner": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+    "tranche": "senior",
+    "amountE6": 5000000000
+   }
+  },
+  {
+   "name": "deposit junior from an outside wallet is refused (v0: house only)",
+   "method": "POST",
+   "path": "/api/v1/pool/deposits",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-dep-j"
+   },
+   "body": {
+    "owner": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+    "tranche": "junior",
+    "amountE6": 1000000000
+   },
+   "expect": 403
+  },
+  {
+   "name": "request a senior withdrawal",
+   "method": "POST",
+   "path": "/api/v1/pool/withdrawals",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-wd"
+   },
+   "body": {
+    "owner": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+    "tranche": "senior",
+    "shares": 1000000000000000
+   }
+  },
+  {
+   "name": "open auctions for 2026-07-16",
+   "method": "GET",
+   "path": "/api/v1/auctions?day=2026-07-16&status=open",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "find the LGA auction",
+   "method": "GET",
+   "path": "/api/v1/auctions?day=2026-07-16",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "save": {
+    "auc": "[contractId=RES-LGA-NYC].auctionId"
+   }
+  },
+  {
+   "name": "trader buys basis (long)",
+   "method": "POST",
+   "path": "/api/v1/auctions/{{auc}}/orders",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-ord-1"
+   },
+   "body": {
+    "trader": "0x14dC79964da2C08b23698b3d3cc7Ca32193d9955",
+    "side": "buy",
+    "qty": 20,
+    "limitPriceE6": 600000
+   }
+  },
+  {
+   "name": "trader sells basis (short)",
+   "method": "POST",
+   "path": "/api/v1/auctions/{{auc}}/orders",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-ord-2"
+   },
+   "body": {
+    "trader": "0x14dC79964da2C08b23698b3d3cc7Ca32193d9955",
+    "side": "sell",
+    "qty": 15,
+    "limitPriceE6": 400000
+   }
+  },
+  {
+   "name": "A sells basis",
+   "method": "POST",
+   "path": "/api/v1/auctions/{{auc}}/orders",
+   "headers": {
+    "X-WI-World": "{{world}}",
+    "Idempotency-Key": "sc-ord-3"
+   },
+   "body": {
+    "trader": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+    "side": "sell",
+    "qty": 10,
+    "limitPriceE6": 550000
+   },
+   "save": {
+    "ordA": "result.orderId"
+   }
+  },
+  {
+   "name": "cancel is refused (no cancels in v0)",
+   "method": "DELETE",
+   "path": "/api/v1/auctions/{{auc}}/orders/{{ordA}}?trader=0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "expect": 409
+  },
+  {
+   "name": "auction before clear",
+   "method": "GET",
+   "path": "/api/v1/auctions/{{auc}}",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "clear before cutoff is refused",
+   "method": "POST",
+   "path": "/api/v1/auctions/{{auc}}/clear",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "expect": 409
+  },
+  {
+   "name": "advance 1 day through the cutoff (house books, clock clears and binds)",
+   "method": "POST",
+   "path": "/api/v1/sim/advance",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "days": 1
+   }
+  },
+  {
+   "name": "clear (already cleared by the clock)",
+   "method": "POST",
+   "path": "/api/v1/auctions/{{auc}}/clear",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "auction after clear",
+   "method": "GET",
+   "path": "/api/v1/auctions/{{auc}}",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "policies A after bind",
+   "method": "GET",
+   "path": "/api/v1/policies?holder=0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "settlements A before D+2 12:00Z (none)",
+   "method": "GET",
+   "path": "/api/v1/settlements?owner=0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "advance 4 days (all three days final)",
+   "method": "POST",
+   "path": "/api/v1/sim/advance",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "days": 4
+   }
+  },
+  {
+   "name": "settlements A",
+   "method": "GET",
+   "path": "/api/v1/settlements?owner=0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "settlements B",
+   "method": "GET",
+   "path": "/api/v1/settlements?owner=0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "settlements trader",
+   "method": "GET",
+   "path": "/api/v1/settlements?owner=0x14dC79964da2C08b23698b3d3cc7Ca32193d9955",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "positions A",
+   "method": "GET",
+   "path": "/api/v1/positions?owner=0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "positions B",
+   "method": "GET",
+   "path": "/api/v1/positions?owner=0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "positions LP",
+   "method": "GET",
+   "path": "/api/v1/positions?owner=0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "positions trader",
+   "method": "GET",
+   "path": "/api/v1/positions?owner=0x14dC79964da2C08b23698b3d3cc7Ca32193d9955",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "stake WI (A holds demo WI)",
+   "method": "POST",
+   "path": "/api/v1/staking/stake",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   },
+   "body": {
+    "owner": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+    "amountWei": "1000000000000000000000"
+   }
+  },
+  {
+   "name": "staking A",
+   "method": "GET",
+   "path": "/api/v1/staking?owner=0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  },
+  {
+   "name": "pool",
+   "method": "GET",
+   "path": "/api/v1/pool",
+   "headers": {
+    "X-WI-World": "{{world}}"
+   }
+  }
+ ]
+}

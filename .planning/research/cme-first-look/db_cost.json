@@ -1,0 +1,52 @@
+{
+ "stats_nychi_2022-10_2026-10": {
+  "cost_usd": 0.0397,
+  "records": 533335,
+  "bytes": 42666800
+ },
+ "stats_all20_2022-10_2026-10": {
+  "cost_usd": 0.1889,
+  "records": 2535449,
+  "bytes": 202835920
+ },
+ "stats_all20_2010-06_2026-10": {
+  "cost_usd": 0.36,
+  "records": 4832056,
+  "bytes": 386564480
+ },
+ "defn_all20_2022-10_2026-10": {
+  "cost_usd": 0.4354,
+  "records": 528872,
+  "bytes": 275013440
+ },
+ "ohlcv1d_all20_2022-10_2026-10": {
+  "cost_usd": 0.0005,
+  "records": 55,
+  "bytes": 3080
+ },
+ "trades_all20_2022-10_2026-10": {
+  "cost_usd": 0.0001,
+  "records": 76,
+  "bytes": 3648
+ },
+ "trades_all20_2025-10_2026-10": {
+  "cost_usd": 0.0,
+  "records": 9,
+  "bytes": 432
+ },
+ "mbp1_all20_2025-10_2026-10": {
+  "cost_usd": 0.0005,
+  "records": 3383,
+  "bytes": 270640
+ },
+ "mbo_all20_2025-10_2026-10": {
+  "cost_usd": 0.0042,
+  "records": 44980,
+  "bytes": 2518880
+ },
+ "trades_all20_2010-06_2026-10": {
+  "cost_usd": 0.0013,
+  "records": 1024,
+  "bytes": 49152
+ }
+}

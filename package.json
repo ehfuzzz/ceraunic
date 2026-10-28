@@ -1,0 +1,10 @@
+{
+  "name": "weather-insurance",
+  "private": true,
+  "scripts": {
+    "portal:dev": "pnpm --filter @wi/portal dev",
+    "portal:build": "pnpm --filter @wi/portal build",
+    "gen:fixtures": "pnpm --filter @wi/portal gen:fixtures",
+    "pos:accept": "pnpm --filter @wi/portal pos:accept"
+  }
+}

@@ -1,0 +1,884 @@
+[
+  {
+    "objects": [
+      {
+        "type": "CATEGORY",
+        "id": "CATNYC0001",
+        "category_data": {
+          "name": "Scoops"
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATNYC0002",
+        "category_data": {
+          "name": "Coffee"
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATNYC0003",
+        "category_data": {
+          "name": "Extras"
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0001",
+        "item_data": {
+          "name": "Single scoop",
+          "reporting_category": {
+            "id": "CATNYC0001"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0001",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0001",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 475,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0002",
+        "item_data": {
+          "name": "Double scoop",
+          "reporting_category": {
+            "id": "CATNYC0001"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0002",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0002",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 675,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0003",
+        "item_data": {
+          "name": "Sundae",
+          "reporting_category": {
+            "id": "CATNYC0001"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0003",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0003",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 975,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0004",
+        "item_data": {
+          "name": "Drip coffee",
+          "reporting_category": {
+            "id": "CATNYC0002"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0004",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0004",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 375,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0005",
+        "item_data": {
+          "name": "Latte",
+          "reporting_category": {
+            "id": "CATNYC0002"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0005",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0005",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 575,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0006",
+        "item_data": {
+          "name": "Iced coffee",
+          "reporting_category": {
+            "id": "CATNYC0002"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0006",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0006",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 525,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0007",
+        "item_data": {
+          "name": "Affogato",
+          "reporting_category": {
+            "id": "CATNYC0003"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0007",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0007",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 825,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0008",
+        "item_data": {
+          "name": "Cookie",
+          "reporting_category": {
+            "id": "CATNYC0003"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0008",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0008",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 395,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMNYC0009",
+        "item_data": {
+          "name": "Milkshake",
+          "reporting_category": {
+            "id": "CATNYC0003"
+          },
+          "categories": [
+            {
+              "id": "CATNYC0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARNYC0009",
+              "item_variation_data": {
+                "item_id": "ITEMNYC0009",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 925,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATCHI0001",
+        "category_data": {
+          "name": "Coffee"
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATCHI0002",
+        "category_data": {
+          "name": "Bakery"
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATCHI0003",
+        "category_data": {
+          "name": "Breakfast"
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0001",
+        "item_data": {
+          "name": "Drip coffee",
+          "reporting_category": {
+            "id": "CATCHI0001"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0001",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0001",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 375,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0002",
+        "item_data": {
+          "name": "Latte",
+          "reporting_category": {
+            "id": "CATCHI0001"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0002",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0002",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 550,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0003",
+        "item_data": {
+          "name": "Cold brew",
+          "reporting_category": {
+            "id": "CATCHI0001"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0003",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0003",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 525,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "cursor": "CATALOGPAGE2"
+  },
+  {
+    "objects": [
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0004",
+        "item_data": {
+          "name": "Croissant",
+          "reporting_category": {
+            "id": "CATCHI0002"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0004",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0004",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 450,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0005",
+        "item_data": {
+          "name": "Muffin",
+          "reporting_category": {
+            "id": "CATCHI0002"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0005",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0005",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 425,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0006",
+        "item_data": {
+          "name": "Scone",
+          "reporting_category": {
+            "id": "CATCHI0002"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0006",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0006",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 475,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0007",
+        "item_data": {
+          "name": "Egg sandwich",
+          "reporting_category": {
+            "id": "CATCHI0003"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0007",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0007",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 875,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0008",
+        "item_data": {
+          "name": "Bagel",
+          "reporting_category": {
+            "id": "CATCHI0003"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0008",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0008",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 525,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMCHI0009",
+        "item_data": {
+          "name": "Breakfast burrito",
+          "reporting_category": {
+            "id": "CATCHI0003"
+          },
+          "categories": [
+            {
+              "id": "CATCHI0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARCHI0009",
+              "item_variation_data": {
+                "item_id": "ITEMCHI0009",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 975,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATMIA0001",
+        "category_data": {
+          "name": "Juice"
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATMIA0002",
+        "category_data": {
+          "name": "Cafe"
+        }
+      },
+      {
+        "type": "CATEGORY",
+        "id": "CATMIA0003",
+        "category_data": {
+          "name": "Smoothie"
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0001",
+        "item_data": {
+          "name": "Orange juice",
+          "reporting_category": {
+            "id": "CATMIA0001"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0001",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0001",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 600,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0002",
+        "item_data": {
+          "name": "Green juice",
+          "reporting_category": {
+            "id": "CATMIA0001"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0002",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0002",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 850,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0003",
+        "item_data": {
+          "name": "Acai bowl",
+          "reporting_category": {
+            "id": "CATMIA0001"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0001"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0003",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0003",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 975,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0004",
+        "item_data": {
+          "name": "Cortadito",
+          "reporting_category": {
+            "id": "CATMIA0002"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0004",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0004",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 375,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0005",
+        "item_data": {
+          "name": "Cafe con leche",
+          "reporting_category": {
+            "id": "CATMIA0002"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0005",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0005",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 475,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0006",
+        "item_data": {
+          "name": "Empanada",
+          "reporting_category": {
+            "id": "CATMIA0002"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0002"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0006",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0006",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 525,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0007",
+        "item_data": {
+          "name": "Mango smoothie",
+          "reporting_category": {
+            "id": "CATMIA0003"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0007",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0007",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 750,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0008",
+        "item_data": {
+          "name": "Berry smoothie",
+          "reporting_category": {
+            "id": "CATMIA0003"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0008",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0008",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 775,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "ITEM",
+        "id": "ITEMMIA0009",
+        "item_data": {
+          "name": "Protein smoothie",
+          "reporting_category": {
+            "id": "CATMIA0003"
+          },
+          "categories": [
+            {
+              "id": "CATMIA0003"
+            }
+          ],
+          "variations": [
+            {
+              "type": "ITEM_VARIATION",
+              "id": "VARMIA0009",
+              "item_variation_data": {
+                "item_id": "ITEMMIA0009",
+                "name": "Regular",
+                "pricing_type": "FIXED_PRICING",
+                "price_money": {
+                  "amount": 925,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

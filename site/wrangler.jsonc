@@ -1,0 +1,9 @@
+{
+  "name": "ceraunic",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./public" },
+  "routes": [
+    { "pattern": "ceraunic.com/*", "zone_name": "ceraunic.com" },
+    { "pattern": "www.ceraunic.com", "custom_domain": true }
+  ]
+}

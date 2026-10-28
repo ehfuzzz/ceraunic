@@ -1,0 +1,568 @@
+{
+ "_meta": {
+  "crossCheck": "digest recomputed with eth_account.encode_typed_data and asserted equal",
+  "doNotRegenerateFromSolidity": true,
+  "generator": "wi.engine.parity (scripts/engine_fixture_run.py)",
+  "spec": "SPEC 6.1, 9.1, 10.1, 14",
+  "tolerance": "exact integer equality",
+  "verifyingContracts": {
+   "998": {
+    "wi-oracle": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "wi-policy": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512"
+   },
+   "31337": {
+    "wi-oracle": "0x00000000000000000000000000000000000000a1",
+    "wi-policy": "0x00000000000000000000000000000000000000a2"
+   }
+  },
+  "what": "EIP-712 typeHash / domainSeparator / structHash / digest / signature for Report, Quote, RfqQuote; signer = anvil key #2 (Report) or #1 (Quote, RfqQuote), public dev mnemonic"
+ },
+ "cases": [
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-oracle",
+    "verifyingContract": "0x00000000000000000000000000000000000000a1",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0xfc375b65e67151e8c11e52ced2eb1c029ad9e9f970cc50f42fbda18f14b6daf6",
+    "domainSeparator": "0xa756193e251f286d4a43a17d8f92c039032f63e02fbf71eb0b7539ab090f5a91",
+    "r": "0x7fed04772a197b4c2b00ea7ccd41f4828e83e2c6cd58cba2ac2ebe8554fd8c10",
+    "s": "0x749c175a48c9772e827287ebe76ed53b1e79fba20c13b7a4e0e6a67419515424",
+    "signature": "0x7fed04772a197b4c2b00ea7ccd41f4828e83e2c6cd58cba2ac2ebe8554fd8c10749c175a48c9772e827287ebe76ed53b1e79fba20c13b7a4e0e6a674195154241b",
+    "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "structHash": "0x0ee48f19da128c9fe0dfa62e2a07c00b6cb1cd6e8771b0f92782be91c4bb4333",
+    "typeHash": "0xf432ec17d56fd45f4ff00bfa5d7cddbfd8a0d9dbb70cbdbab33347a8017de6a8",
+    "v": 27
+   },
+   "message": {
+    "asOf": 1786190400,
+    "day": 20674,
+    "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+    "revision": 0,
+    "value": 30
+   },
+   "type": "Report",
+   "typeString": "Report(bytes32 indexId,uint32 day,int64 value,uint16 revision,uint64 asOf)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-oracle",
+    "verifyingContract": "0x00000000000000000000000000000000000000a1",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x830aff5aa4e3354547c71ec1df2bd8ff9ba7945577b2fa5a7242faa0d7d532a3",
+    "domainSeparator": "0xa756193e251f286d4a43a17d8f92c039032f63e02fbf71eb0b7539ab090f5a91",
+    "r": "0x0472b1024099bb6d9bb042703c894ed4c642a3ffe04f04711ea824f2e0d33404",
+    "s": "0x0446f5d970f835dab9bf7437f30014113cc7dea177c461969fda2ba23324efa3",
+    "signature": "0x0472b1024099bb6d9bb042703c894ed4c642a3ffe04f04711ea824f2e0d334040446f5d970f835dab9bf7437f30014113cc7dea177c461969fda2ba23324efa31c",
+    "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "structHash": "0xbc3795bc45ec6cf5d27d419047ef1c16024dc1d23a9348a60ea949946204fee7",
+    "typeHash": "0xf432ec17d56fd45f4ff00bfa5d7cddbfd8a0d9dbb70cbdbab33347a8017de6a8",
+    "v": 28
+   },
+   "message": {
+    "asOf": 1786190400,
+    "day": 20674,
+    "indexId": "0xfd878c1e1a3fbb8962345fce588ba5d7904b186897cf0c2335a630c6a6916e16",
+    "revision": 1,
+    "value": 910
+   },
+   "type": "Report",
+   "typeString": "Report(bytes32 indexId,uint32 day,int64 value,uint16 revision,uint64 asOf)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-oracle",
+    "verifyingContract": "0x00000000000000000000000000000000000000a1",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x331b3b0feab579c0fa04c26fd0e72f65902a23500a3bcb6a934c2bbc9534e7ff",
+    "domainSeparator": "0xa756193e251f286d4a43a17d8f92c039032f63e02fbf71eb0b7539ab090f5a91",
+    "r": "0xfd75e4b7eb033fbe59a8345d08b3f0cda0e79fb97566defba039b541dad064ca",
+    "s": "0x28976184d0d437b2519cc3b4e85daafaaa395bef8d883a252d2ceb13943ff7e6",
+    "signature": "0xfd75e4b7eb033fbe59a8345d08b3f0cda0e79fb97566defba039b541dad064ca28976184d0d437b2519cc3b4e85daafaaa395bef8d883a252d2ceb13943ff7e61c",
+    "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "structHash": "0x75d9e971fd3fe1c520c354462738affa1420a799ffb1abf709c4d64fcb1e05b2",
+    "typeHash": "0xf432ec17d56fd45f4ff00bfa5d7cddbfd8a0d9dbb70cbdbab33347a8017de6a8",
+    "v": 28
+   },
+   "message": {
+    "asOf": 18446744073709551615,
+    "day": 20675,
+    "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+    "revision": 65535,
+    "value": -70
+   },
+   "type": "Report",
+   "typeString": "Report(bytes32 indexId,uint32 day,int64 value,uint16 revision,uint64 asOf)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-oracle",
+    "verifyingContract": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x0164ed645ed7fd85ebe8dd5524a067074a0a066a390673aa8b181652dc8e3b74",
+    "domainSeparator": "0xb069fb6d05252b06e06e7f953511b4b4abde0382c665cb3dc7aac62c8622485f",
+    "r": "0xb8fe628d322f8a07b3a4893fdc5a2f047ec53e0fb543861da583cdb25896f2d8",
+    "s": "0x10bcd8869a3258ea2d7366c11d206450ffec44b04f7fc2005a73fc8fa7823525",
+    "signature": "0xb8fe628d322f8a07b3a4893fdc5a2f047ec53e0fb543861da583cdb25896f2d810bcd8869a3258ea2d7366c11d206450ffec44b04f7fc2005a73fc8fa78235251b",
+    "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "structHash": "0x0ee48f19da128c9fe0dfa62e2a07c00b6cb1cd6e8771b0f92782be91c4bb4333",
+    "typeHash": "0xf432ec17d56fd45f4ff00bfa5d7cddbfd8a0d9dbb70cbdbab33347a8017de6a8",
+    "v": 27
+   },
+   "message": {
+    "asOf": 1786190400,
+    "day": 20674,
+    "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+    "revision": 0,
+    "value": 30
+   },
+   "type": "Report",
+   "typeString": "Report(bytes32 indexId,uint32 day,int64 value,uint16 revision,uint64 asOf)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-oracle",
+    "verifyingContract": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x0575991a9337f0e7d99499e2b7751c9e7c3917ee94bc638230ebc650573cd5a8",
+    "domainSeparator": "0xb069fb6d05252b06e06e7f953511b4b4abde0382c665cb3dc7aac62c8622485f",
+    "r": "0x50d3a1d350605117ec60ba1f42543a3d267c9673679e211413afd3c0b7081167",
+    "s": "0x3344ce5ff7292ebfb8a0cb80aac4826ae9ed8586ab2a70c1923881a47a013cf9",
+    "signature": "0x50d3a1d350605117ec60ba1f42543a3d267c9673679e211413afd3c0b70811673344ce5ff7292ebfb8a0cb80aac4826ae9ed8586ab2a70c1923881a47a013cf91c",
+    "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "structHash": "0xbc3795bc45ec6cf5d27d419047ef1c16024dc1d23a9348a60ea949946204fee7",
+    "typeHash": "0xf432ec17d56fd45f4ff00bfa5d7cddbfd8a0d9dbb70cbdbab33347a8017de6a8",
+    "v": 28
+   },
+   "message": {
+    "asOf": 1786190400,
+    "day": 20674,
+    "indexId": "0xfd878c1e1a3fbb8962345fce588ba5d7904b186897cf0c2335a630c6a6916e16",
+    "revision": 1,
+    "value": 910
+   },
+   "type": "Report",
+   "typeString": "Report(bytes32 indexId,uint32 day,int64 value,uint16 revision,uint64 asOf)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-oracle",
+    "verifyingContract": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x0f454dd777d246b4c45641eebea0eea102a2c4da3184088b1b4762d8630452e7",
+    "domainSeparator": "0xb069fb6d05252b06e06e7f953511b4b4abde0382c665cb3dc7aac62c8622485f",
+    "r": "0x7b51c7f13e4a65d089a22de6b5d35297d709b9151efc0e60ade6525305460ed8",
+    "s": "0x0356f07207d27087266f2b02dbf2909b84eb4ba17e7330435821c9036d3ace3c",
+    "signature": "0x7b51c7f13e4a65d089a22de6b5d35297d709b9151efc0e60ade6525305460ed80356f07207d27087266f2b02dbf2909b84eb4ba17e7330435821c9036d3ace3c1c",
+    "signer": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+    "structHash": "0x75d9e971fd3fe1c520c354462738affa1420a799ffb1abf709c4d64fcb1e05b2",
+    "typeHash": "0xf432ec17d56fd45f4ff00bfa5d7cddbfd8a0d9dbb70cbdbab33347a8017de6a8",
+    "v": 28
+   },
+   "message": {
+    "asOf": 18446744073709551615,
+    "day": 20675,
+    "indexId": "0x62d3cc039c507966c7f03a509d04cb8233790a82de68c4fe2183e8a6c42c88e7",
+    "revision": 65535,
+    "value": -70
+   },
+   "type": "Report",
+   "typeString": "Report(bytes32 indexId,uint32 day,int64 value,uint16 revision,uint64 asOf)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-policy",
+    "verifyingContract": "0x00000000000000000000000000000000000000a2",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x5a03488829185dcbcf2365415bb366c7b17ea31cd075fe89eb2735ab3052add3",
+    "domainSeparator": "0x50d3a06aab20545d4cc40af99c03f618101737f188c79541cd927faa183ccb52",
+    "r": "0x17e552ebbd51aced6f2318b470ea55e1944072cd026a828d74fb304f18b664c6",
+    "s": "0x79b772aceee8e61e6a71b1f146c16f7d50b30dd791a19db4d302c301f2442d4a",
+    "signature": "0x17e552ebbd51aced6f2318b470ea55e1944072cd026a828d74fb304f18b664c679b772aceee8e61e6a71b1f146c16f7d50b30dd791a19db4d302c301f2442d4a1c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xd8f4c9fb262d7bb7cf399fa0b70547841841d5a44dac4db7fbfe1ab56d8757db",
+    "typeHash": "0x0f9a78a6a6ed009fe1203e2329f11094c7e989989abf2c730c571011202e035b",
+    "v": 28
+   },
+   "message": {
+    "buyer": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+    "expiry": 1786155300,
+    "fee": 300000,
+    "isLong": true,
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "nonce": 1,
+    "premium": 4200000,
+    "units": 6
+   },
+   "type": "Quote",
+   "typeString": "Quote(bytes32 market,address buyer,bool isLong,uint128 units,uint128 premium,uint128 fee,uint64 expiry,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-policy",
+    "verifyingContract": "0x00000000000000000000000000000000000000a2",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0xfc0878d1ca5eafe3507a3493433ce5f54ff0f3fa5ebf27c97269317b7a4c4b9b",
+    "domainSeparator": "0x50d3a06aab20545d4cc40af99c03f618101737f188c79541cd927faa183ccb52",
+    "r": "0x8ed6ddc1837c12d58d3f4c872aaba5fa189323a9d3727550a0f5cb3f5db03f90",
+    "s": "0x21636597ae3b9a5e965a3b5d38fc0f4b52a1ee10971b50f0db036914fd0cfcaf",
+    "signature": "0x8ed6ddc1837c12d58d3f4c872aaba5fa189323a9d3727550a0f5cb3f5db03f9021636597ae3b9a5e965a3b5d38fc0f4b52a1ee10971b50f0db036914fd0cfcaf1c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0x66730fad3964994d19893efebaaaaab161d778185ed1c2c8382807056aeaad53",
+    "typeHash": "0x0f9a78a6a6ed009fe1203e2329f11094c7e989989abf2c730c571011202e035b",
+    "v": 28
+   },
+   "message": {
+    "buyer": "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    "expiry": 1786155300,
+    "fee": 18000,
+    "isLong": false,
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "nonce": 57896044618658097711785492504343953926634992332820282019728792003956564819968,
+    "premium": 6000000,
+    "units": 10
+   },
+   "type": "Quote",
+   "typeString": "Quote(bytes32 market,address buyer,bool isLong,uint128 units,uint128 premium,uint128 fee,uint64 expiry,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-policy",
+    "verifyingContract": "0x00000000000000000000000000000000000000a2",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x53107fa37e08f50254cc1c20e87489d2717aaad09fa85e27f5dab715049a7dce",
+    "domainSeparator": "0x50d3a06aab20545d4cc40af99c03f618101737f188c79541cd927faa183ccb52",
+    "r": "0x8fcc1d37a3144eca313a8f18a599a015bfa0497da18cca0f5374b0e9eb9e8af2",
+    "s": "0x61eba3f92342063df2eed9d351f8b3e3679cdf6da30eb5907ea6b58b3a1763d1",
+    "signature": "0x8fcc1d37a3144eca313a8f18a599a015bfa0497da18cca0f5374b0e9eb9e8af261eba3f92342063df2eed9d351f8b3e3679cdf6da30eb5907ea6b58b3a1763d11c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xd00b39c1713d85a7395bbc98fec414d3bd6b8ca8c724f52f215c45dc051af35e",
+    "typeHash": "0x0f9a78a6a6ed009fe1203e2329f11094c7e989989abf2c730c571011202e035b",
+    "v": 28
+   },
+   "message": {
+    "buyer": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+    "expiry": 0,
+    "fee": 0,
+    "isLong": true,
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "nonce": 0,
+    "premium": 0,
+    "units": 340282366920938463463374607431768211455
+   },
+   "type": "Quote",
+   "typeString": "Quote(bytes32 market,address buyer,bool isLong,uint128 units,uint128 premium,uint128 fee,uint64 expiry,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-policy",
+    "verifyingContract": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x8eb7a1261e10e9a98b443664e3eb08b901d27e833eda041b4a0f2d3e7729e1f5",
+    "domainSeparator": "0xfe5f656e2364e5c948491ac40af4a5d7c98b07f6125b1f8a80446080c4ba6bf0",
+    "r": "0xcfc6cfffd998f1827f70b43428ec7d68123bd1904fc10de0af33ca5c247125d7",
+    "s": "0x56da7fb53ed2e09cdeb298964318932385ea56d3cafc23e18a8b9d772e055837",
+    "signature": "0xcfc6cfffd998f1827f70b43428ec7d68123bd1904fc10de0af33ca5c247125d756da7fb53ed2e09cdeb298964318932385ea56d3cafc23e18a8b9d772e0558371b",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xd8f4c9fb262d7bb7cf399fa0b70547841841d5a44dac4db7fbfe1ab56d8757db",
+    "typeHash": "0x0f9a78a6a6ed009fe1203e2329f11094c7e989989abf2c730c571011202e035b",
+    "v": 27
+   },
+   "message": {
+    "buyer": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+    "expiry": 1786155300,
+    "fee": 300000,
+    "isLong": true,
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "nonce": 1,
+    "premium": 4200000,
+    "units": 6
+   },
+   "type": "Quote",
+   "typeString": "Quote(bytes32 market,address buyer,bool isLong,uint128 units,uint128 premium,uint128 fee,uint64 expiry,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-policy",
+    "verifyingContract": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0xe048c675f20c61ddc57f9e9f183000131002202f2849161b5727c64fc965b759",
+    "domainSeparator": "0xfe5f656e2364e5c948491ac40af4a5d7c98b07f6125b1f8a80446080c4ba6bf0",
+    "r": "0x79c34a0f26fb2e3ecb84ea9a86368c22a060ff097f8ad88fdc1baff0c0a43cfb",
+    "s": "0x4799fb00f556352f39537d291b8d3ee2819c930e78ad4dc1660b406bdf083293",
+    "signature": "0x79c34a0f26fb2e3ecb84ea9a86368c22a060ff097f8ad88fdc1baff0c0a43cfb4799fb00f556352f39537d291b8d3ee2819c930e78ad4dc1660b406bdf0832931b",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0x66730fad3964994d19893efebaaaaab161d778185ed1c2c8382807056aeaad53",
+    "typeHash": "0x0f9a78a6a6ed009fe1203e2329f11094c7e989989abf2c730c571011202e035b",
+    "v": 27
+   },
+   "message": {
+    "buyer": "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    "expiry": 1786155300,
+    "fee": 18000,
+    "isLong": false,
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "nonce": 57896044618658097711785492504343953926634992332820282019728792003956564819968,
+    "premium": 6000000,
+    "units": 10
+   },
+   "type": "Quote",
+   "typeString": "Quote(bytes32 market,address buyer,bool isLong,uint128 units,uint128 premium,uint128 fee,uint64 expiry,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-policy",
+    "verifyingContract": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0xc163e62672420140c0ae54403c04fe9504c5880f4bed19185b6378fd258d5738",
+    "domainSeparator": "0xfe5f656e2364e5c948491ac40af4a5d7c98b07f6125b1f8a80446080c4ba6bf0",
+    "r": "0x14c9b48ac7ee260c375e871d44727df34c203e1e19c1b41d6c8fbea5d1a7e19f",
+    "s": "0x487ba5f243cd141c1d2378dbf348ed32e22e75a84d0288f3ffe988fa0db24022",
+    "signature": "0x14c9b48ac7ee260c375e871d44727df34c203e1e19c1b41d6c8fbea5d1a7e19f487ba5f243cd141c1d2378dbf348ed32e22e75a84d0288f3ffe988fa0db240221c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xd00b39c1713d85a7395bbc98fec414d3bd6b8ca8c724f52f215c45dc051af35e",
+    "typeHash": "0x0f9a78a6a6ed009fe1203e2329f11094c7e989989abf2c730c571011202e035b",
+    "v": 28
+   },
+   "message": {
+    "buyer": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+    "expiry": 0,
+    "fee": 0,
+    "isLong": true,
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "nonce": 0,
+    "premium": 0,
+    "units": 340282366920938463463374607431768211455
+   },
+   "type": "Quote",
+   "typeString": "Quote(bytes32 market,address buyer,bool isLong,uint128 units,uint128 premium,uint128 fee,uint64 expiry,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-policy",
+    "verifyingContract": "0x00000000000000000000000000000000000000a2",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0xcf5d1d2cacbc1dc55a912a21196a9cd319df8d307c2c914b8ed075de14ffee9f",
+    "domainSeparator": "0x50d3a06aab20545d4cc40af99c03f618101737f188c79541cd927faa183ccb52",
+    "r": "0x0e6622a236d646c1463a57abffcabff3d40415a5de75c85a5c790f41f68cb597",
+    "s": "0x43f845a414175b8c3389e837329ce4a8119ba85f0b27d583b9de1cddabd2ee9f",
+    "signature": "0x0e6622a236d646c1463a57abffcabff3d40415a5de75c85a5c790f41f68cb59743f845a414175b8c3389e837329ce4a8119ba85f0b27d583b9de1cddabd2ee9f1c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xdf24ccde6f1d346e12ac69850d5808a44a1f2af2b9fe38c8263ef8be28376acb",
+    "typeHash": "0xd34d3dea5e61b74cf8fc8404ef4d0c1ae5d94afd3ccaff31b821cf1fe5ae1aed",
+    "v": 28
+   },
+   "message": {
+    "maker": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "maxQty": 25,
+    "nonce": 7,
+    "requestId": "0xf75e91e5ed0575f9bc034ea815feea52a39f8d15cec9fb9d4d90a515c511be33",
+    "taker": "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+    "takerLong": true,
+    "tick": 68,
+    "validUntil": 1786146000
+   },
+   "type": "RfqQuote",
+   "typeString": "RfqQuote(bytes32 requestId,bytes32 market,address maker,address taker,bool takerLong,uint8 tick,uint128 maxQty,uint64 validUntil,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-policy",
+    "verifyingContract": "0x00000000000000000000000000000000000000a2",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x388c9f8eaba14b52855eb087f5d5088b20f5f4aee3b9fa56b07dc095c2b8bec5",
+    "domainSeparator": "0x50d3a06aab20545d4cc40af99c03f618101737f188c79541cd927faa183ccb52",
+    "r": "0x63e07385d1ac07a6d308e20b2d5b594ab98eb671b5bd302aaf7b0ffe856c2ac5",
+    "s": "0x4ba2637541ee6235b651c29844e6a3249cba00fe73a234a4e4af376a1a47fbcc",
+    "signature": "0x63e07385d1ac07a6d308e20b2d5b594ab98eb671b5bd302aaf7b0ffe856c2ac54ba2637541ee6235b651c29844e6a3249cba00fe73a234a4e4af376a1a47fbcc1c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xb736455daa3e65c1a87600861e0e6b7531d9e11628f2e6976106323092d5fd13",
+    "typeHash": "0xd34d3dea5e61b74cf8fc8404ef4d0c1ae5d94afd3ccaff31b821cf1fe5ae1aed",
+    "v": 28
+   },
+   "message": {
+    "maker": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "maxQty": 1,
+    "nonce": 0,
+    "requestId": "0xf75e91e5ed0575f9bc034ea815feea52a39f8d15cec9fb9d4d90a515c511be33",
+    "taker": "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+    "takerLong": false,
+    "tick": 1,
+    "validUntil": 1
+   },
+   "type": "RfqQuote",
+   "typeString": "RfqQuote(bytes32 requestId,bytes32 market,address maker,address taker,bool takerLong,uint8 tick,uint128 maxQty,uint64 validUntil,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 31337,
+    "name": "wi-policy",
+    "verifyingContract": "0x00000000000000000000000000000000000000a2",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0xf5e86d4205722fef1857492d3bdba60cc659aa94852e13d543abd9a41f5408b2",
+    "domainSeparator": "0x50d3a06aab20545d4cc40af99c03f618101737f188c79541cd927faa183ccb52",
+    "r": "0x1ffe36ef9b18b10abf1741bf45d83d7a30c16147e35dc4037f7d6ebae29ae1ca",
+    "s": "0x1863fc9886dd27576865200cbd1333f496c140e8dbfaca69383713b40edb3ea3",
+    "signature": "0x1ffe36ef9b18b10abf1741bf45d83d7a30c16147e35dc4037f7d6ebae29ae1ca1863fc9886dd27576865200cbd1333f496c140e8dbfaca69383713b40edb3ea31c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0x0d001d3c24f20b6b7fbc699d7b696c0198fa652c4d4039bfaf32fa23c583d3f5",
+    "typeHash": "0xd34d3dea5e61b74cf8fc8404ef4d0c1ae5d94afd3ccaff31b821cf1fe5ae1aed",
+    "v": 28
+   },
+   "message": {
+    "maker": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "maxQty": 340282366920938463463374607431768211455,
+    "nonce": 115792089237316195423570985008687907853269984665640564039457584007913129639935,
+    "requestId": "0xf75e91e5ed0575f9bc034ea815feea52a39f8d15cec9fb9d4d90a515c511be33",
+    "taker": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+    "takerLong": true,
+    "tick": 99,
+    "validUntil": 18446744073709551615
+   },
+   "type": "RfqQuote",
+   "typeString": "RfqQuote(bytes32 requestId,bytes32 market,address maker,address taker,bool takerLong,uint8 tick,uint128 maxQty,uint64 validUntil,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-policy",
+    "verifyingContract": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x8aa2f97711a784ae1bc5504c7ef930177cda964b051fa886603da97b5c53c685",
+    "domainSeparator": "0xfe5f656e2364e5c948491ac40af4a5d7c98b07f6125b1f8a80446080c4ba6bf0",
+    "r": "0x1488e9224743638e4bd97e623f85b13b8338fe54d83dca26c713a275cfe300bb",
+    "s": "0x5205cc564af7210a0f0f111911492ca43a162232d4f80e3bbe4c620fab7029d0",
+    "signature": "0x1488e9224743638e4bd97e623f85b13b8338fe54d83dca26c713a275cfe300bb5205cc564af7210a0f0f111911492ca43a162232d4f80e3bbe4c620fab7029d01c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xdf24ccde6f1d346e12ac69850d5808a44a1f2af2b9fe38c8263ef8be28376acb",
+    "typeHash": "0xd34d3dea5e61b74cf8fc8404ef4d0c1ae5d94afd3ccaff31b821cf1fe5ae1aed",
+    "v": 28
+   },
+   "message": {
+    "maker": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "maxQty": 25,
+    "nonce": 7,
+    "requestId": "0xf75e91e5ed0575f9bc034ea815feea52a39f8d15cec9fb9d4d90a515c511be33",
+    "taker": "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+    "takerLong": true,
+    "tick": 68,
+    "validUntil": 1786146000
+   },
+   "type": "RfqQuote",
+   "typeString": "RfqQuote(bytes32 requestId,bytes32 market,address maker,address taker,bool takerLong,uint8 tick,uint128 maxQty,uint64 validUntil,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-policy",
+    "verifyingContract": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0x0634ace44d0fbea5017acbdeac124034bfddc15fee1a8ed63da84f0f0f1bedad",
+    "domainSeparator": "0xfe5f656e2364e5c948491ac40af4a5d7c98b07f6125b1f8a80446080c4ba6bf0",
+    "r": "0xb2ef731e5234443ac484e218b9ece974c3f100eac4fd80cbcf9189e2af339bdd",
+    "s": "0x46bb05074bbda420169497b2e63f50a317edaa1482d0b926baa08794b4c84b3c",
+    "signature": "0xb2ef731e5234443ac484e218b9ece974c3f100eac4fd80cbcf9189e2af339bdd46bb05074bbda420169497b2e63f50a317edaa1482d0b926baa08794b4c84b3c1b",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0xb736455daa3e65c1a87600861e0e6b7531d9e11628f2e6976106323092d5fd13",
+    "typeHash": "0xd34d3dea5e61b74cf8fc8404ef4d0c1ae5d94afd3ccaff31b821cf1fe5ae1aed",
+    "v": 27
+   },
+   "message": {
+    "maker": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "maxQty": 1,
+    "nonce": 0,
+    "requestId": "0xf75e91e5ed0575f9bc034ea815feea52a39f8d15cec9fb9d4d90a515c511be33",
+    "taker": "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+    "takerLong": false,
+    "tick": 1,
+    "validUntil": 1
+   },
+   "type": "RfqQuote",
+   "typeString": "RfqQuote(bytes32 requestId,bytes32 market,address maker,address taker,bool takerLong,uint8 tick,uint128 maxQty,uint64 validUntil,uint256 nonce)"
+  },
+  {
+   "domain": {
+    "chainId": 998,
+    "name": "wi-policy",
+    "verifyingContract": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "version": "1"
+   },
+   "expected": {
+    "digest": "0xe0e5bedd36913fadb6a06b2f526d4a9297ac162e197d3986c58915bb41775cd6",
+    "domainSeparator": "0xfe5f656e2364e5c948491ac40af4a5d7c98b07f6125b1f8a80446080c4ba6bf0",
+    "r": "0x25642725e79306b11180dded790126faa5e7cbdc39b28010f12b251070fca6e8",
+    "s": "0x1c94da6d7926ed289144c981571cd03f70873a1203f9062c198770f9e118e932",
+    "signature": "0x25642725e79306b11180dded790126faa5e7cbdc39b28010f12b251070fca6e81c94da6d7926ed289144c981571cd03f70873a1203f9062c198770f9e118e9321c",
+    "signer": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "structHash": "0x0d001d3c24f20b6b7fbc699d7b696c0198fa652c4d4039bfaf32fa23c583d3f5",
+    "typeHash": "0xd34d3dea5e61b74cf8fc8404ef4d0c1ae5d94afd3ccaff31b821cf1fe5ae1aed",
+    "v": 28
+   },
+   "message": {
+    "maker": "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+    "market": "0xc19b4643be72cafe1a51791ee7692f033e104bebf0ce9b6df141d0cf5dad2fcf",
+    "maxQty": 340282366920938463463374607431768211455,
+    "nonce": 115792089237316195423570985008687907853269984665640564039457584007913129639935,
+    "requestId": "0xf75e91e5ed0575f9bc034ea815feea52a39f8d15cec9fb9d4d90a515c511be33",
+    "taker": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+    "takerLong": true,
+    "tick": 99,
+    "validUntil": 18446744073709551615
+   },
+   "type": "RfqQuote",
+   "typeString": "RfqQuote(bytes32 requestId,bytes32 market,address maker,address taker,bool takerLong,uint8 tick,uint128 maxQty,uint64 validUntil,uint256 nonce)"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+UNAVAILABLE: https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2026/ncdd-202609-grd-scaled.nc -> HTTP 404; only the prelim version of September exists, no revision measurable.

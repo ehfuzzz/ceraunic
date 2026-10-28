@@ -1,0 +1,465 @@
+{
+ "note": "SENSITIVITY, not the pre-registered result. rain_daily recomputed with --wet-rule dry (wet = station precip >= 0.01 in, trace = dry); primary = reports/eval-01/results.json rain_daily.",
+ "rule_primary": "precip > 0 incl. trace",
+ "rule_dry": "precip >= 0.01 in (trace = dry)",
+ "primary_reproduced_max_abs_diff": 0.0,
+ "seconds": 2.3,
+ "moved": {
+  "result_vs_station_agreement": {
+   "primary": 0.9578820697954272,
+   "dry": 0.9326113116726835
+  },
+  "horizons.24.brier_clim": {
+   "primary": 0.2473213398465797,
+   "dry": 0.24927362149583165
+  },
+  "horizons.24.brier_gain": {
+   "primary": 0.14117336296796698,
+   "dry": 0.14312564461721894
+  },
+  "horizons.24.brier_gain_ci.est": {
+   "primary": 0.14117336296796693,
+   "dry": 0.143125644617219
+  },
+  "horizons.24.brier_gain_ci.lo": {
+   "primary": 0.12767333481700108,
+   "dry": 0.12747670099693503
+  },
+  "horizons.24.brier_gain_ci.hi": {
+   "primary": 0.15208396952105857,
+   "dry": 0.15626216219429287
+  },
+  "horizons.24.by_city.CHI.brier_clim": {
+   "primary": 0.21294117531606455,
+   "dry": 0.20712588802815998
+  },
+  "horizons.24.by_city.EWR.brier_clim": {
+   "primary": 0.23983608458900782,
+   "dry": 0.2547996874280665
+  },
+  "horizons.24.by_city.MIA.brier_clim": {
+   "primary": 0.26700416081269734,
+   "dry": 0.2432393628888656
+  },
+  "horizons.24.by_city.NY.brier_clim": {
+   "primary": 0.2496609322607743,
+   "dry": 0.25403507115039353
+  },
+  "horizons.24.by_city.TTN.brier_clim": {
+   "primary": 0.22909204811920528,
+   "dry": 0.23010479129023947
+  },
+  "horizons.24.by_series.KXRAIN.brier_clim": {
+   "primary": 0.24073369432325503,
+   "dry": 0.23960433934877876
+  },
+  "horizons.24.by_series.KXRAINNYC.brier_clim": {
+   "primary": 0.2498026280808292,
+   "dry": 0.25291563227801084
+  },
+  "horizons.24.he_wet.he_cover.est": {
+   "primary": 0.8261159488946603,
+   "dry": 0.7599115611988108
+  },
+  "horizons.24.he_wet.he_cover.lo": {
+   "primary": 0.737506349153824,
+   "dry": 0.6475695992900631
+  },
+  "horizons.24.he_wet.he_cover.hi": {
+   "primary": 0.9114460090949075,
+   "dry": 0.8378065778142083
+  },
+  "horizons.24.he_wet.he_ladder.est": {
+   "primary": 0.2688546046050869,
+   "dry": 0.23371045651673739
+  },
+  "horizons.24.he_wet.he_ladder.lo": {
+   "primary": 0.19301996188369272,
+   "dry": 0.11534856889641595
+  },
+  "horizons.24.he_wet.he_ladder.hi": {
+   "primary": 0.35223583157399935,
+   "dry": 0.3337419306925071
+  },
+  "horizons.12.brier_clim": {
+   "primary": 0.24773089442049365,
+   "dry": 0.24885811676257427
+  },
+  "horizons.12.brier_gain": {
+   "primary": 0.18229205046235852,
+   "dry": 0.18341927280443915
+  },
+  "horizons.12.brier_gain_ci.est": {
+   "primary": 0.18229205046235852,
+   "dry": 0.18341927280443915
+  },
+  "horizons.12.brier_gain_ci.lo": {
+   "primary": 0.1710533152305059,
+   "dry": 0.16820245467401176
+  },
+  "horizons.12.brier_gain_ci.hi": {
+   "primary": 0.19236394499338424,
+   "dry": 0.1964386977169736
+  },
+  "horizons.12.by_city.CHI.brier_clim": {
+   "primary": 0.21294117531606455,
+   "dry": 0.20712588802815998
+  },
+  "horizons.12.by_city.EWR.brier_clim": {
+   "primary": 0.23983608458900782,
+   "dry": 0.2547996874280665
+  },
+  "horizons.12.by_city.MIA.brier_clim": {
+   "primary": 0.26700416081269734,
+   "dry": 0.2432393628888656
+  },
+  "horizons.12.by_city.NY.brier_clim": {
+   "primary": 0.25013772267293055,
+   "dry": 0.2534407990167072
+  },
+  "horizons.12.by_city.TTN.brier_clim": {
+   "primary": 0.22909204811920528,
+   "dry": 0.23010479129023947
+  },
+  "horizons.12.by_series.KXRAIN.brier_clim": {
+   "primary": 0.24073369432325503,
+   "dry": 0.23960433934877876
+  },
+  "horizons.12.by_series.KXRAINNYC.brier_clim": {
+   "primary": 0.2503217742478936,
+   "dry": 0.25228454803443595
+  },
+  "horizons.12.he_wet.he_cover.est": {
+   "primary": 0.8385414338745496,
+   "dry": 0.7787534934182505
+  },
+  "horizons.12.he_wet.he_cover.lo": {
+   "primary": 0.7556632541763872,
+   "dry": 0.6806354825980419
+  },
+  "horizons.12.he_wet.he_cover.hi": {
+   "primary": 0.919580055293789,
+   "dry": 0.8499655389129854
+  },
+  "horizons.12.he_wet.he_ladder.est": {
+   "primary": 0.18776586913469306,
+   "dry": 0.19249029885396984
+  },
+  "horizons.12.he_wet.he_ladder.lo": {
+   "primary": 0.12463387686341176,
+   "dry": 0.12646635006400758
+  },
+  "horizons.12.he_wet.he_ladder.hi": {
+   "primary": 0.26230476426149585,
+   "dry": 0.25446860852910463
+  },
+  "horizons.2.brier_clim": {
+   "primary": 0.2477123969970315,
+   "dry": 0.24870089116690966
+  },
+  "horizons.2.brier_gain": {
+   "primary": 0.22689281524798205,
+   "dry": 0.22788130941786022
+  },
+  "horizons.2.brier_gain_ci.est": {
+   "primary": 0.22689281524798208,
+   "dry": 0.22788130941786025
+  },
+  "horizons.2.brier_gain_ci.lo": {
+   "primary": 0.21714138810801384,
+   "dry": 0.21402433236780302
+  },
+  "horizons.2.brier_gain_ci.hi": {
+   "primary": 0.23622042159776907,
+   "dry": 0.24096989239144537
+  },
+  "horizons.2.by_city.CHI.brier_clim": {
+   "primary": 0.21294117531606455,
+   "dry": 0.20712588802815998
+  },
+  "horizons.2.by_city.EWR.brier_clim": {
+   "primary": 0.23983608458900782,
+   "dry": 0.2547996874280665
+  },
+  "horizons.2.by_city.MIA.brier_clim": {
+   "primary": 0.26700416081269734,
+   "dry": 0.2432393628888656
+  },
+  "horizons.2.by_city.NY.brier_clim": {
+   "primary": 0.2501116915803893,
+   "dry": 0.25323843710135807
+  },
+  "horizons.2.by_city.TTN.brier_clim": {
+   "primary": 0.22909204811920528,
+   "dry": 0.23010479129023947
+  },
+  "horizons.2.by_series.KXRAIN.brier_clim": {
+   "primary": 0.24073369432325503,
+   "dry": 0.23960433934877876
+  },
+  "horizons.2.by_series.KXRAINNYC.brier_clim": {
+   "primary": 0.25029306308993843,
+   "dry": 0.25206472022465604
+  },
+  "horizons.2.he_wet.he_cover.est": {
+   "primary": 0.8475554583745932,
+   "dry": 0.7400933633610046
+  },
+  "horizons.2.he_wet.he_cover.lo": {
+   "primary": 0.7674876907981704,
+   "dry": 0.636088650117835
+  },
+  "horizons.2.he_wet.he_cover.hi": {
+   "primary": 0.9249036382347504,
+   "dry": 0.8167233061136236
+  },
+  "horizons.2.he_wet.he_ladder.est": {
+   "primary": 0.1084255410974756,
+   "dry": 0.07572383690708251
+  },
+  "horizons.2.he_wet.he_ladder.lo": {
+   "primary": 0.07429285192898528,
+   "dry": 0.04561650165214791
+  },
+  "horizons.2.he_wet.he_ladder.hi": {
+   "primary": 0.15029476055959273,
+   "dry": 0.10487882029625466
+  }
+ },
+ "n_leaves_compared": 132,
+ "n_leaves_moved": 55,
+ "keys_in_one_side_only": [],
+ "unchanged_keys_note": "brier_market, cost_per_dollar_payout*, no_offer_share, no_quote_share, n_quoted, base_rate do not use the wet rule",
+ "T3_brier_gain_24": {
+  "primary": 0.14117336296796698,
+  "dry": 0.14312564461721894,
+  "pass_primary": true,
+  "pass_dry": true
+ },
+ "rain_daily_dry": {
+  "n_markets": 1053,
+  "by_series": {
+   "KXRAINNYC": 769,
+   "KXRAIN": 284
+  },
+  "by_city": {
+   "NY": 841,
+   "CHI": 72,
+   "MIA": 72,
+   "EWR": 34,
+   "TTN": 34
+  },
+  "trace_days": 91,
+  "trace_yes_share": 0.6153846153846154,
+  "wet_rule": "precip >= 0.01 in (trace = dry)",
+  "result_vs_station_agreement": 0.9326113116726835,
+  "n_with_station_precip": 831,
+  "horizons": {
+   "24": {
+    "n_quoted": 1038,
+    "no_quote_share": 0.014245014245014231,
+    "no_offer_share": 0.10826210826210825,
+    "brier_market": 0.10614797687861272,
+    "brier_clim": 0.24927362149583165,
+    "brier_gain": 0.14312564461721894,
+    "base_rate": 0.41811175337186895,
+    "brier_gain_ci": {
+     "est": 0.143125644617219,
+     "lo": 0.12747670099693503,
+     "hi": 0.15626216219429287
+    },
+    "by_city": {
+     "CHI": {
+      "n": 72,
+      "brier_market": 0.11307951388888887,
+      "brier_clim": 0.20712588802815998
+     },
+     "EWR": {
+      "n": 34,
+      "brier_market": 0.08471544117647059,
+      "brier_clim": 0.2547996874280665
+     },
+     "MIA": {
+      "n": 72,
+      "brier_market": 0.18157013888888893,
+      "brier_clim": 0.2432393628888656
+     },
+     "NY": {
+      "n": 826,
+      "brier_market": 0.10199582324455204,
+      "brier_clim": 0.25403507115039353
+     },
+     "TTN": {
+      "n": 34,
+      "brier_market": 0.054057352941176466,
+      "brier_clim": 0.23010479129023947
+     }
+    },
+    "by_series": {
+     "KXRAIN": {
+      "n": 284,
+      "brier_market": 0.11607385563380282,
+      "brier_clim": 0.23960433934877876
+     },
+     "KXRAINNYC": {
+      "n": 754,
+      "brier_market": 0.10240931697612732,
+      "brier_clim": 0.25291563227801084
+     }
+    },
+    "cost_per_dollar_payout": 1.2031571815718158,
+    "cost_per_dollar_payout_ex_fee": 1.1814634146341465,
+    "he_wet": {
+     "n": 730,
+     "he_cover": {
+      "est": 0.7599115611988108,
+      "lo": 0.6475695992900631,
+      "hi": 0.8378065778142083
+     },
+     "he_ladder": {
+      "est": 0.23371045651673739,
+      "lo": 0.11534856889641595,
+      "hi": 0.3337419306925071
+     }
+    }
+   },
+   "12": {
+    "n_quoted": 1051,
+    "no_quote_share": 0.0018993352326686086,
+    "no_offer_share": 0.05508072174738843,
+    "brier_market": 0.06543884395813512,
+    "brier_clim": 0.24885811676257427,
+    "brier_gain": 0.18341927280443915,
+    "base_rate": 0.41579448144624165,
+    "brier_gain_ci": {
+     "est": 0.18341927280443915,
+     "lo": 0.16820245467401176,
+     "hi": 0.1964386977169736
+    },
+    "by_city": {
+     "CHI": {
+      "n": 72,
+      "brier_market": 0.05675833333333334,
+      "brier_clim": 0.20712588802815998
+     },
+     "EWR": {
+      "n": 34,
+      "brier_market": 0.03198014705882352,
+      "brier_clim": 0.2547996874280665
+     },
+     "MIA": {
+      "n": 72,
+      "brier_market": 0.12343263888888892,
+      "brier_clim": 0.2432393628888656
+     },
+     "NY": {
+      "n": 839,
+      "brier_market": 0.0637157926102503,
+      "brier_clim": 0.2534407990167072
+     },
+     "TTN": {
+      "n": 34,
+      "brier_market": 0.036988235294117634,
+      "brier_clim": 0.23010479129023947
+     }
+    },
+    "by_series": {
+     "KXRAIN": {
+      "n": 284,
+      "brier_market": 0.06758926056338029,
+      "brier_clim": 0.23960433934877876
+     },
+     "KXRAINNYC": {
+      "n": 767,
+      "brier_market": 0.06464260104302476,
+      "brier_clim": 0.25228454803443595
+     }
+    },
+    "cost_per_dollar_payout": 1.1943507462686567,
+    "cost_per_dollar_payout_ex_fee": 1.1803233830845772,
+    "he_wet": {
+     "n": 783,
+     "he_cover": {
+      "est": 0.7787534934182505,
+      "lo": 0.6806354825980419,
+      "hi": 0.8499655389129854
+     },
+     "he_ladder": {
+      "est": 0.19249029885396984,
+      "lo": 0.12646635006400758,
+      "hi": 0.25446860852910463
+     }
+    }
+   },
+   "2": {
+    "n_quoted": 1052,
+    "no_quote_share": 0.0009496676163343043,
+    "no_offer_share": 0.007597340930674212,
+    "brier_market": 0.02081958174904943,
+    "brier_clim": 0.24870089116690966,
+    "brier_gain": 0.22788130941786022,
+    "base_rate": 0.41539923954372626,
+    "brier_gain_ci": {
+     "est": 0.22788130941786025,
+     "lo": 0.21402433236780302,
+     "hi": 0.24096989239144537
+    },
+    "by_city": {
+     "CHI": {
+      "n": 72,
+      "brier_market": 0.002581944444444444,
+      "brier_clim": 0.20712588802815998
+     },
+     "EWR": {
+      "n": 34,
+      "brier_market": 0.04319558823529411,
+      "brier_clim": 0.2547996874280665
+     },
+     "MIA": {
+      "n": 72,
+      "brier_market": 0.015939930555555554,
+      "brier_clim": 0.2432393628888656
+     },
+     "NY": {
+      "n": 840,
+      "brier_market": 0.02222125,
+      "brier_clim": 0.25323843710135807
+     },
+     "TTN": {
+      "n": 34,
+      "brier_market": 0.012768382352941176,
+      "brier_clim": 0.23010479129023947
+     }
+    },
+    "by_series": {
+     "KXRAIN": {
+      "n": 284,
+      "brier_market": 0.012090757042253522,
+      "brier_clim": 0.23960433934877876
+     },
+     "KXRAINNYC": {
+      "n": 768,
+      "brier_market": 0.02404742838541667,
+      "brier_clim": 0.25206472022465604
+     }
+    },
+    "cost_per_dollar_payout": 1.132601851851852,
+    "cost_per_dollar_payout_ex_fee": 1.1253472222222223,
+    "he_wet": {
+     "n": 826,
+     "he_cover": {
+      "est": 0.7400933633610046,
+      "lo": 0.636088650117835,
+      "hi": 0.8167233061136236
+     },
+     "he_ladder": {
+      "est": 0.07572383690708251,
+      "lo": 0.04561650165214791,
+      "hi": 0.10487882029625466
+     }
+    }
+   }
+  },
+  "wet_rule_forced": "dry (--wet-rule dry); the frozen conditional would have chosen the primary rule"
+ }
+}

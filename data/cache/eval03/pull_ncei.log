@@ -1,0 +1,100 @@
+county tmax 202401 scaled
+county prcp 202401 scaled
+county tmax 202402 scaled
+county prcp 202402 scaled
+county tmax 202403 scaled
+county prcp 202403 scaled
+county tmax 202404 scaled
+county prcp 202404 scaled
+county tmax 202405 scaled
+county prcp 202405 scaled
+county tmax 202406 scaled
+county prcp 202406 scaled
+county tmax 202407 scaled
+county prcp 202407 scaled
+county tmax 202408 scaled
+county prcp 202408 scaled
+county tmax 202409 scaled
+county prcp 202409 scaled
+county tmax 202410 scaled
+county prcp 202410 scaled
+county tmax 202411 scaled
+county prcp 202411 scaled
+county tmax 202412 scaled
+county prcp 202412 scaled
+county tmax 202501 scaled
+county prcp 202501 scaled
+county tmax 202502 scaled
+county prcp 202502 scaled
+county tmax 202503 scaled
+county prcp 202503 scaled
+county tmax 202504 scaled
+county prcp 202504 scaled
+county tmax 202505 scaled
+county prcp 202505 scaled
+county tmax 202506 scaled
+county prcp 202506 scaled
+county tmax 202507 scaled
+county prcp 202507 scaled
+county tmax 202508 scaled
+county prcp 202508 scaled
+county tmax 202509 scaled
+county prcp 202509 scaled
+county tmax 202510 scaled
+county prcp 202510 scaled
+county tmax 202511 scaled
+county prcp 202511 scaled
+county tmax 202512 scaled
+county prcp 202512 scaled
+county tmax 202601 scaled
+county prcp 202601 scaled
+county tmax 202602 scaled
+county prcp 202602 scaled
+county tmax 202603 scaled
+county prcp 202603 scaled
+county tmax 202604 scaled
+county prcp 202604 scaled
+county tmax 202605 scaled
+county prcp 202605 scaled
+county tmax 202606 scaled
+county prcp 202606 scaled
+county tmax 202607 scaled
+county prcp 202607 scaled
+county tmax 202608 scaled
+county prcp 202608 scaled
+county tmax 202609 prelim
+county prcp 202609 prelim
+nclimgrid points 202401 scaled 64792713
+nclimgrid points 202402 scaled 58615273
+nclimgrid points 202403 scaled 62885255
+nclimgrid points 202404 scaled 58928665
+nclimgrid points 202405 scaled 60724966
+nclimgrid points 202406 scaled 56461049
+nclimgrid points 202407 scaled 58413169
+nclimgrid points 202408 scaled 58006758
+nclimgrid points 202409 scaled 54957757
+nclimgrid points 202410 scaled 56641195
+nclimgrid points 202411 scaled 60694984
+nclimgrid points 202412 scaled 62461952
+nclimgrid points 202501 scaled 61013299
+nclimgrid points 202502 scaled 56017260
+nclimgrid points 202503 scaled 61658270
+nclimgrid points 202504 scaled 59101293
+nclimgrid points 202505 scaled 59894515
+nclimgrid points 202506 scaled 56872702
+nclimgrid points 202507 scaled 57962790
+nclimgrid points 202508 scaled 57051268
+nclimgrid points 202509 scaled 55352723
+nclimgrid points 202510 scaled 59404116
+nclimgrid points 202511 scaled 58309012
+nclimgrid points 202512 scaled 62113608
+nclimgrid points 202601 scaled 61191307
+nclimgrid points 202602 scaled 54715593
+nclimgrid points 202603 scaled 59303824
+nclimgrid points 202604 scaled 59122333
+nclimgrid points 202605 scaled 59224710
+nclimgrid points 202606 scaled 56899783
+nclimgrid points 202607 scaled 57115170
+nclimgrid points 202608 scaled 57244383
+nclimgrid points 202609 prelim 49100699
+DONE ncei

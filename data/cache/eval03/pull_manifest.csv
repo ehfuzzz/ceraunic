@@ -1,0 +1,142 @@
+dataset,url,bytes,fetched_utc,path
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KLGA&year=2024&fmt=csv,67002,2026-09-30T15:44:12Z,data/cache/eval03/cli/LGA_2024.csv
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202401-cty-scaled.csv,1093490,2026-09-30T15:44:13Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202401-cty-scaled.csv,1093490,2026-09-30T15:44:14Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202402-cty-scaled.csv,1093490,2026-09-30T15:44:15Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202402-cty-scaled.csv,1093490,2026-09-30T15:44:16Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202403-cty-scaled.csv,1093490,2026-09-30T15:44:17Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202403-cty-scaled.csv,1093490,2026-09-30T15:44:18Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202404-cty-scaled.csv,1093490,2026-09-30T15:44:18Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202404-cty-scaled.csv,1093490,2026-09-30T15:44:19Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202405-cty-scaled.csv,1093490,2026-09-30T15:44:20Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202405-cty-scaled.csv,1093490,2026-09-30T15:44:21Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202406-cty-scaled.csv,1093490,2026-09-30T15:44:22Z,"(parsed, not kept)"
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KLGA&year=2025&fmt=csv,66448,2026-09-30T15:44:22Z,data/cache/eval03/cli/LGA_2025.csv
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202406-cty-scaled.csv,1093490,2026-09-30T15:44:23Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202407-cty-scaled.csv,1093490,2026-09-30T15:44:23Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202407-cty-scaled.csv,1093490,2026-09-30T15:44:24Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202408-cty-scaled.csv,1093490,2026-09-30T15:44:25Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202408-cty-scaled.csv,1093490,2026-09-30T15:44:26Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202409-cty-scaled.csv,1093490,2026-09-30T15:44:27Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202409-cty-scaled.csv,1093490,2026-09-30T15:44:28Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202410-cty-scaled.csv,1093490,2026-09-30T15:44:28Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202410-cty-scaled.csv,1093490,2026-09-30T15:44:29Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202411-cty-scaled.csv,1093490,2026-09-30T15:44:30Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202411-cty-scaled.csv,1093490,2026-09-30T15:44:31Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/tmax-202412-cty-scaled.csv,1093490,2026-09-30T15:44:32Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2024/prcp-202412-cty-scaled.csv,1093490,2026-09-30T15:44:33Z,"(parsed, not kept)"
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KLGA&year=2026&fmt=csv,49712,2026-09-30T15:44:33Z,data/cache/eval03/cli/LGA_2026.csv
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202501-cty-scaled.csv,1093490,2026-09-30T15:44:33Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202501-cty-scaled.csv,1093490,2026-09-30T15:44:34Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202502-cty-scaled.csv,1093490,2026-09-30T15:44:35Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202502-cty-scaled.csv,1093490,2026-09-30T15:44:36Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202503-cty-scaled.csv,1093490,2026-09-30T15:44:37Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202503-cty-scaled.csv,1093490,2026-09-30T15:44:38Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202504-cty-scaled.csv,1093490,2026-09-30T15:44:38Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202504-cty-scaled.csv,1093490,2026-09-30T15:44:39Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202505-cty-scaled.csv,1093490,2026-09-30T15:44:40Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202505-cty-scaled.csv,1093490,2026-09-30T15:44:41Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202506-cty-scaled.csv,1093490,2026-09-30T15:44:42Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202506-cty-scaled.csv,1093490,2026-09-30T15:44:43Z,"(parsed, not kept)"
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KJFK&year=2024&fmt=csv,66837,2026-09-30T15:44:43Z,data/cache/eval03/cli/JFK_2024.csv
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202507-cty-scaled.csv,1093490,2026-09-30T15:44:43Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202507-cty-scaled.csv,1093490,2026-09-30T15:44:44Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202508-cty-scaled.csv,1093490,2026-09-30T15:44:45Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202508-cty-scaled.csv,1093490,2026-09-30T15:44:46Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202509-cty-scaled.csv,1093490,2026-09-30T15:44:47Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202509-cty-scaled.csv,1093490,2026-09-30T15:44:48Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202510-cty-scaled.csv,1093490,2026-09-30T15:44:48Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202510-cty-scaled.csv,1093490,2026-09-30T15:44:49Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202511-cty-scaled.csv,1093490,2026-09-30T15:44:50Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202511-cty-scaled.csv,1093490,2026-09-30T15:44:51Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/tmax-202512-cty-scaled.csv,1093490,2026-09-30T15:44:52Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2025/prcp-202512-cty-scaled.csv,1093490,2026-09-30T15:44:53Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202601-cty-scaled.csv,1093490,2026-09-30T15:44:53Z,"(parsed, not kept)"
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KJFK&year=2025&fmt=csv,66304,2026-09-30T15:44:54Z,data/cache/eval03/cli/JFK_2025.csv
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202601-cty-scaled.csv,1093490,2026-09-30T15:44:54Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202602-cty-scaled.csv,1093490,2026-09-30T15:44:55Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202602-cty-scaled.csv,1093490,2026-09-30T15:44:56Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202603-cty-scaled.csv,1093490,2026-09-30T15:44:57Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202603-cty-scaled.csv,1093490,2026-09-30T15:44:58Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202604-cty-scaled.csv,1093490,2026-09-30T15:44:58Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202604-cty-scaled.csv,1093490,2026-09-30T15:44:59Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202605-cty-scaled.csv,1093490,2026-09-30T15:45:00Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202605-cty-scaled.csv,1093490,2026-09-30T15:45:01Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202606-cty-scaled.csv,1093490,2026-09-30T15:45:02Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202606-cty-scaled.csv,1093490,2026-09-30T15:45:03Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202607-cty-scaled.csv,1093490,2026-09-30T15:45:03Z,"(parsed, not kept)"
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KJFK&year=2026&fmt=csv,49588,2026-09-30T15:45:04Z,data/cache/eval03/cli/JFK_2026.csv
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202607-cty-scaled.csv,1093490,2026-09-30T15:45:04Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202608-cty-scaled.csv,1093490,2026-09-30T15:45:05Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202608-cty-scaled.csv,1093490,2026-09-30T15:45:06Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/tmax-202609-cty-prelim.csv,1093490,2026-09-30T15:45:07Z,"(parsed, not kept)"
+nclimgrid_county,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/averages/2026/prcp-202609-cty-prelim.csv,1093490,2026-09-30T15:45:09Z,"(parsed, not kept)"
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KORD&year=2024&fmt=csv,66085,2026-09-30T15:45:14Z,data/cache/eval03/cli/ORD_2024.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202401-grd-scaled.nc,64792713,2026-09-30T15:45:16Z,data/cache/eval03/nclimgrid_points/202401.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202402-grd-scaled.nc,58615273,2026-09-30T15:45:22Z,data/cache/eval03/nclimgrid_points/202402.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KORD&year=2025&fmt=csv,65965,2026-09-30T15:45:25Z,data/cache/eval03/cli/ORD_2025.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202403-grd-scaled.nc,62885255,2026-09-30T15:45:29Z,data/cache/eval03/nclimgrid_points/202403.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KORD&year=2026&fmt=csv,49319,2026-09-30T15:45:35Z,data/cache/eval03/cli/ORD_2026.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202404-grd-scaled.nc,58928665,2026-09-30T15:45:35Z,data/cache/eval03/nclimgrid_points/202404.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202405-grd-scaled.nc,60724966,2026-09-30T15:45:42Z,data/cache/eval03/nclimgrid_points/202405.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KLOT&year=2024&fmt=csv,62908,2026-09-30T15:45:46Z,data/cache/eval03/cli/LOT_2024.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202406-grd-scaled.nc,56461049,2026-09-30T15:45:48Z,data/cache/eval03/nclimgrid_points/202406.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202407-grd-scaled.nc,58413169,2026-09-30T15:45:55Z,data/cache/eval03/nclimgrid_points/202407.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KLOT&year=2025&fmt=csv,62727,2026-09-30T15:45:56Z,data/cache/eval03/cli/LOT_2025.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202408-grd-scaled.nc,58006758,2026-09-30T15:46:01Z,data/cache/eval03/nclimgrid_points/202408.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KLOT&year=2026&fmt=csv,46691,2026-09-30T15:46:06Z,data/cache/eval03/cli/LOT_2026.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202409-grd-scaled.nc,54957757,2026-09-30T15:46:08Z,data/cache/eval03/nclimgrid_points/202409.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202410-grd-scaled.nc,56641195,2026-09-30T15:46:14Z,data/cache/eval03/nclimgrid_points/202410.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KPWK&year=2024&fmt=csv,54307,2026-09-30T15:46:17Z,data/cache/eval03/cli/PWK_2024.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202411-grd-scaled.nc,60694984,2026-09-30T15:46:20Z,data/cache/eval03/nclimgrid_points/202411.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KPWK&year=2025&fmt=csv,54079,2026-09-30T15:46:27Z,data/cache/eval03/cli/PWK_2025.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2024/ncdd-202412-grd-scaled.nc,62461952,2026-09-30T15:46:28Z,data/cache/eval03/nclimgrid_points/202412.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202501-grd-scaled.nc,61013299,2026-09-30T15:46:34Z,data/cache/eval03/nclimgrid_points/202501.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KPWK&year=2026&fmt=csv,40473,2026-09-30T15:46:37Z,data/cache/eval03/cli/PWK_2026.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202502-grd-scaled.nc,56017260,2026-09-30T15:46:40Z,data/cache/eval03/nclimgrid_points/202502.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202503-grd-scaled.nc,61658270,2026-09-30T15:46:48Z,data/cache/eval03/nclimgrid_points/202503.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KDPA&year=2024&fmt=csv,55965,2026-09-30T15:46:48Z,data/cache/eval03/cli/DPA_2024.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202504-grd-scaled.nc,59101293,2026-09-30T15:46:54Z,data/cache/eval03/nclimgrid_points/202504.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KDPA&year=2025&fmt=csv,55861,2026-09-30T15:46:58Z,data/cache/eval03/cli/DPA_2025.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202505-grd-scaled.nc,59894515,2026-09-30T15:47:02Z,data/cache/eval03/nclimgrid_points/202505.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KDPA&year=2026&fmt=csv,41437,2026-09-30T15:47:08Z,data/cache/eval03/cli/DPA_2026.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202506-grd-scaled.nc,56872702,2026-09-30T15:47:09Z,data/cache/eval03/nclimgrid_points/202506.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202507-grd-scaled.nc,57962790,2026-09-30T15:47:15Z,data/cache/eval03/nclimgrid_points/202507.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KFLL&year=2024&fmt=csv,62071,2026-09-30T15:47:19Z,data/cache/eval03/cli/FLL_2024.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202508-grd-scaled.nc,57051268,2026-09-30T15:47:21Z,data/cache/eval03/nclimgrid_points/202508.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202509-grd-scaled.nc,55352723,2026-09-30T15:47:27Z,data/cache/eval03/nclimgrid_points/202509.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KFLL&year=2025&fmt=csv,61312,2026-09-30T15:47:29Z,data/cache/eval03/cli/FLL_2025.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202510-grd-scaled.nc,59404116,2026-09-30T15:47:33Z,data/cache/eval03/nclimgrid_points/202510.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202511-grd-scaled.nc,58309012,2026-09-30T15:47:39Z,data/cache/eval03/nclimgrid_points/202511.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KFLL&year=2026&fmt=csv,46213,2026-09-30T15:47:40Z,data/cache/eval03/cli/FLL_2026.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2025/ncdd-202512-grd-scaled.nc,62113608,2026-09-30T15:47:45Z,data/cache/eval03/nclimgrid_points/202512.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KISP&year=2024&fmt=csv,65624,2026-09-30T15:47:51Z,data/cache/eval03/cli/ISP_2024.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2026/ncdd-202601-grd-scaled.nc,61191307,2026-09-30T15:47:52Z,data/cache/eval03/nclimgrid_points/202601.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2026/ncdd-202602-grd-scaled.nc,54715593,2026-09-30T15:47:57Z,data/cache/eval03/nclimgrid_points/202602.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KISP&year=2025&fmt=csv,65025,2026-09-30T15:48:01Z,data/cache/eval03/cli/ISP_2025.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2026/ncdd-202603-grd-scaled.nc,59303824,2026-09-30T15:48:04Z,data/cache/eval03/nclimgrid_points/202603.parquet
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2026/ncdd-202604-grd-scaled.nc,59122333,2026-09-30T15:48:10Z,data/cache/eval03/nclimgrid_points/202604.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KISP&year=2026&fmt=csv,48859,2026-09-30T15:48:12Z,data/cache/eval03/cli/ISP_2026.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2026/ncdd-202605-grd-scaled.nc,59224710,2026-09-30T15:48:18Z,data/cache/eval03/nclimgrid_points/202605.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KUGN&year=2024&fmt=csv,53850,2026-09-30T15:48:22Z,data/cache/eval03/cli/UGN_2024.csv
+nclimgrid_grid_points,https://www.ncei.noaa.gov/data/nclimgrid-daily/access/grids/2026/ncdd-202606-grd-scaled.nc,56899783,2026-09-30T15:48:25Z,data/cache/eval03/nclimgrid_points/202606.parquet
+nclimgrid_grid_points,data/raw/nclimgrid/ncdd-202607-grd-scaled.nc,57115170,2026-09-30T15:48:26Z,data/cache/eval03/nclimgrid_points/202607.parquet
+nclimgrid_grid_points,data/raw/nclimgrid/ncdd-202608-grd-scaled.nc,57244383,2026-09-30T15:48:27Z,data/cache/eval03/nclimgrid_points/202608.parquet
+nclimgrid_grid_points,data/raw/nclimgrid/ncdd-202609-grd-prelim.nc,49100699,2026-09-30T15:48:27Z,data/cache/eval03/nclimgrid_points/202609.parquet
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KUGN&year=2025&fmt=csv,53715,2026-09-30T15:48:32Z,data/cache/eval03/cli/UGN_2025.csv
+iem_cli,https://mesonet.agron.iastate.edu/json/cli.py?station=KUGN&year=2026&fmt=csv,40056,2026-09-30T15:48:43Z,data/cache/eval03/cli/UGN_2026.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=FL_ASOS&stations=FXE&sts=2024-01-01&ets=2024-12-31&format=csv,55750,2026-09-30T15:48:53Z,data/cache/eval03/iem/FL_ASOS_2024.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=FL_ASOS&stations=FXE&sts=2025-01-01&ets=2025-12-31&format=csv,53717,2026-09-30T15:49:53Z,data/cache/eval03/iem/FL_ASOS_2025.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=FL_ASOS&stations=FXE&sts=2026-01-01&ets=2026-09-29&format=csv,42669,2026-09-30T15:50:54Z,data/cache/eval03/iem/FL_ASOS_2026.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=IL_ASOS&stations=IGQ&stations=LOT&stations=06C&stations=JOT&sts=2024-01-01&ets=2024-12-31&format=csv,218768,2026-09-30T15:51:54Z,data/cache/eval03/iem/IL_ASOS_2024.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=IL_ASOS&stations=IGQ&stations=LOT&stations=06C&stations=JOT&sts=2025-01-01&ets=2025-12-31&format=csv,218804,2026-09-30T15:52:55Z,data/cache/eval03/iem/IL_ASOS_2025.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=IL_ASOS&stations=IGQ&stations=LOT&stations=06C&stations=JOT&sts=2026-01-01&ets=2026-09-29&format=csv,164312,2026-09-30T15:53:55Z,data/cache/eval03/iem/IL_ASOS_2026.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=NJ_ASOS&stations=WRI&stations=VAY&sts=2024-01-01&ets=2024-12-31&format=csv,110932,2026-09-30T15:54:56Z,data/cache/eval03/iem/NJ_ASOS_2024.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=NJ_ASOS&stations=WRI&stations=VAY&sts=2025-01-01&ets=2025-12-31&format=csv,110544,2026-09-30T15:55:56Z,data/cache/eval03/iem/NJ_ASOS_2025.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=NJ_ASOS&stations=WRI&stations=VAY&sts=2026-01-01&ets=2026-09-29&format=csv,81174,2026-09-30T15:56:57Z,data/cache/eval03/iem/NJ_ASOS_2026.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=NY_ASOS&stations=JRB&sts=2024-01-01&ets=2024-12-31&format=csv,55661,2026-09-30T15:57:57Z,data/cache/eval03/iem/NY_ASOS_2024.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=NY_ASOS&stations=JRB&sts=2025-01-01&ets=2025-12-31&format=csv,54672,2026-09-30T15:58:58Z,data/cache/eval03/iem/NY_ASOS_2025.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=NY_ASOS&stations=JRB&sts=2026-01-01&ets=2026-09-29&format=csv,40894,2026-09-30T15:59:58Z,data/cache/eval03/iem/NY_ASOS_2026.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=PA_ASOS&stations=DYL&stations=PNE&stations=LOM&stations=CKZ&sts=2024-01-01&ets=2024-12-31&format=csv,219267,2026-09-30T16:00:59Z,data/cache/eval03/iem/PA_ASOS_2024.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=PA_ASOS&stations=DYL&stations=PNE&stations=LOM&stations=CKZ&sts=2025-01-01&ets=2025-12-31&format=csv,217518,2026-09-30T16:02:00Z,data/cache/eval03/iem/PA_ASOS_2025.csv
+iem_daily,https://mesonet.agron.iastate.edu/cgi-bin/request/daily.py?network=PA_ASOS&stations=DYL&stations=PNE&stations=LOM&stations=CKZ&sts=2026-01-01&ets=2026-09-29&format=csv,161424,2026-09-30T16:03:00Z,data/cache/eval03/iem/PA_ASOS_2026.csv

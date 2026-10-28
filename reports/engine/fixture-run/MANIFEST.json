@@ -1,0 +1,423 @@
+{
+ "artifact": "wi.engine fixture run (engine demo; not evidence)",
+ "conservation": {
+  "equal": true,
+  "funded": 79000000000,
+  "held": 79000000000,
+  "kalshiNet": 75140000,
+  "treasury": 11604000
+ },
+ "daysClosed": 30,
+ "eventCount": 3251,
+ "eventCounts": {
+  "AccountFunded": 7,
+  "AuctionCleared": 60,
+  "DayClosed": 30,
+  "HedgeDecision": 30,
+  "HedgeFilled": 30,
+  "HedgeSettled": 30,
+  "HouseFunded": 87,
+  "HouseReturned": 30,
+  "IndexFinalized": 148,
+  "IndexRegistered": 5,
+  "IndexVoided": 2,
+  "JuniorDeposited": 1,
+  "MarginDeposited": 1,
+  "MarketCreated": 180,
+  "OrderClaimed": 891,
+  "OrderPlaced": 891,
+  "ParamsSet": 41,
+  "PolicyBought": 116,
+  "PolicyBound": 116,
+  "PolicySettled": 114,
+  "PolicyVoided": 2,
+  "PoolEpoch": 37,
+  "PositionRefunded": 2,
+  "PositionSettled": 117,
+  "QuoteIssued": 117,
+  "ReportPosted": 150,
+  "RfqAccepted": 1,
+  "RfqQuoted": 1,
+  "RfqRequested": 1,
+  "SeniorDeposited": 1,
+  "StripOpened": 1,
+  "WIHaircut": 5,
+  "WIStaked": 2,
+  "WIUnstakeClaimed": 1,
+  "WIUnstakeRequested": 1,
+  "WithdrawClaimed": 1,
+  "WithdrawRequested": 1
+ },
+ "finalStateSha256": "51b823d9bc1b333725e58e8f4423f41bdf87cf7f55a97958fa3893ebcae9afa5",
+ "gitHead": "f1e606247b8319371cca5cbd7137831d2456f281",
+ "inputs": [
+  {
+   "bytes": 163895,
+   "path": "tests/engine/fixtures/nyc_30d_inputs.json",
+   "sha256": "76ad2fd7d74334e108336f6248e54836d26f920324dfcf15b4e74eaf59034546"
+  }
+ ],
+ "inputsNote": "books on 2026-08-07 and 2026-08-08 are SYNTHETIC (built from the last candle ask at T = close - 24 h, 4 NO-bid levels) only to exercise the book path; the hl-mm recorder has no data yet. Every other input is real.",
+ "invariantChecks": {
+  "I1": 3251,
+  "I10": 232,
+  "I11": 231,
+  "I12": 38,
+  "I15": 1,
+  "I2": 1071,
+  "I3": 1071,
+  "I5": 1071,
+  "I6": 3251,
+  "I7": 146,
+  "I8": 205,
+  "I9": 537,
+  "house": 3251
+ },
+ "invariantFailures": 0,
+ "lastEventHash": "0de4f9a904c3aa3ea51c1fa5ffffabf2b12213e43d54cd64c1fd6d68c2333977",
+ "notes": [
+  "20674: no quote for 0x996550, premium 63890000 above max payout",
+  "20674: no quote for 0x14dc79, premium 33135000 above max payout",
+  "20675: strip day skipped, premium 58360000 above max",
+  "20675: no quote for 0x14dc79, premium 31785000 above max payout"
+ ],
+ "outputs": [
+  {
+   "bytes": 1007936,
+   "path": "reports/engine/fixture-run/events.jsonl",
+   "sha256": "b92cb5ba15d0faabde9d6be4774701d0d530ff42a042b1b69d0f2116e99d8446"
+  },
+  {
+   "bytes": 3217,
+   "path": "reports/engine/fixture-run/daily_pnl.csv",
+   "sha256": "50b2a2187ea66add587d6a80cd37a6ef8ca8794a714e9cabd1e1a416f587a8a2"
+  }
+ ],
+ "params": {
+  "alphaBps": 1000,
+  "auctionFeePerUnit": 0,
+  "basisRangeTenths": 50,
+  "betaBps": 2000,
+  "bindByOffset": 16200,
+  "bookBandCents": 3,
+  "bookMaxAgeS": 120,
+  "bufferTicks": 1,
+  "candleCapCenti": 3000,
+  "capBps": 8000,
+  "contractStepCenti": 100,
+  "cutoffOffset": 10800,
+  "feeMarginBps": 1000,
+  "feeNotionalBps": 10,
+  "gammaBps": 3000,
+  "haircutCapBps": 3000,
+  "hedgeLeadS": 86400,
+  "historyDays": 60,
+  "houseCutoffOffset": 9000,
+  "houseLevelMaxQty": 100,
+  "houseLevels": 3,
+  "houseReturnWindow": 864000,
+  "jMinBps": 2000,
+  "kInvPpm": 0,
+  "levelStepTicks": 1,
+  "maxOrders": 200,
+  "maxOrdersPerTrader": 20,
+  "maxReportAge": 86400,
+  "minHalfTicks": 1,
+  "minJuniorForSenior": 1000000000,
+  "minOrderEscrowE6": 1000000,
+  "minPremiumE6": 10000,
+  "rfqFeePerUnit": 0,
+  "riskLoadBps": 200,
+  "saleCutoffOffset": 8100,
+  "seniorPremiumBps": 30,
+  "slipBufferCents": 1,
+  "unstakeCooldown": 1036800,
+  "withdrawClaimWindow": 259200,
+  "withdrawDelay": 1036800,
+  "zBps": 10000
+ },
+ "paramsSha256": "7450b5385d5c2269e1ecc1504df708583285a77c22ade621192c44de67893b62",
+ "parityFixtures": [
+  {
+   "bytes": 265453,
+   "cases": 64,
+   "path": "contracts/test/fixtures/auction_cases.json",
+   "sha256": "1ea0394a4ed536900960fb31468b3fcbb2b3731c09eac4b3f37b018b30a061c8"
+  },
+  {
+   "bytes": 32012,
+   "cases": 192,
+   "path": "contracts/test/fixtures/payoff_cases.json",
+   "sha256": "786e381498987949259e9e395256387c9998e8c8a0df5a1669140ccec6a51e80"
+  },
+  {
+   "bytes": 94816,
+   "cases": 28,
+   "path": "contracts/test/fixtures/pool_cases.json",
+   "sha256": "a68636d58398f873ac84f6b3d479aa482b5b36a62fe44825538d9c540a61b22f"
+  },
+  {
+   "bytes": 94816,
+   "cases": 28,
+   "path": "contracts/test/fixtures/waterfall_cases.json",
+   "sha256": "a68636d58398f873ac84f6b3d479aa482b5b36a62fe44825538d9c540a61b22f"
+  },
+  {
+   "bytes": 5089,
+   "cases": 16,
+   "path": "contracts/test/fixtures/bind_cases.json",
+   "sha256": "a551ad52ec10cb6a71f99bc0516d4fe120c9f91cd156bd8b90b727e1aa0f167a"
+  },
+  {
+   "bytes": 10937,
+   "cases": 11,
+   "path": "contracts/test/fixtures/haircut_cases.json",
+   "sha256": "bee2269d5c0524d9b0735164dd816b4ed457c3679ee88abdbd1f69867bd18e14"
+  },
+  {
+   "bytes": 25917,
+   "cases": 18,
+   "path": "contracts/test/fixtures/eip712_cases.json",
+   "sha256": "03fc538ee88e9ffe055ad0811dbc9167cca17a408aedb60293bec0e7b95466f0"
+  },
+  {
+   "bytes": 19355,
+   "cases": 15,
+   "path": "contracts/test/fixtures/oracle_cases.json",
+   "sha256": "356153be6190af1c0beced4381c18e8488390d04309217f8ce4bdf73b25c7a1b"
+  }
+ ],
+ "policies": {
+  "bought": 116,
+  "open": 0,
+  "settled": 114,
+  "voided": 2
+ },
+ "pool": {
+  "cash": 26209375100,
+  "deployed": 0,
+  "junior": 8208157966,
+  "juniorSupply": 8000000000000000,
+  "reserved": 0,
+  "senior": 18001217134,
+  "seniorSupply": 18000000000000000
+ },
+ "postRunChecks": {
+  "fullReplayHashEqual": true,
+  "logChainLines": 3251,
+  "secondRunHashEqual": true,
+  "snapshotReplay": {
+   "boundaryDay": "2026-08-08",
+   "fromSeq": 1700,
+   "hashEqual": true
+  }
+ },
+ "snapshots": [
+  {
+   "boundaryDay": "2026-07-23",
+   "seq": 58,
+   "sha256": "0741cc3be2a71ae01535b3b110c772fd7b52eb1c4b27957fc709685aba048495"
+  },
+  {
+   "boundaryDay": "2026-07-24",
+   "seq": 99,
+   "sha256": "c04ffef4285876c75326e7414cd0a3689f284901cd67fc12b9babb6f00f96f81"
+  },
+  {
+   "boundaryDay": "2026-07-25",
+   "seq": 194,
+   "sha256": "4500929b7402d6a18a41469801571e0000b8033b02d6022dc9caabfcc6bf4725"
+  },
+  {
+   "boundaryDay": "2026-07-26",
+   "seq": 293,
+   "sha256": "c1905be6d5bc8868b5633abe251bc5ddc2914422bfdd0811e213947062165502"
+  },
+  {
+   "boundaryDay": "2026-07-27",
+   "seq": 403,
+   "sha256": "b6253c177d5763832bfdcf8fad9d1ffc6234314b8ff108c0104b707f83a662b6"
+  },
+  {
+   "boundaryDay": "2026-07-28",
+   "seq": 507,
+   "sha256": "10afd824070cb0a5bc8b67d852a817e6f4e32df0a4010c7446351ed6074bda97"
+  },
+  {
+   "boundaryDay": "2026-07-29",
+   "seq": 616,
+   "sha256": "cbdf962a55a69966575bbd27482593a6450d89f4acb2dbd1df9f3f7350aafb68"
+  },
+  {
+   "boundaryDay": "2026-07-30",
+   "seq": 720,
+   "sha256": "b1dff1494229085ed4abab3b03bb83dbea8a883b95f9d596a93cb7e56d6e60a2"
+  },
+  {
+   "boundaryDay": "2026-07-31",
+   "seq": 827,
+   "sha256": "b87f614a7b0f03262d34876efae3ea1d6b5f1ce22c01840a5509a45bf5ace48b"
+  },
+  {
+   "boundaryDay": "2026-08-01",
+   "seq": 942,
+   "sha256": "523480cd096190363bd49bf60bcb575c0e030742e2ceb90c65a8e495039931a7"
+  },
+  {
+   "boundaryDay": "2026-08-02",
+   "seq": 1055,
+   "sha256": "d7da42de74faaec0866b0eef18972aafff3df943697140480b2a296988923f10"
+  },
+  {
+   "boundaryDay": "2026-08-03",
+   "seq": 1161,
+   "sha256": "a8b65fe40297a3e5e5ccaac7dfa9a227f93bc28295d0df23c978b0f0ba4eeafa"
+  },
+  {
+   "boundaryDay": "2026-08-04",
+   "seq": 1267,
+   "sha256": "a40c1a3170e6ebac03100d3f1b5dd6f5134f00da465cbd77d2cd4ab890f6e104"
+  },
+  {
+   "boundaryDay": "2026-08-05",
+   "seq": 1381,
+   "sha256": "8ca396a9d56d3e632239fffea8c710b7b9b197facf7b4d82b4487b40b42be8f4"
+  },
+  {
+   "boundaryDay": "2026-08-06",
+   "seq": 1488,
+   "sha256": "91e1697e81feca659cb74d8afd16ab87b5668a55114f6fa8f0507c27d4b8d98c"
+  },
+  {
+   "boundaryDay": "2026-08-07",
+   "seq": 1594,
+   "sha256": "f032049d3d51ec77ed96363b68a3863674bb03079ec6e07e9a58a195ac03e590"
+  },
+  {
+   "boundaryDay": "2026-08-08",
+   "seq": 1700,
+   "sha256": "7efe4d04f03dd36ca26d7cfa7d03ec26e2777ba1277aa2e2b4e201b38d66f7a2"
+  },
+  {
+   "boundaryDay": "2026-08-09",
+   "seq": 1801,
+   "sha256": "a79f05f47109dd4d5a67d96459cff02ddf979be35cfa9b470ed1e12fab83f4c9"
+  },
+  {
+   "boundaryDay": "2026-08-10",
+   "seq": 1892,
+   "sha256": "09854ffa259ee926ce7c10ecc6259b40a563939269b057de916402db5cda17a6"
+  },
+  {
+   "boundaryDay": "2026-08-11",
+   "seq": 1990,
+   "sha256": "42fcce4926a83a2e9e27c7771713068851a3eed15552e062a2500931766866b1"
+  },
+  {
+   "boundaryDay": "2026-08-12",
+   "seq": 2088,
+   "sha256": "fdf119672a53a024d42f77e5dfcf362dd36fb65cb9660eed873f67c7b0b6e69d"
+  },
+  {
+   "boundaryDay": "2026-08-13",
+   "seq": 2189,
+   "sha256": "839d665aad62ad9ac1db588df364bb00c205949a1d3a00296b9fd17a391343b6"
+  },
+  {
+   "boundaryDay": "2026-08-14",
+   "seq": 2297,
+   "sha256": "336ae3dd6eb81f900dca1d378442ae52eb9e545f81cef53faf14be8121ab20e4"
+  },
+  {
+   "boundaryDay": "2026-08-15",
+   "seq": 2403,
+   "sha256": "04e9842808c70d1f9baccaa814c76bb65bb2ad26094e83949ce7663d600c2114"
+  },
+  {
+   "boundaryDay": "2026-08-16",
+   "seq": 2512,
+   "sha256": "6d1f6fa0f226e083df5217c43f1b9d3bc3727fcd291255db5241829518fe8a0a"
+  },
+  {
+   "boundaryDay": "2026-08-17",
+   "seq": 2610,
+   "sha256": "3dace12f165a2f683b1220ae7713f7dcc9ee4d079408718ab3c39402e24aa7a0"
+  },
+  {
+   "boundaryDay": "2026-08-18",
+   "seq": 2711,
+   "sha256": "578d8450eb8ab79fe272a050224dbd0799d2c1bffee402fc96ee4bdfe54c35b7"
+  },
+  {
+   "boundaryDay": "2026-08-19",
+   "seq": 2818,
+   "sha256": "e8bc82ed10961f915c0d4f9ac6ea844ffbe0849fe64bb72a07311979d3227ded"
+  },
+  {
+   "boundaryDay": "2026-08-20",
+   "seq": 2927,
+   "sha256": "1f7978c0e41e58e53bb37d646429b89d1a934c438835b54913a34a9fc247710c"
+  },
+  {
+   "boundaryDay": "2026-08-21",
+   "seq": 3035,
+   "sha256": "3b97d4e692789fad6f7dc3b622070b85beb9bf13e1193285e3a2eb0e01038603"
+  },
+  {
+   "boundaryDay": "2026-08-22",
+   "seq": 3140,
+   "sha256": "a058ed0ae93ff720bdc64e60c550099d11aed7924098414e890af28b688103e5"
+  },
+  {
+   "boundaryDay": "2026-08-23",
+   "seq": 3209,
+   "sha256": "90e9c1041621c27316186e388da3eaef777dc67621baed03e342fec30426ee47"
+  },
+  {
+   "boundaryDay": "2026-08-24",
+   "seq": 3231,
+   "sha256": "96304a88330a99146f63a2d8abe3f50ecf77ee3f7eb464d9f6ced4c2302624a0"
+  },
+  {
+   "boundaryDay": "2026-08-25",
+   "seq": 3247,
+   "sha256": "9e6e5e267dff41717d3e979a9fc44ae64105413155d41e60dd9bacf7dfdfa167"
+  },
+  {
+   "boundaryDay": "2026-08-26",
+   "seq": 3248,
+   "sha256": "52e3397adb826b5abcb816c1d3092b10c52aabb1a478b2fae76db144202820cf"
+  },
+  {
+   "boundaryDay": "2026-08-27",
+   "seq": 3249,
+   "sha256": "0911c1aaa5ed6499f16bd39be5dc5a24fc3c87fdb154da82aab088561de08960"
+  },
+  {
+   "boundaryDay": "2026-08-28",
+   "seq": 3250,
+   "sha256": "a17db753ed77db9af17142f58b5d62edade3bdfd1c7cba2ab3b6d5345cc0f6f3"
+  }
+ ],
+ "spec": {
+  "bytes": 63440,
+  "path": "docs/SPEC.md",
+  "sha256": "bccf34c13382e1713ab024a4019cc8051976730df354786e3f0a42f5cef914b1"
+ },
+ "wi": {
+  "burned": 3101903743141436340000,
+  "supply": 1000000000000000000000000,
+  "totalShares": 750000000000000000000000000000,
+  "totalStaked": 747302893785208563660000
+ },
+ "window": [
+  "2026-07-24",
+  "2026-08-22"
+ ],
+ "world": {
+  "bytes": 970,
+  "canonicalSha256": "d4c2cd807a3358b72ec97227a813aad972fc10e8f284b1c744d535af95796609",
+  "path": "reports/engine/fixture-run/world.json",
+  "sha256": "b8105fa20fa54d03c2a0608157d9e1302eebbc6413a7a53b858724c8c8376239"
+ }
+}

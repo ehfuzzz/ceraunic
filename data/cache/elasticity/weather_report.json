@@ -1,0 +1,21 @@
+{
+ "NYC": {
+  "overlap_days": 1366,
+  "tmax_equal_share": 0.9956076134699854,
+  "prcp_equal_share": 0.9963396778916545,
+  "wet_flag_equal_share": 0.9992679355783309,
+  "acis_rows": 13421,
+  "acis_first": "1990-01-01",
+  "cli_rows": 1366
+ },
+ "MDW": {
+  "overlap_days": 1368,
+  "tmax_equal_share": 0.9992690058479532,
+  "prcp_equal_share": 0.9970760233918129,
+  "wet_flag_equal_share": 0.9985380116959064,
+  "acis_rows": 13421,
+  "acis_first": "1990-01-01",
+  "cli_rows": 1368,
+  "snow_source": "KORD (ACIS) - KMDW has no snowfall"
+ }
+}

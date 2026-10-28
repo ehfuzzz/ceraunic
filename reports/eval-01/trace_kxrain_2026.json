@@ -1,0 +1,55 @@
+{
+ "series": "KXRAIN (multi-city daily '> 0 in' binary: KXRAIN-<DATE>-NYC/-CHI/-MIA)",
+ "window_start": "2026-07-15",
+ "window_end": "2026-09-29",
+ "stations": [
+  "CLINYC",
+  "CLIORD",
+  "CLIMIA"
+ ],
+ "trace_days": 26,
+ "trace_yes": 0,
+ "measurable_days": 94,
+ "measurable_yes": 94,
+ "dry_days": 96,
+ "dry_no": 96,
+ "by_station": {
+  "CLINYC": {
+   "trace_days": 5,
+   "trace_yes": 0,
+   "measurable_days": 33,
+   "measurable_yes": 33,
+   "dry_days": 34,
+   "dry_no": 34,
+   "unmatched": 0
+  },
+  "CLIORD": {
+   "trace_days": 11,
+   "trace_yes": 0,
+   "measurable_days": 19,
+   "measurable_yes": 19,
+   "dry_days": 42,
+   "dry_no": 42,
+   "unmatched": 0
+  },
+  "CLIMIA": {
+   "trace_days": 10,
+   "trace_yes": 0,
+   "measurable_days": 42,
+   "measurable_yes": 42,
+   "dry_days": 20,
+   "dry_no": 20,
+   "unmatched": 0
+  }
+ },
+ "rule": "trace = CLI precip 'T'; measurable = CLI precip >= 0.01 in; dry = 0.00 in; only settled markets (result yes/no)",
+ "source_files": [
+  "data/cache/kalshi/kxrain_markets.parquet",
+  "data/raw/iem/cli/NYC_KNYC_cli.csv",
+  "data/cache/eval03/cli/ORD_2026.csv",
+  "data/raw/iem/cli/MIA_KMIA_cli.csv"
+ ],
+ "compare": "eval-01 rain_daily.trace_yes_share = 0.615 (91 trace days, mostly the older KXRAINNYC series, 2021-09..2026-07)",
+ "settled_markets": 216,
+ "note": "window = every settled NYC/CHI/MIA KXRAIN market in the cache (event dates 2026-07-15..09-29; the listing skips 07-16 and 07-18..21); restricting to the demo replay window (..09-28) gives 26/0, 93/93, 94/94"
+}

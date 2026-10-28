@@ -1,0 +1,1285 @@
+{
+ "final_check": {
+  "n": 516,
+  "mean": -0.49,
+  "mae": 1.01,
+  "share_within_1": 0.938
+ },
+ "class_counts": [
+  {
+   "cls": "a_trade",
+   "n": 502,
+   "changed_share": 0.795,
+   "actual_flag_share": 1.0
+  },
+  {
+   "cls": "b_window_mark",
+   "n": 15022,
+   "changed_share": 0.8,
+   "actual_flag_share": 0.986
+  },
+  {
+   "cls": "c_stale_mark",
+   "n": 141877,
+   "changed_share": 0.042,
+   "actual_flag_share": 0.773
+  }
+ ],
+ "leads": [
+  {
+   "cls": "a_trade",
+   "kind": "cdd",
+   "lead": 7,
+   "price": [
+    -14.5,
+    null,
+    1,
+    1
+   ],
+   "base_trend": [
+    39.3,
+    null,
+    1,
+    1
+   ],
+   "base_10y": [
+    24.7,
+    null,
+    1,
+    1
+   ],
+   "price_minus_base": [
+    -53.8,
+    null,
+    1,
+    1
+   ],
+   "sd_price": NaN,
+   "sd_base": NaN,
+   "rmse_price": 14.5,
+   "rmse_base": 39.3
+  },
+  {
+   "cls": "a_trade",
+   "kind": "cdd",
+   "lead": 15,
+   "price": [
+    -18.5,
+    51.0,
+    2,
+    2
+   ],
+   "base_trend": [
+    -21.5,
+    56.3,
+    2,
+    2
+   ],
+   "base_10y": [
+    -26.8,
+    38.6,
+    2,
+    2
+   ],
+   "price_minus_base": [
+    3.0,
+    5.3,
+    2,
+    2
+   ],
+   "sd_price": 72.1,
+   "sd_base": 79.6,
+   "rmse_price": 54.3,
+   "rmse_base": 60.2
+  },
+  {
+   "cls": "a_trade",
+   "kind": "cdd",
+   "lead": 30,
+   "price": [
+    -30.5,
+    17.8,
+    5,
+    5
+   ],
+   "base_trend": [
+    -26.8,
+    12.9,
+    5,
+    5
+   ],
+   "base_10y": [
+    -49.3,
+    20.2,
+    5,
+    5
+   ],
+   "price_minus_base": [
+    -3.7,
+    7.2,
+    5,
+    5
+   ],
+   "sd_price": 39.8,
+   "sd_base": 28.8,
+   "rmse_price": 46.9,
+   "rmse_base": 37.2
+  },
+  {
+   "cls": "a_trade",
+   "kind": "cdd",
+   "lead": 60,
+   "price": [
+    -3.4,
+    20.2,
+    4,
+    4
+   ],
+   "base_trend": [
+    -1.2,
+    17.9,
+    4,
+    4
+   ],
+   "base_10y": [
+    -16.4,
+    18.5,
+    4,
+    4
+   ],
+   "price_minus_base": [
+    -2.2,
+    17.0,
+    4,
+    4
+   ],
+   "sd_price": 40.3,
+   "sd_base": 35.8,
+   "rmse_price": 35.1,
+   "rmse_base": 31.0
+  },
+  {
+   "cls": "a_trade",
+   "kind": "cdd",
+   "lead": 90,
+   "price": [
+    -11.5,
+    null,
+    1,
+    1
+   ],
+   "base_trend": [
+    6.4,
+    null,
+    1,
+    1
+   ],
+   "base_10y": [
+    6.7,
+    null,
+    1,
+    1
+   ],
+   "price_minus_base": [
+    -17.9,
+    null,
+    1,
+    1
+   ],
+   "sd_price": NaN,
+   "sd_base": NaN,
+   "rmse_price": 11.5,
+   "rmse_base": 6.4
+  },
+  {
+   "cls": "a_trade",
+   "kind": "hdd",
+   "lead": 7,
+   "price": [
+    4.5,
+    4.5,
+    2,
+    2
+   ],
+   "base_trend": [
+    29.3,
+    44.6,
+    2,
+    2
+   ],
+   "base_10y": [
+    8.2,
+    38.2,
+    2,
+    2
+   ],
+   "price_minus_base": [
+    -24.8,
+    40.1,
+    2,
+    2
+   ],
+   "sd_price": 6.4,
+   "sd_base": 63.1,
+   "rmse_price": 6.4,
+   "rmse_base": 53.4
+  },
+  {
+   "cls": "a_trade",
+   "kind": "hdd",
+   "lead": 15,
+   "price": [
+    4.6,
+    4.6,
+    7,
+    4
+   ],
+   "base_trend": [
+    29.1,
+    52.1,
+    7,
+    4
+   ],
+   "base_10y": [
+    30.6,
+    43.8,
+    7,
+    4
+   ],
+   "price_minus_base": [
+    -24.5,
+    49.5,
+    7,
+    4
+   ],
+   "sd_price": 15.4,
+   "sd_base": 79.0,
+   "rmse_price": 15.0,
+   "rmse_base": 78.7
+  },
+  {
+   "cls": "a_trade",
+   "kind": "hdd",
+   "lead": 30,
+   "price": [
+    17.8,
+    26.0,
+    9,
+    7
+   ],
+   "base_trend": [
+    -2.5,
+    48.4,
+    9,
+    7
+   ],
+   "base_10y": [
+    1.3,
+    56.4,
+    9,
+    7
+   ],
+   "price_minus_base": [
+    20.3,
+    39.3,
+    9,
+    7
+   ],
+   "sd_price": 83.8,
+   "sd_base": 138.9,
+   "rmse_price": 81.0,
+   "rmse_base": 131.0
+  },
+  {
+   "cls": "a_trade",
+   "kind": "hdd",
+   "lead": 60,
+   "price": [
+    32.2,
+    195.8,
+    2,
+    2
+   ],
+   "base_trend": [
+    11.1,
+    184.5,
+    2,
+    2
+   ],
+   "base_10y": [
+    24.3,
+    203.4,
+    2,
+    2
+   ],
+   "price_minus_base": [
+    21.1,
+    11.2,
+    2,
+    2
+   ],
+   "sd_price": 276.8,
+   "sd_base": 261.0,
+   "rmse_price": 198.4,
+   "rmse_base": 184.9
+  },
+  {
+   "cls": "a_trade",
+   "kind": "hdd",
+   "lead": 90,
+   "price": [
+    62.2,
+    43.2,
+    2,
+    2
+   ],
+   "base_trend": [
+    50.5,
+    57.8,
+    2,
+    2
+   ],
+   "base_10y": [
+    70.6,
+    59.2,
+    2,
+    2
+   ],
+   "price_minus_base": [
+    11.8,
+    14.6,
+    2,
+    2
+   ],
+   "sd_price": 61.2,
+   "sd_base": 81.8,
+   "rmse_price": 75.8,
+   "rmse_base": 76.8
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "cdd",
+   "lead": 1,
+   "price": [
+    1.4,
+    0.6,
+    263,
+    24
+   ],
+   "base_trend": [
+    0.2,
+    1.0,
+    263,
+    24
+   ],
+   "base_10y": [
+    -0.9,
+    1.0,
+    263,
+    24
+   ],
+   "price_minus_base": [
+    1.2,
+    0.9,
+    263,
+    24
+   ],
+   "sd_price": 6.4,
+   "sd_base": 10.5,
+   "rmse_price": 6.6,
+   "rmse_base": 10.5
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "cdd",
+   "lead": 7,
+   "price": [
+    4.0,
+    1.2,
+    262,
+    24
+   ],
+   "base_trend": [
+    1.7,
+    2.6,
+    262,
+    24
+   ],
+   "base_10y": [
+    -1.0,
+    2.7,
+    262,
+    24
+   ],
+   "price_minus_base": [
+    2.3,
+    2.7,
+    262,
+    24
+   ],
+   "sd_price": 14.4,
+   "sd_base": 26.4,
+   "rmse_price": 14.9,
+   "rmse_base": 26.4
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "cdd",
+   "lead": 15,
+   "price": [
+    5.1,
+    3.1,
+    261,
+    24
+   ],
+   "base_trend": [
+    2.3,
+    4.6,
+    261,
+    24
+   ],
+   "base_10y": [
+    -2.1,
+    4.7,
+    261,
+    24
+   ],
+   "price_minus_base": [
+    2.8,
+    3.2,
+    261,
+    24
+   ],
+   "sd_price": 29.9,
+   "sd_base": 38.8,
+   "rmse_price": 30.2,
+   "rmse_base": 38.8
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "cdd",
+   "lead": 30,
+   "price": [
+    -0.4,
+    5.1,
+    263,
+    24
+   ],
+   "base_trend": [
+    0.6,
+    5.6,
+    263,
+    24
+   ],
+   "base_10y": [
+    -7.7,
+    6.5,
+    263,
+    24
+   ],
+   "price_minus_base": [
+    -1.1,
+    3.7,
+    263,
+    24
+   ],
+   "sd_price": 48.2,
+   "sd_base": 56.0,
+   "rmse_price": 48.1,
+   "rmse_base": 55.9
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "hdd",
+   "lead": 1,
+   "price": [
+    0.2,
+    0.7,
+    230,
+    27
+   ],
+   "base_trend": [
+    2.0,
+    2.4,
+    230,
+    27
+   ],
+   "base_10y": [
+    3.0,
+    2.5,
+    230,
+    27
+   ],
+   "price_minus_base": [
+    -1.8,
+    2.3,
+    230,
+    27
+   ],
+   "sd_price": 5.5,
+   "sd_base": 16.8,
+   "rmse_price": 5.5,
+   "rmse_base": 16.9
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "hdd",
+   "lead": 7,
+   "price": [
+    2.2,
+    1.8,
+    228,
+    27
+   ],
+   "base_trend": [
+    4.5,
+    6.6,
+    228,
+    27
+   ],
+   "base_10y": [
+    6.4,
+    6.7,
+    228,
+    27
+   ],
+   "price_minus_base": [
+    -2.3,
+    6.9,
+    228,
+    27
+   ],
+   "sd_price": 16.2,
+   "sd_base": 46.5,
+   "rmse_price": 16.3,
+   "rmse_base": 46.6
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "hdd",
+   "lead": 15,
+   "price": [
+    3.6,
+    4.6,
+    223,
+    27
+   ],
+   "base_trend": [
+    3.8,
+    9.5,
+    223,
+    27
+   ],
+   "base_10y": [
+    9.7,
+    9.8,
+    223,
+    27
+   ],
+   "price_minus_base": [
+    -0.1,
+    8.4,
+    223,
+    27
+   ],
+   "sd_price": 42.1,
+   "sd_base": 68.2,
+   "rmse_price": 42.1,
+   "rmse_base": 68.2
+  },
+  {
+   "cls": "b_window_mark",
+   "kind": "hdd",
+   "lead": 30,
+   "price": [
+    18.8,
+    10.0,
+    239,
+    27
+   ],
+   "base_trend": [
+    16.2,
+    12.4,
+    239,
+    27
+   ],
+   "base_10y": [
+    26.4,
+    13.4,
+    239,
+    27
+   ],
+   "price_minus_base": [
+    2.6,
+    7.1,
+    239,
+    27
+   ],
+   "sd_price": 74.0,
+   "sd_base": 94.7,
+   "rmse_price": 76.2,
+   "rmse_base": 95.9
+  },
+  {
+   "cls": "c_stale_mark",
+   "kind": "cdd",
+   "lead": 60,
+   "price": [
+    -8.0,
+    5.8,
+    252,
+    24
+   ],
+   "base_trend": [
+    1.5,
+    5.7,
+    252,
+    24
+   ],
+   "base_10y": [
+    -7.0,
+    6.2,
+    252,
+    24
+   ],
+   "price_minus_base": [
+    -9.5,
+    1.5,
+    252,
+    24
+   ],
+   "sd_price": 56.9,
+   "sd_base": 55.6,
+   "rmse_price": 57.3,
+   "rmse_base": 55.6
+  },
+  {
+   "cls": "c_stale_mark",
+   "kind": "cdd",
+   "lead": 90,
+   "price": [
+    -10.5,
+    5.9,
+    255,
+    23
+   ],
+   "base_trend": [
+    0.6,
+    5.7,
+    255,
+    23
+   ],
+   "base_10y": [
+    -7.9,
+    6.0,
+    255,
+    23
+   ],
+   "price_minus_base": [
+    -11.1,
+    1.3,
+    255,
+    23
+   ],
+   "sd_price": 56.3,
+   "sd_base": 54.9,
+   "rmse_price": 57.2,
+   "rmse_base": 54.8
+  },
+  {
+   "cls": "c_stale_mark",
+   "kind": "hdd",
+   "lead": 60,
+   "price": [
+    29.3,
+    14.1,
+    240,
+    25
+   ],
+   "base_trend": [
+    13.5,
+    12.7,
+    240,
+    25
+   ],
+   "base_10y": [
+    23.7,
+    13.3,
+    240,
+    25
+   ],
+   "price_minus_base": [
+    15.8,
+    6.9,
+    240,
+    25
+   ],
+   "sd_price": 103.4,
+   "sd_base": 94.7,
+   "rmse_price": 107.2,
+   "rmse_base": 95.5
+  },
+  {
+   "cls": "c_stale_mark",
+   "kind": "hdd",
+   "lead": 90,
+   "price": [
+    25.3,
+    14.7,
+    224,
+    21
+   ],
+   "base_trend": [
+    13.7,
+    15.1,
+    224,
+    21
+   ],
+   "base_10y": [
+    22.1,
+    16.1,
+    224,
+    21
+   ],
+   "price_minus_base": [
+    11.5,
+    4.1,
+    224,
+    21
+   ],
+   "sd_price": 99.7,
+   "sd_base": 94.3,
+   "rmse_price": 102.6,
+   "rmse_base": 95.0
+  }
+ ],
+ "trade_days": [
+  {
+   "kind": "cdd",
+   "bucket": "0-7",
+   "n_days": 4,
+   "n_contracts": 4,
+   "vol": 1400,
+   "price": [
+    -2.0,
+    1.3,
+    4,
+    4
+   ],
+   "base_trend": [
+    3.3,
+    8.1,
+    4,
+    4
+   ],
+   "price_minus_base": [
+    -5.3,
+    8.1,
+    4,
+    4
+   ]
+  },
+  {
+   "kind": "cdd",
+   "bucket": "8-15",
+   "n_days": 6,
+   "n_contracts": 4,
+   "vol": 2600,
+   "price": [
+    -10.6,
+    17.7,
+    6,
+    4
+   ],
+   "base_trend": [
+    21.6,
+    32.1,
+    6,
+    4
+   ],
+   "price_minus_base": [
+    -32.2,
+    16.1,
+    6,
+    4
+   ]
+  },
+  {
+   "kind": "cdd",
+   "bucket": "16-31",
+   "n_days": 40,
+   "n_contracts": 24,
+   "vol": 18400,
+   "price": [
+    -6.6,
+    9.4,
+    40,
+    24
+   ],
+   "base_trend": [
+    -10.1,
+    11.5,
+    40,
+    24
+   ],
+   "price_minus_base": [
+    3.5,
+    5.7,
+    40,
+    24
+   ]
+  },
+  {
+   "kind": "cdd",
+   "bucket": "32-60",
+   "n_days": 85,
+   "n_contracts": 49,
+   "vol": 48800,
+   "price": [
+    -7.3,
+    7.0,
+    85,
+    49
+   ],
+   "base_trend": [
+    1.8,
+    7.2,
+    85,
+    49
+   ],
+   "price_minus_base": [
+    -9.0,
+    2.7,
+    85,
+    49
+   ]
+  },
+  {
+   "kind": "cdd",
+   "bucket": "61-120",
+   "n_days": 57,
+   "n_contracts": 33,
+   "vol": 20600,
+   "price": [
+    -1.1,
+    8.1,
+    57,
+    33
+   ],
+   "base_trend": [
+    12.9,
+    8.2,
+    57,
+    33
+   ],
+   "price_minus_base": [
+    -14.0,
+    2.9,
+    57,
+    33
+   ]
+  },
+  {
+   "kind": "cdd",
+   "bucket": "121+",
+   "n_days": 19,
+   "n_contracts": 13,
+   "vol": 8150,
+   "price": [
+    9.5,
+    17.0,
+    19,
+    13
+   ],
+   "base_trend": [
+    21.4,
+    15.5,
+    19,
+    13
+   ],
+   "price_minus_base": [
+    -11.9,
+    5.1,
+    19,
+    13
+   ]
+  },
+  {
+   "kind": "hdd",
+   "bucket": "8-15",
+   "n_days": 13,
+   "n_contracts": 9,
+   "vol": 1800,
+   "price": [
+    3.2,
+    3.8,
+    13,
+    9
+   ],
+   "base_trend": [
+    41.4,
+    24.2,
+    13,
+    9
+   ],
+   "price_minus_base": [
+    -38.2,
+    22.6,
+    13,
+    9
+   ]
+  },
+  {
+   "kind": "hdd",
+   "bucket": "16-31",
+   "n_days": 63,
+   "n_contracts": 39,
+   "vol": 19725,
+   "price": [
+    4.4,
+    11.7,
+    63,
+    39
+   ],
+   "base_trend": [
+    -26.1,
+    17.2,
+    63,
+    39
+   ],
+   "price_minus_base": [
+    30.5,
+    12.5,
+    63,
+    39
+   ]
+  },
+  {
+   "kind": "hdd",
+   "bucket": "32-60",
+   "n_days": 151,
+   "n_contracts": 73,
+   "vol": 64560,
+   "price": [
+    12.6,
+    11.9,
+    151,
+    73
+   ],
+   "base_trend": [
+    7.8,
+    12.8,
+    151,
+    73
+   ],
+   "price_minus_base": [
+    4.9,
+    3.2,
+    151,
+    73
+   ]
+  },
+  {
+   "kind": "hdd",
+   "bucket": "61-120",
+   "n_days": 57,
+   "n_contracts": 36,
+   "vol": 21280,
+   "price": [
+    -31.9,
+    19.3,
+    57,
+    36
+   ],
+   "base_trend": [
+    -32.9,
+    18.5,
+    57,
+    36
+   ],
+   "price_minus_base": [
+    1.0,
+    4.6,
+    57,
+    36
+   ]
+  },
+  {
+   "kind": "hdd",
+   "bucket": "121+",
+   "n_days": 7,
+   "n_contracts": 6,
+   "vol": 1715,
+   "price": [
+    23.8,
+    53.0,
+    7,
+    6
+   ],
+   "base_trend": [
+    18.8,
+    56.3,
+    7,
+    6
+   ],
+   "price_minus_base": [
+    5.0,
+    12.0,
+    7,
+    6
+   ]
+  }
+ ],
+ "trade_all_hdd": {
+  "n_days": 291,
+  "n_contracts": 96,
+  "vol": 109080,
+  "e_price": [
+   2.0,
+   9.9,
+   291,
+   96
+  ],
+  "e_base": [
+   -5.8,
+   11.1,
+   291,
+   96
+  ],
+  "price_minus_base": [
+   7.7,
+   3.5,
+   291,
+   96
+  ],
+  "vol_weighted_e_price": 7.8,
+  "vol_weighted_price_minus_base": 2.9
+ },
+ "trade_all_cdd": {
+  "n_days": 211,
+  "n_contracts": 77,
+  "vol": 99950,
+  "e_price": [
+   -4.0,
+   5.3,
+   211,
+   77
+  ],
+  "e_base": [
+   4.9,
+   5.8,
+   211,
+   77
+  ],
+  "price_minus_base": [
+   -8.9,
+   2.2,
+   211,
+   77
+  ],
+  "vol_weighted_e_price": -8.3,
+  "vol_weighted_price_minus_base": -8.0
+ },
+ "trade_by_city": [
+  {
+   "city": "Atlanta",
+   "kind": "cdd",
+   "n": 8,
+   "vol": 3825.0,
+   "e_price": -0.5,
+   "pmb": 6.2
+  },
+  {
+   "city": "Atlanta",
+   "kind": "hdd",
+   "n": 31,
+   "vol": 12186.0,
+   "e_price": 16.7,
+   "pmb": 2.1
+  },
+  {
+   "city": "Boston",
+   "kind": "cdd",
+   "n": 6,
+   "vol": 1975.0,
+   "e_price": -0.8,
+   "pmb": -0.8
+  },
+  {
+   "city": "Boston",
+   "kind": "hdd",
+   "n": 7,
+   "vol": 2945.0,
+   "e_price": -58.1,
+   "pmb": -4.4
+  },
+  {
+   "city": "Burbank",
+   "kind": "cdd",
+   "n": 2,
+   "vol": 200.0,
+   "e_price": -3.2,
+   "pmb": 3.8
+  },
+  {
+   "city": "Burbank",
+   "kind": "hdd",
+   "n": 1,
+   "vol": 625.0,
+   "e_price": 112.0,
+   "pmb": 33.3
+  },
+  {
+   "city": "Chicago",
+   "kind": "cdd",
+   "n": 27,
+   "vol": 14975.0,
+   "e_price": -3.6,
+   "pmb": -2.1
+  },
+  {
+   "city": "Chicago",
+   "kind": "hdd",
+   "n": 53,
+   "vol": 16024.0,
+   "e_price": 42.4,
+   "pmb": 9.9
+  },
+  {
+   "city": "Cincinnati",
+   "kind": "cdd",
+   "n": 14,
+   "vol": 6700.0,
+   "e_price": -10.5,
+   "pmb": -9.9
+  },
+  {
+   "city": "Cincinnati",
+   "kind": "hdd",
+   "n": 46,
+   "vol": 14722.0,
+   "e_price": 16.3,
+   "pmb": 1.3
+  },
+  {
+   "city": "Dallas",
+   "kind": "cdd",
+   "n": 22,
+   "vol": 8975.0,
+   "e_price": -5.2,
+   "pmb": -9.6
+  },
+  {
+   "city": "Dallas",
+   "kind": "hdd",
+   "n": 25,
+   "vol": 14559.0,
+   "e_price": -34.6,
+   "pmb": -5.2
+  },
+  {
+   "city": "Houston",
+   "kind": "cdd",
+   "n": 8,
+   "vol": 5900.0,
+   "e_price": -46.3,
+   "pmb": -13.8
+  },
+  {
+   "city": "Houston",
+   "kind": "hdd",
+   "n": 2,
+   "vol": 3050.0,
+   "e_price": -43.8,
+   "pmb": -42.3
+  },
+  {
+   "city": "Las Vegas",
+   "kind": "cdd",
+   "n": 5,
+   "vol": 2800.0,
+   "e_price": 36.8,
+   "pmb": -4.3
+  },
+  {
+   "city": "Las Vegas",
+   "kind": "hdd",
+   "n": 1,
+   "vol": 1300.0,
+   "e_price": -87.5,
+   "pmb": 40.5
+  },
+  {
+   "city": "Minneapolis",
+   "kind": "hdd",
+   "n": 12,
+   "vol": 1858.0,
+   "e_price": -23.2,
+   "pmb": 58.3
+  },
+  {
+   "city": "New York",
+   "kind": "cdd",
+   "n": 40,
+   "vol": 17450.0,
+   "e_price": 16.1,
+   "pmb": -10.8
+  },
+  {
+   "city": "New York",
+   "kind": "hdd",
+   "n": 48,
+   "vol": 17611.0,
+   "e_price": 50.3,
+   "pmb": 6.1
+  },
+  {
+   "city": "Philadelphia",
+   "kind": "cdd",
+   "n": 74,
+   "vol": 36000.0,
+   "e_price": -13.5,
+   "pmb": -13.9
+  },
+  {
+   "city": "Philadelphia",
+   "kind": "hdd",
+   "n": 62,
+   "vol": 23450.0,
+   "e_price": -56.8,
+   "pmb": 12.5
+  },
+  {
+   "city": "Portland",
+   "kind": "cdd",
+   "n": 4,
+   "vol": 1000.0,
+   "e_price": 49.1,
+   "pmb": 18.1
+  },
+  {
+   "city": "Portland",
+   "kind": "hdd",
+   "n": 1,
+   "vol": 250.0,
+   "e_price": -12.5,
+   "pmb": 25.0
+  },
+  {
+   "city": "Sacramento",
+   "kind": "cdd",
+   "n": 1,
+   "vol": 150.0,
+   "e_price": -125.0,
+   "pmb": 7.4
+  },
+  {
+   "city": "Sacramento",
+   "kind": "hdd",
+   "n": 2,
+   "vol": 500.0,
+   "e_price": -103.5,
+   "pmb": -7.2
+  }
+ ]
+}

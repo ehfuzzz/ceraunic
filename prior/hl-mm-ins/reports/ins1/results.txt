@@ -1,0 +1,57 @@
+city-days: 272 Counter({'KXHIGHNY': 68, 'KXHIGHCHI': 68, 'KXHIGHMIA': 68, 'KXHIGHTEWR': 34, 'KXHIGHTTTN': 34})
+executable at 24h: Counter({'KXHIGHNY': 68, 'KXHIGHCHI': 68, 'KXHIGHMIA': 68, 'KXHIGHTEWR': 34, 'KXHIGHTTTN': 33})
+
+T1 replication (premium at asks vs realised ladder payoff; error = payoff - premium):
+series       h  n   mean_prem  mean_pay  mean_err  rmse   HE_vs_H_nws  spread_cost
+KXHIGHNY     24  68     1.727     1.434    -0.293   1.091    0.937      0.121
+KXHIGHNY     12  68     1.578     1.434    -0.144   0.847    0.937      0.116
+KXHIGHNY      2  68     1.615     1.434    -0.181   0.182    0.937      0.098
+KXHIGHTEWR   24  34     8.932     2.618    -6.315   8.860    0.956      3.691
+KXHIGHTEWR   12  31     7.652     2.710    -4.942   7.342    0.960      2.981
+KXHIGHTEWR    2  30     3.095     2.867    -0.228   0.258    0.953      0.133
+KXHIGHTTTN   24  33     8.865     2.424    -6.441   9.109    0.899      3.749
+KXHIGHTTTN   12  32     7.896     2.500    -5.396   7.781    0.891      3.159
+KXHIGHTTTN    2  31     2.989     2.500    -0.489   1.081    0.893      0.259
+KXHIGHCHI    24  68     3.144     2.934    -0.210   1.500    0.938      0.124
+KXHIGHCHI    12  68     3.003     2.934    -0.069   1.158    0.938      0.159
+KXHIGHCHI     2  68     3.100     2.934    -0.166   0.168    0.938      0.098
+KXHIGHMIA    24  68     4.788     4.787    -0.001   1.299    0.856      0.137
+KXHIGHMIA    12  68     4.721     4.787     0.066   0.831    0.856      0.178
+KXHIGHMIA     2  68     4.898     4.787    -0.112   0.313    0.856      0.099
+
+T2 decomposition:
+KXHIGHNY     n= 68 binning: mean -0.096 rmse 0.416 | settlement-source mismatch (TWC bracket vs NWS ASOS): 0/68 = 0.0% | mean H_nws 1.338 (share of days with H>0: 53%)
+    geography LGA exposure hedged with NYC ladder: n=68 mean +1.199 rmse 1.870 HE=0.213 (own-station HE=0.937)
+    geography JFK exposure hedged with NYC ladder: n=68 mean +0.301 rmse 1.538 HE=0.131 (own-station HE=0.937)
+KXHIGHTEWR   n= 34 binning: mean -0.118 rmse 0.437 | settlement-source mismatch (TWC bracket vs NWS ASOS): 0/34 = 0.0% | mean H_nws 2.500 (share of days with H>0: 76%)
+    geography TTN exposure hedged with EWR ladder: n=34 mean -0.559 rmse 1.576 HE=0.463 (own-station HE=0.956)
+KXHIGHTTTN   n= 34 binning: mean -0.091 rmse 0.491 | settlement-source mismatch (TWC bracket vs NWS ASOS): 1/34 = 2.9% | mean H_nws 2.276 (share of days with H>0: 85%)
+    geography EWR exposure hedged with TTN ladder: n=34 mean +0.321 rmse 1.620 HE=-0.063 (own-station HE=0.902)
+KXHIGHCHI    n= 68 binning: mean -0.169 rmse 0.496 | settlement-source mismatch (TWC bracket vs NWS ASOS): 1/68 = 1.5% | mean H_nws 2.765 (share of days with H>0: 81%)
+    geography ORD exposure hedged with MDW ladder: n=68 mean -0.066 rmse 1.129 HE=0.639 (own-station HE=0.938)
+KXHIGHMIA    n= 68 binning: mean +0.007 rmse 0.511 | settlement-source mismatch (TWC bracket vs NWS ASOS): 3/68 = 4.4% | mean H_nws 4.794 (share of days with H>0: 97%)
+    geography FLL exposure hedged with MIA ladder: n=68 mean -0.963 rmse 1.701 HE=-0.081 (own-station HE=0.856)
+    geography OPF exposure hedged with MIA ladder: n=68 mean -0.051 rmse 0.991 HE=0.462 (own-station HE=0.856)
+
+T2d geography with bias/ratio correction (in-sample OLS of nearby-station payoff on ladder payoff):
+  KXHIGHNY     LGA: offset +1.39 ratio 0.86 -> HE 0.493   (mean T diff LGA-NYC: +1.79 F)
+  KXHIGHNY     JFK: offset +0.80 ratio 0.65 -> HE 0.363   (mean T diff JFK-NYC: +0.69 F)
+  KXHIGHTEWR   TTN: offset +0.50 ratio 0.59 -> HE 0.487   (mean T diff TTN-EWR: -0.59 F)
+  KXHIGHTTTN   EWR: offset +0.97 ratio 0.73 -> HE 0.348   (mean T diff EWR-TTN: +0.59 F)
+  KXHIGHCHI    ORD: offset +0.40 ratio 0.84 -> HE 0.678   (mean T diff ORD-MDW: +0.00 F)
+  KXHIGHMIA    FLL: offset +0.81 ratio 0.63 -> HE 0.296   (mean T diff FLL-MIA: -1.06 F)
+  KXHIGHMIA    OPF: offset +0.82 ratio 0.82 -> HE 0.570   (mean T diff OPF-MIA: -0.04 F)
+
+V1 sell-side (post at ask 24h before close, hold to settlement; per $1/F unit ladder):
+  KXHIGHNY     n=68 mean +0.293/day  worst day -2.575  p10 -1.340  win rate 71%  contracts/day 19.5
+  KXHIGHTEWR   n=34 mean +6.315/day  worst day -0.685  p10 +0.025  win rate 91%  contracts/day 19.5
+  KXHIGHTTTN   n=33 mean +6.441/day  worst day -1.540  p10 -0.250  win rate 88%  contracts/day 19.5
+  KXHIGHCHI    n=68 mean +0.210/day  worst day -3.920  p10 -1.330  win rate 56%  contracts/day 19.5
+  KXHIGHMIA    n=68 mean +0.001/day  worst day -1.905  p10 -1.305  win rate 43%  contracts/day 19.5
+
+V3 rolling 30-day cover per $1/F unit: sum of daily spread cost and daily overround (premium - fair mid):
+  KXHIGHNY     30-day spread cost $3.64, 30-day total overpay $8.78, vs 30-day expected payout $43.01
+  KXHIGHTEWR   30-day spread cost $110.74, 30-day total overpay $189.44, vs 30-day expected payout $78.53
+  KXHIGHTTTN   30-day spread cost $112.46, 30-day total overpay $193.23, vs 30-day expected payout $72.73
+  KXHIGHCHI    30-day spread cost $3.71, 30-day total overpay $6.30, vs 30-day expected payout $88.01
+  KXHIGHMIA    30-day spread cost $4.12, 30-day total overpay $0.04, vs 30-day expected payout $143.60

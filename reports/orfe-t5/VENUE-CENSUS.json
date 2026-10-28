@@ -1,0 +1,671 @@
+{
+  "title": "ORFE T5b - weather hedge venue census",
+  "date_read": "2026-10-02",
+  "status": "complete; page-read pass done 2026-10-02 (21 of 24 page-read lines closed, 3 could not be read); judgement unchanged, reasoning on ForecastEx and Polymarket US changed",
+  "question": "Does any venue price a 7-day, single-city temperature cover (CHI heat K=90 F, MIA heat K=93 F, NYC cold K=75 F, CHI rain) at under 2x burn in the tails, and list it early enough to hedge cover sold a week or more ahead?",
+  "answer": "No. Every exchange ladder lists one to two days ahead, none lists a weekly temperature contract, and no venue is shown to price the tail under 2x burn. ForecastEx lists only about nine strikes around the forecast, so it has no tail strikes. Polymarket US has the best station and source match but is a day-ahead two-degree bracket ladder like Kalshi.",
+  "evidence_levels": {
+    "P": "page read by the earlier worker on 2026-10-02 (CME section 1)",
+    "R": "page read by the fourth pass on 2026-10-02 (URL in the notes; mirror or official copy named where the original refused)",
+    "S": "search result: stated in search-returned text for the URL given, not a full page read",
+    "U": "unverified: background knowledge or inference, no source seen today"
+  },
+  "evidence_count": {
+    "pages_read_this_pass": 40,
+    "page_read_lines_closed": "21 of 24",
+    "could_not_read": [
+      "CME 2026 fee schedule (timeout)",
+      "CME monthly volume report (timeout)",
+      "weatherXchange current status (connection refused; 2016 deck read)"
+    ],
+    "other_failed_urls": [
+      "forecasttrader.interactivebrokers.com (403)",
+      "ForecastEx rulebook PDF (404)",
+      "CME chapter 403 PDF (timeout; CFTC copy read)",
+      "two interactivebrokers.com Campus URLs (403; ibkrcampus.com copies read)"
+    ],
+    "search_facts_upgraded_to_page_read": [
+      "S2",
+      "S5",
+      "S7",
+      "S8",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S19",
+      "S21",
+      "S23",
+      "S24",
+      "S25",
+      "S27",
+      "S30",
+      "S31",
+      "S34",
+      "S35",
+      "S38",
+      "S44",
+      "S46",
+      "S47",
+      "S48"
+    ],
+    "search_facts_upgraded_in_part": [
+      "S9",
+      "S20",
+      "S22",
+      "S45",
+      "S51"
+    ],
+    "search_facts_remaining": [
+      "S1",
+      "S3",
+      "S4",
+      "S6",
+      "S10",
+      "S17",
+      "S18",
+      "S26",
+      "S28",
+      "S29",
+      "S32",
+      "S33",
+      "S36",
+      "S37",
+      "S39",
+      "S40",
+      "S41",
+      "S42",
+      "S43",
+      "S49",
+      "S50"
+    ],
+    "unverified_closed": [
+      "U4",
+      "U5",
+      "U8",
+      "U9",
+      "U13"
+    ],
+    "unverified_narrowed": [
+      "U3",
+      "U10",
+      "U14"
+    ],
+    "unverified_remaining": [
+      "U1",
+      "U2",
+      "U6",
+      "U7",
+      "U11",
+      "U12",
+      "U15",
+      "U16",
+      "U17"
+    ]
+  },
+  "table": [
+    {
+      "venue": "CME weather",
+      "products": "HDD, CDD, CAT, wind futures and options",
+      "demo_cities": "NYC (LaGuardia), CHI (O'Hare); no Miami",
+      "listing_lead": "about 3 contract months",
+      "tenor": "month or seasonal strip; no day or week",
+      "depth_or_size": "zero volume on 2026-10-01; NY HDD OI 1,800; no screen quotes; voice-brokered blocks",
+      "fees": "$1.35/side non-member (2024 filing, re-read; 2026 schedule not read) + broker + margin; block minimum 20 lots = $400 per degree day",
+      "access": "FCM futures account, or a block through BGC Financial, Snapper Creek Energy, TP ICAP",
+      "basis_vs_station_day_cover": "wrong index (monthly mean degree days), wrong stations, no Miami, no rain; timing fine",
+      "evidence_level": "P + R",
+      "evidence_refs": [
+        "section 1",
+        "R: chapter 403 stations (CFTC copy of CME submission 23-177)",
+        "R: 2024 fee table",
+        "S1",
+        "S3",
+        "U1",
+        "U2"
+      ],
+      "urls": [
+        "https://www.cmegroup.com/markets/products.html#groups=5&sortDirection=desc&sortField=oi",
+        "https://www.cmegroup.com/trading/weather/files/weather-fact-card.pdf",
+        "https://www.cmegroup.com/markets/weather/hdd/new-york-hdd-monthly/settlements",
+        "https://www.cmegroup.com/markets/weather/cdd/chicago-cdd-monthly/specs",
+        "https://www.cftc.gov/sites/default/files/filings/ptc/24/05/ptc0523241209.pdf",
+        "https://www.cmegroup.com/daily_bulletin/current/Section24_Weather_Futures_And_Options.pdf",
+        "https://www.cftc.gov/sites/default/files/filings/ptc/23/05/ptc0504231410.pdf"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": false,
+        "size": false,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "ForecastEx daily temperature",
+      "products": "yes/no 'high greater than X F', one-degree strikes, about nine per city-day around the forecast (four each side); daily lows too",
+      "demo_cities": "NYC (LaGuardia KLGA), CHI (Midway KMDW), MIA (Miami Intl KMIA); 20+ US cities",
+      "listing_lead": "next day only (terms leave the cycle to the exchange's discretion)",
+      "tenor": "one day",
+      "depth_or_size": "160,000+ open contracts on one expiry at launch (S); prices seen 3c-98c on Robinhood, no sizes; strikes more than about 4 degrees from the forecast are not listed",
+      "fees": "$0.01 per contract per side",
+      "access": "IBKR account (US), or Robinhood",
+      "basis_vs_station_day_cover": "strip works only within about 4 degrees of the forecast and never reaches the cap; New York station wrong (LaGuardia); Weather Underground source can read a degree under the NWS report; no daily rain",
+      "evidence_level": "R",
+      "evidence_refs": [
+        "R: S5",
+        "R: S7",
+        "R: S8",
+        "R: S11",
+        "R: S12",
+        "R: S13",
+        "R: S14",
+        "R: S16",
+        "R: S19",
+        "R: S21",
+        "S4",
+        "S6",
+        "S17",
+        "S18",
+        "U3 (narrowed)",
+        "U4 (closed)",
+        "U5 (closed)",
+        "U6",
+        "U7"
+      ],
+      "urls": [
+        "https://data.forecastex.com/regulatory/DailyTemperatureTermsandConditions.pdf",
+        "https://forecastex.com/faq",
+        "https://ibkrcampus.com/campus/traders-insight/ibkr-climate-energy/daily-high-temperature-markets-at-forecastex/",
+        "https://ibkrcampus.com/campus/traders-insight/ibkr-climate-energy/nuances-in-the-calculations-of-daily-temperature-market-values/",
+        "https://robinhood.com/us/en/prediction-markets/climate/daily-high-temperature/",
+        "https://robinhood.com/us/en/prediction-markets/climate/events/new-york-city-daily-temperature-high-october-2-2026-oct-02-2026/",
+        "https://robinhood.com/us/en/prediction-markets/climate/events/chicago-daily-temperature-high-october-2-2026-oct-02-2026/",
+        "https://robinhood.com/us/en/prediction-markets/climate/events/miami-daily-temperature-high-october-2-2026-oct-02-2026/"
+      ],
+      "solves": {
+        "timing": false,
+        "basis": "partly (CHI and MIA stations; not NYC; not the tail)",
+        "size": true,
+        "tail_under_2x_burn": "no tail strikes listed"
+      }
+    },
+    {
+      "venue": "ForecastEx monthly",
+      "products": "US monthly temperature (NOAA national, code USTM), storm counts; monthly precipitation at named locations (S, unconfirmed)",
+      "demo_cities": "precipitation locations not confirmed",
+      "listing_lead": "next three monthly releases plus the next two quarter-end months",
+      "tenor": "month",
+      "depth_or_size": "unknown",
+      "fees": "$0.01 per contract per side",
+      "access": "IBKR account",
+      "basis_vs_station_day_cover": "national or monthly totals; not a station-day",
+      "evidence_level": "R + S",
+      "evidence_refs": [
+        "R: S9 (temperature contract)",
+        "R: S15",
+        "S10"
+      ],
+      "urls": [
+        "https://ibkrcampus.com/campus/traders-insight/prediction-market/fair-value-weather-climate-monday-august-31-2026/",
+        "https://www.cftc.gov/sites/default/files/filings/ptc/25/01/ptc01012512998.pdf"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": false,
+        "size": true,
+        "tail_under_2x_burn": "not applicable"
+      }
+    },
+    {
+      "venue": "Polymarket (international)",
+      "products": "daily highest temperature, two-degree brackets, 11 per city-day with open-ended ends",
+      "demo_cities": "NYC (LaGuardia KLGA), CHI (O'Hare KORD), MIA (Miami Intl, S); many non-US cities",
+      "listing_lead": "about 2 days (Oct 3 markets opened Oct 1 about 3-4 AM ET)",
+      "tenor": "one day",
+      "depth_or_size": "$7K-$10K traded per US city-day a day ahead; $56K-$106K over a Miami event's life (S); tail brackets 0.1c-1c; resting depth unknown",
+      "fees": "taker 0.05 x p x (1-p); makers free, 25% rebate pool",
+      "access": "closed to US persons (close-only)",
+      "basis_vs_station_day_cover": "wrong stations for NYC and CHI; settles on the weather.gov time series, not the climate report; not usable from the US",
+      "evidence_level": "R",
+      "evidence_refs": [
+        "R: S22 (part)",
+        "R: S23",
+        "R: S24 (NYC)",
+        "R: S25",
+        "R: S27",
+        "S26",
+        "S28",
+        "U8 (closed)",
+        "U9 (closed)"
+      ],
+      "urls": [
+        "https://polymarket.com/weather/high-temperature",
+        "https://polymarket.com/event/highest-temperature-in-chicago-on-october-3-2026",
+        "https://polymarket.com/event/highest-temperature-in-nyc-on-october-3-2026",
+        "https://docs.polymarket.com/trading/fees",
+        "https://wethr.net/market-resolution",
+        "https://startpolymarket.com/countries/united-states/"
+      ],
+      "solves": {
+        "timing": false,
+        "basis": "partly (MIA only)",
+        "size": true,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "Polymarket US",
+      "products": "daily highest temperature, two-degree brackets with open-ended ends",
+      "demo_cities": "NYC (Central Park KNYC), CHI (Midway KMDW), MIA (Miami Intl KMIA); five cities (plus SF, LA)",
+      "listing_lead": "day-ahead (today's and tomorrow's markets listed on 2026-10-02); no weekly temperature market",
+      "tenor": "one day",
+      "depth_or_size": "unknown",
+      "fees": "taker 0.0695 x p x (1-p), max $1.74 per 100 contracts; maker rebate 0.0125 x p x (1-p)",
+      "access": "US app with KYC; blocked in eight states",
+      "basis_vs_station_day_cover": "same source (NWS daily climate report, local standard time) and same three stations as the covers; bracket form as Kalshi",
+      "evidence_level": "R",
+      "evidence_refs": [
+        "R: S30",
+        "R: U10 (mostly closed)",
+        "S29"
+      ],
+      "urls": [
+        "https://docs.polymarket.us/faqs/weather-faqs",
+        "https://polymarket.us/category/weather",
+        "https://docs.polymarket.us/fees"
+      ],
+      "solves": {
+        "timing": false,
+        "basis": true,
+        "size": true,
+        "tail_under_2x_burn": "unknown; same bracket form and fee as Kalshi"
+      }
+    },
+    {
+      "venue": "Kalshi (reference)",
+      "products": "daily high/low ladders, daily rain, monthly rain totals",
+      "demo_cities": "NYC, CHI, MIA",
+      "listing_lead": "37-39 h before close (cost stack)",
+      "tenor": "one day; month for rain totals",
+      "depth_or_size": "thin tails (cost stack)",
+      "fees": "0.07 x p x (1-p)",
+      "access": "Kalshi account",
+      "basis_vs_station_day_cover": "measured: 3.4x burn on demo covers, tails 4-7x; daily temperature settles on The Weather Company per Kalshi's series record (read 2026-10-02); Kalshi's help article still says NWS",
+      "evidence_level": "local data + R",
+      "evidence_refs": [
+        "COST-STACK.md",
+        "R: S31",
+        "S32"
+      ],
+      "urls": [
+        "https://api.elections.kalshi.com/trade-api/v2/series/KXHIGHNY",
+        "https://help.kalshi.com/en/articles/13823837-weather-markets",
+        "https://predictionmarketspicks.com/how-it-settles/KXHIGHNY"
+      ],
+      "solves": {
+        "timing": false,
+        "basis": true,
+        "size": true,
+        "tail_under_2x_burn": false
+      }
+    },
+    {
+      "venue": "Arbol",
+      "products": "bespoke parametric temperature, rain, wind, storm; insurance or derivative",
+      "demo_cities": "any US location (PRISM grid)",
+      "listing_lead": "any; bought ahead",
+      "tenor": "season in the published examples",
+      "depth_or_size": "examples $500K-$1M limit; named-storm minimum premium $100K; temperature minimum not published",
+      "fees": "load not published",
+      "access": "insurance agents only on its platform; contact form and sales@arbol.io for others",
+      "basis_vs_station_day_cover": "exact payoff possible; grid cell vs station; size is 2-3 orders of magnitude too big",
+      "evidence_level": "R + S",
+      "evidence_refs": [
+        "R: S34",
+        "R: S35",
+        "R: S38",
+        "R: U13 (closed)",
+        "S33",
+        "S36",
+        "S37",
+        "S39",
+        "S40",
+        "U11",
+        "U12"
+      ],
+      "urls": [
+        "https://insurance.arbol.io/product/high-temperature",
+        "https://insurance.arbol.io/product/named-storm",
+        "https://www.arbol.io/help/agents-brokers/the-basics",
+        "https://www.theinsurer.com/ti/news/insurtech-platform-arbol-launches-bermuda-mgu-with-sig-re-capacity/",
+        "https://www.arbol.io/contact"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": true,
+        "size": false,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "dClimate",
+      "products": "climate data marketplace; insurer tools (Aegis, Tyche)",
+      "demo_cities": "n/a",
+      "listing_lead": "n/a",
+      "tenor": "n/a",
+      "depth_or_size": "n/a",
+      "fees": "n/a",
+      "access": "data buyer",
+      "basis_vs_station_day_cover": "sells data and tooling, not cover",
+      "evidence_level": "S",
+      "evidence_refs": [
+        "S41"
+      ],
+      "urls": [
+        "https://www.dclimate.net/"
+      ],
+      "solves": {
+        "timing": "n/a",
+        "basis": "n/a",
+        "size": "n/a",
+        "tail_under_2x_burn": "n/a"
+      }
+    },
+    {
+      "venue": "Vortex Weather Insurance",
+      "products": "rain, snow, hail, hurricane and temperature cover for events and businesses",
+      "demo_cities": "any US location",
+      "listing_lead": "must buy 15+ days ahead",
+      "tenor": "hours to days",
+      "depth_or_size": "example premium 6-11% of a $10,000 insured amount; minimum premium $250 (S, not on the pages read)",
+      "fees": "load not published",
+      "access": "online quote, direct; underwritten by Mitsui Sumitomo Insurance USA",
+      "basis_vs_station_day_cover": "closest retail ticket; a comparable to price against, not a wholesale hedge",
+      "evidence_level": "R + S",
+      "evidence_refs": [
+        "R: S44 (15-day rule, underwriter, premium example)",
+        "U14 (narrowed)"
+      ],
+      "urls": [
+        "https://vortexinsurance.com/how-much-is-weather-insurance/",
+        "https://vortexinsurance.com/event-rain-insurance-quote-online/"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": true,
+        "size": true,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "Sensible Weather",
+      "products": "weather guarantee at checkout via API (rain, snow, high temperature)",
+      "demo_cities": "travel partners",
+      "listing_lead": "up to the day before (S)",
+      "tenor": "per booking",
+      "depth_or_size": "n/a",
+      "fees": "priced per booking (S)",
+      "access": "partner API",
+      "basis_vs_station_day_cover": "product analogue, not capacity",
+      "evidence_level": "R in part + S",
+      "evidence_refs": [
+        "R: S45 (docs overview)",
+        "U14 (narrowed)"
+      ],
+      "urls": [
+        "https://sensible.readme.io/docs/overview"
+      ],
+      "solves": {
+        "timing": "n/a",
+        "basis": "n/a",
+        "size": "n/a",
+        "tail_under_2x_burn": "n/a"
+      }
+    },
+    {
+      "venue": "FloodFlash / Parametrix",
+      "products": "parametric flood / cloud downtime",
+      "demo_cities": "n/a",
+      "listing_lead": "n/a",
+      "tenor": "n/a",
+      "depth_or_size": "FloodFlash minimum premium $25K outside listed states",
+      "fees": "n/a",
+      "access": "broker",
+      "basis_vs_station_day_cover": "not weather-temperature",
+      "evidence_level": "S",
+      "evidence_refs": [
+        "S42",
+        "S43"
+      ],
+      "urls": [
+        "https://www.parametrixinsurance.com/solutions-cloud",
+        "https://www.reinsurancene.ws/floodflash-expands-parametric-product-to-a-further-10-us-states/"
+      ],
+      "solves": {
+        "timing": "n/a",
+        "basis": "n/a",
+        "size": "n/a",
+        "tail_under_2x_burn": "n/a"
+      }
+    },
+    {
+      "venue": "Swiss Re Corporate Solutions",
+      "products": "HDD/CDD, critical-day covers; derivative (put, call, swap) or parametric insurance",
+      "demo_cities": "any",
+      "listing_lead": "any",
+      "tenor": "season, bespoke",
+      "depth_or_size": "brochure example EUR 10,000 per HDD, payoffs to about EUR 3M; minimum not published; about $100K premium and up [unverified]",
+      "fees": "load not published",
+      "access": "broker",
+      "basis_vs_station_day_cover": "exact station and payoff possible",
+      "evidence_level": "R",
+      "evidence_refs": [
+        "R: S46",
+        "U16",
+        "U17"
+      ],
+      "urls": [
+        "https://corporatesolutions.swissre.com/dam/jcr:6b45fdd5-d3a4-4312-8e9e-66c116badccc/managing-temperature-risk-en.pdf"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": true,
+        "size": false,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "Munich Re",
+      "products": "parametric weather covers (temperature, precipitation, wind, water level)",
+      "demo_cities": "any",
+      "listing_lead": "any",
+      "tenor": "bespoke",
+      "depth_or_size": "weather minimum not published; its nat-cat parametric covers are USD 20-50M and generally not under USD 1M",
+      "fees": "load not published",
+      "access": "broker or direct (corporate)",
+      "basis_vs_station_day_cover": "exact possible",
+      "evidence_level": "R",
+      "evidence_refs": [
+        "R: S47"
+      ],
+      "urls": [
+        "https://www.munichre.com/en/solutions/for-industry-clients/adverse-weather.html",
+        "https://www.munichre.com/en/solutions/for-industry-clients/natcat-parametric-solutions.html"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": true,
+        "size": false,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "Descartes Underwriting",
+      "products": "parametric heat, cold, cat",
+      "demo_cities": "any",
+      "listing_lead": "any",
+      "tenor": "bespoke",
+      "depth_or_size": "minimum premium about $50K ($10K single-site cat-in-a-circle, about $100K for complex deals); capacity EUR 80M-140M per policy",
+      "fees": "load not published",
+      "access": "broker",
+      "basis_vs_station_day_cover": "exact possible",
+      "evidence_level": "R",
+      "evidence_refs": [
+        "R: S48"
+      ],
+      "urls": [
+        "https://descartesunderwriting.com/faq",
+        "https://descartesunderwriting.com/solutions/extreme-temperatures"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": true,
+        "size": false,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "Nephila Climate",
+      "products": "weather risk transfer (energy, renewables, ag)",
+      "demo_cities": "any",
+      "listing_lead": "any",
+      "tenor": "season, bespoke",
+      "depth_or_size": "institutional; minimum not published",
+      "fees": "load not published",
+      "access": "broker or dealer",
+      "basis_vs_station_day_cover": "exact possible",
+      "evidence_level": "S",
+      "evidence_refs": [
+        "S49",
+        "U16"
+      ],
+      "urls": [
+        "https://www.artemis.bm/news/nephila-climate-takes-weather-risk-to-assist-scout-wind-farm-financing/"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": true,
+        "size": false,
+        "tail_under_2x_burn": "unknown"
+      }
+    },
+    {
+      "venue": "Skyline Partners / weatherXchange",
+      "products": "MGA index products; multi-seller price-request platform",
+      "demo_cities": "any",
+      "listing_lead": "any",
+      "tenor": "bespoke",
+      "depth_or_size": "minimum not published; 2016 deck says it aims to make smaller trades attractive",
+      "fees": "platform free, no brokerage or transaction fees (2016 deck)",
+      "access": "weatherXchange account, non-retail users; current status not confirmed",
+      "basis_vs_station_day_cover": "exact possible; one request reaches several sellers",
+      "evidence_level": "R (2016 deck) + S",
+      "evidence_refs": [
+        "R: S51",
+        "S50",
+        "U15"
+      ],
+      "urls": [
+        "https://www.artemis.bm/news/parametric-mga-skyline-partners-joins-weatherxchange-as-capacity-provider/",
+        "https://www.artemis.bm/news/speedwell-unveils-weatherxchange-a-parametric-risk-transfer-platform/",
+        "https://portal.speedwellclimate.com/PDF/weatherXchange/weatherXchange%20Introduction%20to%20Protection%20Sellers%20and%20Brokers.pdf"
+      ],
+      "solves": {
+        "timing": true,
+        "basis": true,
+        "size": "unknown",
+        "tail_under_2x_burn": "unknown"
+      }
+    }
+  ],
+  "judgement_five_lines": [
+    "No venue prices a 7-day single-city station cover under 2x burn in the tails, and none lists a daily contract more than about two days ahead.",
+    "Timing without basis: CME (months ahead, monthly degree days, LaGuardia and O'Hare, no Miami, 20-lot blocks) and the monthly exchange contracts.",
+    "Basis without timing: Polymarket US (same source and stations as the covers), Kalshi, and ForecastEx only for Chicago and Miami within about four degrees of the forecast.",
+    "Timing and basis together exist only over the counter (Arbol, Descartes, Swiss Re, Munich Re), at minimums of $50K-$100K premium or more.",
+    "So the pool carries the week-ahead window itself, uses the cheaper of the Kalshi and Polymarket US brackets once they list, and holds capped tails until the book is big enough to buy an aggregate cover."
+  ],
+  "owner_hand": [
+    "Read a CME degree-day quote: settlement page -> settle x $20, check OI and volume, compare with station climatology; options only by broker indication (steps in VENUE-CENSUS.md)",
+    "Arbol quote request drafted in the owner's voice, not sent, unchanged (text in VENUE-CENSUS.md); send route confirmed: form at arbol.io/contact or sales@arbol.io",
+    "Ten-minute reads with existing accounts: Polymarket US end-bracket asks and sizes for CHI, MIA, NYC (first priority); ForecastTrader station and strike count for New York"
+  ],
+  "needs_page_read": [
+    {
+      "n": 1,
+      "was": 14,
+      "fact": "CME 2026 fee schedule (timed out on its one fetch)",
+      "url": "https://www.cmegroup.com/company/files/cme-fee-schedule-2026-02-01.pdf"
+    },
+    {
+      "n": 2,
+      "was": 15,
+      "fact": "CME weather monthly volume and open interest (timed out on its one fetch)",
+      "url": "https://www.cmegroup.com/daily_bulletin/monthly_volume/Web_Volume_Report_CME.pdf"
+    },
+    {
+      "n": 3,
+      "was": 23,
+      "fact": "weatherXchange still open to new buyers (2016 deck read; live site refused the connection)",
+      "url": "https://www.weatherxchange.com/"
+    },
+    {
+      "n": 4,
+      "was": 2,
+      "fact": "ForecastEx's own market page for the New York station (403 without a login)",
+      "url": "https://forecasttrader.interactivebrokers.com/en/home.php"
+    },
+    {
+      "n": 5,
+      "was": 5,
+      "fact": "ForecastEx monthly precipitation contract: locations, station, lead (terms PDF not located)",
+      "url": ""
+    },
+    {
+      "n": 6,
+      "was": 3,
+      "fact": "ForecastEx rulebook wording on fees (404; the FAQ answered the question)",
+      "url": "https://data.forecastex.com/regulatory/ForecastEx_LLC_Rulebook.pdf"
+    }
+  ],
+  "judgement_changed": false,
+  "judgement_note": "Answer unchanged (no). Reasoning changed: ForecastEx is ruled out as a tail hedge (next-day listing, about nine strikes around the forecast, LaGuardia for New York, one cent per side); Polymarket US replaces it as the second in-window ladder (same source and stations as the covers, day-ahead two-degree brackets).",
+  "conflicts_resolved": [
+    {
+      "conflict": "ForecastEx New York station",
+      "resolution": "LaGuardia (KLGA) on Weather Underground, per the live contract rules on Robinhood read 2026-10-02. The Central Park statement is from IBKR's 2025-11-25 launch article, when the contract settled on the NWS climate report.",
+      "caveat": "Read on Robinhood's page, not ForecastEx's own market page (403)."
+    },
+    {
+      "conflict": "ForecastEx fee basis",
+      "resolution": "Per side: '$0.01 transaction fee per contract, charged to each side at execution' (forecastex.com/faq, read 2026-10-02)."
+    },
+    {
+      "conflict": "Polymarket international source",
+      "resolution": "weather.gov time series for the station (live NYC and Chicago markets read 2026-10-02: site=klga, site=kord). Weather Underground applied to older markets."
+    },
+    {
+      "conflict": "Kalshi daily temperature source",
+      "resolution": "The Weather Company, per Kalshi's series record for KXHIGHNY (read 2026-10-02) and a third-party rules reading dated 2026-08-17. Kalshi's help article and wethr.net still say NWS climate report and lag the contract. Change was in place by 2026-08-17, not from 2026-08-27."
+    }
+  ],
+  "changed_after_page_reads": [
+    "ForecastEx listing lead: next day only (was 'not found, probably 1-2 days').",
+    "ForecastEx lists about nine one-degree strikes, four each side of the forecast; tail strikes are not listed (was 'exact replication with a strike strip').",
+    "ForecastEx New York station is LaGuardia on the live contract (was an open conflict).",
+    "ForecastEx fee is one cent per contract per side (was unknown).",
+    "ForecastEx moved from NWS climate-report settlement at launch to Weather Underground.",
+    "The CFTC filing cited for S9 is the US monthly temperature contract, not precipitation; the precipitation contract is unconfirmed.",
+    "Polymarket US: five cities, Central Park / Midway / Miami Intl, NWS climate report, day-ahead two-degree brackets, taker fee 0.0695 x p x (1-p); no weekly market (was 'unknown').",
+    "Polymarket international: Chicago is O'Hare, source is the weather.gov time series, lead about two days.",
+    "Kalshi daily temperature settles on The Weather Company (series record); its help page is out of date; the 2026-08-27 change date looks wrong.",
+    "Munich Re's USD 1M minimum and USD 20-50M capacity are for nat-cat parametric covers, not weather.",
+    "Descartes capacity is EUR 80M-140M per policy (was '$80M'); $50K minimum premium confirmed.",
+    "Vortex: $250 minimum premium not on the pages read (stays a search result); 15-day rule confirmed; underwriter Mitsui Sumitomo Insurance USA; sells temperature cover.",
+    "Arbol contact route confirmed: arbol.io/contact, info@arbol.io, sales@arbol.io.",
+    "CME chapter 403 stations confirmed (LaGuardia, O'Hare); $1.35 non-member fee confirmed in the 2024 filing; 2026 fee schedule and monthly volume report could not be read.",
+    "IBKR hedging article is a hypothetical HDD forecast-contract example (2025-06-26); no weekly or degree-day contract is shown as listed."
+  ]
+}

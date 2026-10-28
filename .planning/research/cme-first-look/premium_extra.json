@@ -1,0 +1,64 @@
+{
+ "hdd": {
+  "e_price": {
+   "mean": 2.0,
+   "se": 15.2,
+   "mde": 42.5,
+   "n": 291,
+   "months": 25
+  },
+  "e_base": {
+   "mean": -5.8,
+   "se": 17.3,
+   "mde": 48.4,
+   "n": 291,
+   "months": 25
+  },
+  "e_base10": {
+   "mean": -1.4,
+   "se": 19.0,
+   "mde": 53.3,
+   "n": 291,
+   "months": 25
+  },
+  "price_minus_base": {
+   "mean": 7.7,
+   "se": 4.5,
+   "mde": 12.5,
+   "n": 291,
+   "months": 25
+  },
+  "share_price_above_final": 0.502
+ },
+ "cdd": {
+  "e_price": {
+   "mean": -4.0,
+   "se": 7.6,
+   "mde": 21.3,
+   "n": 211,
+   "months": 20
+  },
+  "e_base": {
+   "mean": 4.9,
+   "se": 8.5,
+   "mde": 23.9,
+   "n": 211,
+   "months": 20
+  },
+  "e_base10": {
+   "mean": -9.7,
+   "se": 8.8,
+   "mde": 24.6,
+   "n": 211,
+   "months": 20
+  },
+  "price_minus_base": {
+   "mean": -8.9,
+   "se": 2.4,
+   "mde": 6.7,
+   "n": 211,
+   "months": 20
+  },
+  "share_price_above_final": 0.436
+ }
+}

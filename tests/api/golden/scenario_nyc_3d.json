@@ -1,0 +1,2350 @@
+[
+[
+"create world:http",
+200
+],
+[
+"clock:http",
+200
+],
+[
+"clock.nextEvents[0].kind",
+"house_cutoff"
+],
+[
+"clock.nextEvents[1].kind",
+"public_cutoff"
+],
+[
+"clock.nextEvents[2].kind",
+"hedge"
+],
+[
+"clock.nextEvents[3].kind",
+"hedge"
+],
+[
+"clock.nextEvents[4].kind",
+"hedge"
+],
+[
+"clock.nextEvents[5].kind",
+"epoch"
+],
+[
+"clock.nextEvents[6].kind",
+"markets_open"
+],
+[
+"clock.nextEvents[7].kind",
+"markets_open"
+],
+[
+"create ice-cream business near LGA (loses on cool days):http",
+200
+],
+[
+"create bookshop at Central Park (loses on hot days):http",
+200
+],
+[
+"sales A (6 rows dated after the sim day are ignored):http",
+200
+],
+[
+"elasticity A:http",
+200
+],
+[
+"elasticity B (no sales: sector prior):http",
+200
+],
+[
+"recommendation B:http",
+200
+],
+[
+"recommendation B.capTenthsF",
+100
+],
+[
+"recommendation B.maxDailyPremiumE6",
+387500
+],
+[
+"recommendation B.path",
+"house-hedge"
+],
+[
+"recommendation B.peril",
+"cold"
+],
+[
+"recommendation B.strikeTenthsF",
+750
+],
+[
+"recommendation B.unitsPerDay",
+10
+],
+[
+"faucet A:http",
+200
+],
+[
+"faucet A.result.juniorShares",
+0
+],
+[
+"faucet A.result.lockedE6",
+0
+],
+[
+"faucet A.result.seniorShares",
+0
+],
+[
+"faucet A.result.usdcE6",
+5000000000
+],
+[
+"faucet A.status",
+"done"
+],
+[
+"faucet B:http",
+200
+],
+[
+"faucet B.result.juniorShares",
+0
+],
+[
+"faucet B.result.lockedE6",
+0
+],
+[
+"faucet B.result.seniorShares",
+0
+],
+[
+"faucet B.result.usdcE6",
+5000000000
+],
+[
+"faucet B.status",
+"done"
+],
+[
+"faucet LP:http",
+200
+],
+[
+"faucet LP.result.juniorShares",
+0
+],
+[
+"faucet LP.result.lockedE6",
+0
+],
+[
+"faucet LP.result.seniorShares",
+0
+],
+[
+"faucet LP.result.usdcE6",
+10000000000
+],
+[
+"faucet LP.status",
+"done"
+],
+[
+"faucet trader:http",
+200
+],
+[
+"faucet trader.result.juniorShares",
+0
+],
+[
+"faucet trader.result.lockedE6",
+0
+],
+[
+"faucet trader.result.seniorShares",
+0
+],
+[
+"faucet trader.result.usdcE6",
+2000000000
+],
+[
+"faucet trader.status",
+"done"
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg):http",
+200
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).feesE6",
+3377349
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).maxPayoutE6",
+36000000
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).notionalFeeE6",
+36000
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).premiumE6",
+2957349
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).residualLeg.basisTenthsF",
+15
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).residualLeg.fairPriceE6",
+683333
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).residualLeg.halfSpreadE6",
+32695
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).residualLeg.qty",
+10
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).residualLeg.tick",
+65
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).residualLegE6",
+-4500000
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).riskMarginE6",
+720000
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).stationLeg.rungs[0].qty",
+4
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).stationLeg.rungs[0].qtyCenti",
+400
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).stationLeg.rungs[1].qty",
+1
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).stationLeg.rungs[1].qtyCenti",
+100
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).stationLegE6",
+4080000
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).tailE6",
+2621349
+],
+[
+"quote A house-hedge cool cover 3 days (LGA: station leg + residual leg).treasuryFeeE6",
+108000
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only):http",
+200
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).feesE6",
+378000
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).maxPayoutE6",
+18000000
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).notionalFeeE6",
+18000
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).premiumE6",
+5733000
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).residualLeg.basisTenthsF",
+null
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).residualLeg.fairPriceE6",
+0
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).residualLeg.halfSpreadE6",
+0
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).residualLeg.qty",
+0
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).residualLeg.tick",
+null
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).residualLegE6",
+0
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).riskMarginE6",
+360000
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[0].qty",
+2
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[0].qtyCenti",
+150
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[1].qty",
+4
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[1].qtyCenti",
+350
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[2].qty",
+6
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[2].qtyCenti",
+550
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[3].qty",
+6
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLeg.rungs[3].qtyCenti",
+600
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).stationLegE6",
+5355000
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).tailE6",
+0
+],
+[
+"quote B house-hedge heat cover 3 days (Central Park: station leg only).treasuryFeeE6",
+54000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit):http",
+200
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).feesE6",
+147000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[0].qty",
+3
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[0].qtyCenti",
+250
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[1].qty",
+6
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[1].qtyCenti",
+583
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[2].qty",
+9
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[2].qtyCenti",
+917
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[3].qty",
+10
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).ladderForBusiness[3].qtyCenti",
+1000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).maxPayoutE6",
+7000000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).notionalFeeE6",
+7000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).premiumE6",
+5187000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).residualLeg.basisTenthsF",
+22
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).residualLeg.fairPriceE6",
+683333
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).residualLeg.halfSpreadE6",
+32695
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).residualLeg.qty",
+7
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).residualLeg.tick",
+72
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).residualLegE6",
+5040000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).riskMarginE6",
+140000
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).stationLegE6",
+0
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).tailE6",
+0
+],
+[
+"quote A business-ladder (overlay: venue sells only the basis unit).treasuryFeeE6",
+21000
+],
+[
+"quote B business-ladder (at the station: nothing to sell):http",
+200
+],
+[
+"quote B business-ladder (at the station: nothing to sell).feesE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[0].qty",
+2
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[0].qtyCenti",
+150
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[1].qty",
+4
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[1].qtyCenti",
+350
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[2].qty",
+6
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[2].qtyCenti",
+550
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[3].qty",
+6
+],
+[
+"quote B business-ladder (at the station: nothing to sell).ladderForBusiness[3].qtyCenti",
+600
+],
+[
+"quote B business-ladder (at the station: nothing to sell).maxPayoutE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).notionalFeeE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).premiumE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).residualLeg.basisTenthsF",
+null
+],
+[
+"quote B business-ladder (at the station: nothing to sell).residualLeg.fairPriceE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).residualLeg.halfSpreadE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).residualLeg.qty",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).residualLeg.tick",
+null
+],
+[
+"quote B business-ladder (at the station: nothing to sell).residualLegE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).riskMarginE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).stationLegE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).tailE6",
+0
+],
+[
+"quote B business-ladder (at the station: nothing to sell).treasuryFeeE6",
+0
+],
+[
+"buy A:http",
+200
+],
+[
+"buy A.result.capTenthsF",
+60
+],
+[
+"buy A.result.maxPayoutE6",
+36000000
+],
+[
+"buy A.result.path",
+"house-hedge"
+],
+[
+"buy A.result.peril",
+"cold"
+],
+[
+"buy A.result.premiumE6",
+2957349
+],
+[
+"buy A.result.refundedE6",
+0
+],
+[
+"buy A.result.status",
+"active"
+],
+[
+"buy A.result.strikeTenthsF",
+900
+],
+[
+"buy A.result.units",
+12
+],
+[
+"buy A.status",
+"done"
+],
+[
+"buy A again, same key (replay, not a second policy):http",
+200
+],
+[
+"buy A again, same key (replay, not a second policy).result.capTenthsF",
+60
+],
+[
+"buy A again, same key (replay, not a second policy).result.maxPayoutE6",
+36000000
+],
+[
+"buy A again, same key (replay, not a second policy).result.path",
+"house-hedge"
+],
+[
+"buy A again, same key (replay, not a second policy).result.peril",
+"cold"
+],
+[
+"buy A again, same key (replay, not a second policy).result.premiumE6",
+2957349
+],
+[
+"buy A again, same key (replay, not a second policy).result.refundedE6",
+0
+],
+[
+"buy A again, same key (replay, not a second policy).result.status",
+"active"
+],
+[
+"buy A again, same key (replay, not a second policy).result.strikeTenthsF",
+900
+],
+[
+"buy A again, same key (replay, not a second policy).result.units",
+12
+],
+[
+"buy A again, same key (replay, not a second policy).status",
+"done"
+],
+[
+"buy A, new key, same quote (quote already used):http",
+409
+],
+[
+"buy A, new key, same quote (quote already used).status",
+409
+],
+[
+"buy B:http",
+200
+],
+[
+"buy B.result.capTenthsF",
+60
+],
+[
+"buy B.result.maxPayoutE6",
+18000000
+],
+[
+"buy B.result.path",
+"house-hedge"
+],
+[
+"buy B.result.peril",
+"heat"
+],
+[
+"buy B.result.premiumE6",
+5733000
+],
+[
+"buy B.result.refundedE6",
+0
+],
+[
+"buy B.result.status",
+"active"
+],
+[
+"buy B.result.strikeTenthsF",
+900
+],
+[
+"buy B.result.units",
+6
+],
+[
+"buy B.status",
+"done"
+],
+[
+"buy A overlay:http",
+200
+],
+[
+"buy A overlay.result.capTenthsF",
+60
+],
+[
+"buy A overlay.result.maxPayoutE6",
+7000000
+],
+[
+"buy A overlay.result.path",
+"business-ladder"
+],
+[
+"buy A overlay.result.peril",
+"heat"
+],
+[
+"buy A overlay.result.premiumE6",
+5187000
+],
+[
+"buy A overlay.result.refundedE6",
+0
+],
+[
+"buy A overlay.result.status",
+"active"
+],
+[
+"buy A overlay.result.strikeTenthsF",
+900
+],
+[
+"buy A overlay.result.units",
+10
+],
+[
+"buy A overlay.status",
+"done"
+],
+[
+"deposit senior:http",
+200
+],
+[
+"deposit senior.result.amountE6",
+5000000000
+],
+[
+"deposit senior.result.kind",
+"deposit"
+],
+[
+"deposit senior.result.shares",
+5000000000000000
+],
+[
+"deposit senior.result.status",
+"processed"
+],
+[
+"deposit senior.result.tranche",
+"senior"
+],
+[
+"deposit senior.status",
+"done"
+],
+[
+"deposit junior from an outside wallet is refused (v0: house only):http",
+403
+],
+[
+"deposit junior from an outside wallet is refused (v0: house only).status",
+403
+],
+[
+"request a senior withdrawal:http",
+200
+],
+[
+"request a senior withdrawal.result.amountE6",
+null
+],
+[
+"request a senior withdrawal.result.kind",
+"withdrawal"
+],
+[
+"request a senior withdrawal.result.shares",
+1000000000000000
+],
+[
+"request a senior withdrawal.result.status",
+"queued"
+],
+[
+"request a senior withdrawal.result.tranche",
+"senior"
+],
+[
+"request a senior withdrawal.status",
+"done"
+],
+[
+"open auctions for 2026-07-16:http",
+200
+],
+[
+"open auctions for 2026-07-16[0].day",
+"2026-07-16"
+],
+[
+"open auctions for 2026-07-16[0].rangeTenthsF",
+50
+],
+[
+"open auctions for 2026-07-16[0].status",
+"open"
+],
+[
+"find the LGA auction:http",
+200
+],
+[
+"find the LGA auction[0].day",
+"2026-07-16"
+],
+[
+"find the LGA auction[0].rangeTenthsF",
+50
+],
+[
+"find the LGA auction[0].status",
+"open"
+],
+[
+"trader buys basis (long):http",
+200
+],
+[
+"trader buys basis (long).result.filledQty",
+0
+],
+[
+"trader buys basis (long).result.limitPriceE6",
+600000
+],
+[
+"trader buys basis (long).result.lockedE6",
+12000000
+],
+[
+"trader buys basis (long).result.qty",
+20
+],
+[
+"trader buys basis (long).result.side",
+"buy"
+],
+[
+"trader buys basis (long).result.status",
+"open"
+],
+[
+"trader buys basis (long).status",
+"done"
+],
+[
+"trader sells basis (short):http",
+200
+],
+[
+"trader sells basis (short).result.filledQty",
+0
+],
+[
+"trader sells basis (short).result.limitPriceE6",
+400000
+],
+[
+"trader sells basis (short).result.lockedE6",
+9000000
+],
+[
+"trader sells basis (short).result.qty",
+15
+],
+[
+"trader sells basis (short).result.side",
+"sell"
+],
+[
+"trader sells basis (short).result.status",
+"open"
+],
+[
+"trader sells basis (short).status",
+"done"
+],
+[
+"A sells basis:http",
+200
+],
+[
+"A sells basis.result.filledQty",
+0
+],
+[
+"A sells basis.result.limitPriceE6",
+550000
+],
+[
+"A sells basis.result.lockedE6",
+4500000
+],
+[
+"A sells basis.result.qty",
+10
+],
+[
+"A sells basis.result.side",
+"sell"
+],
+[
+"A sells basis.result.status",
+"open"
+],
+[
+"A sells basis.status",
+"done"
+],
+[
+"cancel is refused (no cancels in v0):http",
+409
+],
+[
+"cancel is refused (no cancels in v0).status",
+409
+],
+[
+"auction before clear:http",
+200
+],
+[
+"auction before clear.asks[0].basisTenthsF",
+-10
+],
+[
+"auction before clear.asks[0].priceE6",
+400000
+],
+[
+"auction before clear.asks[0].qty",
+15
+],
+[
+"auction before clear.asks[1].basisTenthsF",
+5
+],
+[
+"auction before clear.asks[1].priceE6",
+550000
+],
+[
+"auction before clear.asks[1].qty",
+10
+],
+[
+"auction before clear.bids[0].basisTenthsF",
+10
+],
+[
+"auction before clear.bids[0].priceE6",
+600000
+],
+[
+"auction before clear.bids[0].qty",
+20
+],
+[
+"auction before clear.day",
+"2026-07-16"
+],
+[
+"auction before clear.rangeTenthsF",
+50
+],
+[
+"auction before clear.status",
+"open"
+],
+[
+"clear before cutoff is refused:http",
+409
+],
+[
+"clear before cutoff is refused.status",
+409
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds):http",
+200
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[0].kind",
+"house_cutoff"
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[1].kind",
+"public_cutoff"
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[2].kind",
+"hedge"
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[3].kind",
+"hedge"
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[4].kind",
+"hedge"
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[5].kind",
+"epoch"
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[6].kind",
+"markets_open"
+],
+[
+"advance 1 day through the cutoff (house books, clock clears and binds).events[7].kind",
+"markets_open"
+],
+[
+"clear (already cleared by the clock):http",
+200
+],
+[
+"clear (already cleared by the clock).result.basisTenthsF",
+15
+],
+[
+"clear (already cleared by the clock).result.conservation.longLockedE6",
+22750000
+],
+[
+"clear (already cleared by the clock).result.conservation.shortLockedE6",
+12250000
+],
+[
+"clear (already cleared by the clock).result.filledQty",
+35
+],
+[
+"clear (already cleared by the clock).result.fills[0].qty",
+15
+],
+[
+"clear (already cleared by the clock).result.fills[0].side",
+"sell"
+],
+[
+"clear (already cleared by the clock).result.fills[1].qty",
+10
+],
+[
+"clear (already cleared by the clock).result.fills[1].side",
+"sell"
+],
+[
+"clear (already cleared by the clock).result.fills[2].qty",
+10
+],
+[
+"clear (already cleared by the clock).result.fills[2].side",
+"sell"
+],
+[
+"clear (already cleared by the clock).result.fills[3].qty",
+35
+],
+[
+"clear (already cleared by the clock).result.fills[3].side",
+"buy"
+],
+[
+"clear (already cleared by the clock).result.poolFilledQty",
+45
+],
+[
+"clear (already cleared by the clock).result.priceE6",
+650000
+],
+[
+"clear (already cleared by the clock).status",
+"done"
+],
+[
+"auction after clear:http",
+200
+],
+[
+"auction after clear.asks[0].basisTenthsF",
+-10
+],
+[
+"auction after clear.asks[0].priceE6",
+400000
+],
+[
+"auction after clear.asks[0].qty",
+15
+],
+[
+"auction after clear.asks[1].basisTenthsF",
+5
+],
+[
+"auction after clear.asks[1].priceE6",
+550000
+],
+[
+"auction after clear.asks[1].qty",
+10
+],
+[
+"auction after clear.asks[2].basisTenthsF",
+15
+],
+[
+"auction after clear.asks[2].priceE6",
+650000
+],
+[
+"auction after clear.asks[2].qty",
+10
+],
+[
+"auction after clear.asks[3].basisTenthsF",
+22
+],
+[
+"auction after clear.asks[3].priceE6",
+720000
+],
+[
+"auction after clear.asks[3].qty",
+100
+],
+[
+"auction after clear.asks[4].basisTenthsF",
+23
+],
+[
+"auction after clear.asks[4].priceE6",
+730000
+],
+[
+"auction after clear.asks[4].qty",
+100
+],
+[
+"auction after clear.asks[5].basisTenthsF",
+24
+],
+[
+"auction after clear.asks[5].priceE6",
+740000
+],
+[
+"auction after clear.asks[5].qty",
+100
+],
+[
+"auction after clear.bids[0].basisTenthsF",
+15
+],
+[
+"auction after clear.bids[0].priceE6",
+650000
+],
+[
+"auction after clear.bids[0].qty",
+100
+],
+[
+"auction after clear.bids[1].basisTenthsF",
+14
+],
+[
+"auction after clear.bids[1].priceE6",
+640000
+],
+[
+"auction after clear.bids[1].qty",
+100
+],
+[
+"auction after clear.bids[2].basisTenthsF",
+13
+],
+[
+"auction after clear.bids[2].priceE6",
+630000
+],
+[
+"auction after clear.bids[2].qty",
+100
+],
+[
+"auction after clear.bids[3].basisTenthsF",
+10
+],
+[
+"auction after clear.bids[3].priceE6",
+600000
+],
+[
+"auction after clear.bids[3].qty",
+20
+],
+[
+"auction after clear.day",
+"2026-07-16"
+],
+[
+"auction after clear.houseQuote.askBasisTenthsF",
+22
+],
+[
+"auction after clear.houseQuote.askE6",
+720000
+],
+[
+"auction after clear.houseQuote.bidBasisTenthsF",
+15
+],
+[
+"auction after clear.houseQuote.bidE6",
+650000
+],
+[
+"auction after clear.houseQuote.maxQty",
+600
+],
+[
+"auction after clear.rangeTenthsF",
+50
+],
+[
+"auction after clear.result.basisTenthsF",
+15
+],
+[
+"auction after clear.result.conservation.longLockedE6",
+22750000
+],
+[
+"auction after clear.result.conservation.shortLockedE6",
+12250000
+],
+[
+"auction after clear.result.filledQty",
+35
+],
+[
+"auction after clear.result.fills[0].qty",
+15
+],
+[
+"auction after clear.result.fills[0].side",
+"sell"
+],
+[
+"auction after clear.result.fills[1].qty",
+10
+],
+[
+"auction after clear.result.fills[1].side",
+"sell"
+],
+[
+"auction after clear.result.fills[2].qty",
+10
+],
+[
+"auction after clear.result.fills[2].side",
+"sell"
+],
+[
+"auction after clear.result.fills[3].qty",
+35
+],
+[
+"auction after clear.result.fills[3].side",
+"buy"
+],
+[
+"auction after clear.result.poolFilledQty",
+45
+],
+[
+"auction after clear.result.priceE6",
+650000
+],
+[
+"auction after clear.status",
+"cleared"
+],
+[
+"policies A after bind:http",
+200
+],
+[
+"policies A after bind[0].capTenthsF",
+60
+],
+[
+"policies A after bind[0].maxPayoutE6",
+36000000
+],
+[
+"policies A after bind[0].path",
+"house-hedge"
+],
+[
+"policies A after bind[0].peril",
+"cold"
+],
+[
+"policies A after bind[0].premiumE6",
+2957349
+],
+[
+"policies A after bind[0].refundedE6",
+0
+],
+[
+"policies A after bind[0].status",
+"active"
+],
+[
+"policies A after bind[0].strikeTenthsF",
+900
+],
+[
+"policies A after bind[0].units",
+12
+],
+[
+"policies A after bind[1].capTenthsF",
+60
+],
+[
+"policies A after bind[1].maxPayoutE6",
+7000000
+],
+[
+"policies A after bind[1].path",
+"business-ladder"
+],
+[
+"policies A after bind[1].peril",
+"heat"
+],
+[
+"policies A after bind[1].premiumE6",
+5187000
+],
+[
+"policies A after bind[1].refundedE6",
+0
+],
+[
+"policies A after bind[1].status",
+"active"
+],
+[
+"policies A after bind[1].strikeTenthsF",
+900
+],
+[
+"policies A after bind[1].units",
+10
+],
+[
+"settlements A before D+2 12:00Z (none):http",
+200
+],
+[
+"advance 4 days (all three days final):http",
+200
+],
+[
+"advance 4 days (all three days final).events[0].kind",
+"house_cutoff"
+],
+[
+"advance 4 days (all three days final).events[1].kind",
+"public_cutoff"
+],
+[
+"advance 4 days (all three days final).events[2].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[3].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[4].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[5].kind",
+"oracle_fetch"
+],
+[
+"advance 4 days (all three days final).events[6].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[7].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[8].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[9].kind",
+"epoch"
+],
+[
+"advance 4 days (all three days final).events[10].kind",
+"markets_open"
+],
+[
+"advance 4 days (all three days final).events[11].kind",
+"markets_open"
+],
+[
+"advance 4 days (all three days final).events[12].kind",
+"house_cutoff"
+],
+[
+"advance 4 days (all three days final).events[13].kind",
+"public_cutoff"
+],
+[
+"advance 4 days (all three days final).events[14].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[15].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[16].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[17].kind",
+"oracle_fetch"
+],
+[
+"advance 4 days (all three days final).events[18].kind",
+"finalize"
+],
+[
+"advance 4 days (all three days final).events[19].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[20].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[21].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[22].kind",
+"epoch"
+],
+[
+"advance 4 days (all three days final).events[23].kind",
+"markets_open"
+],
+[
+"advance 4 days (all three days final).events[24].kind",
+"markets_open"
+],
+[
+"advance 4 days (all three days final).events[25].kind",
+"house_cutoff"
+],
+[
+"advance 4 days (all three days final).events[26].kind",
+"public_cutoff"
+],
+[
+"advance 4 days (all three days final).events[27].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[28].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[29].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[30].kind",
+"oracle_fetch"
+],
+[
+"advance 4 days (all three days final).events[31].kind",
+"finalize"
+],
+[
+"advance 4 days (all three days final).events[32].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[33].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[34].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[35].kind",
+"epoch"
+],
+[
+"advance 4 days (all three days final).events[36].kind",
+"markets_open"
+],
+[
+"advance 4 days (all three days final).events[37].kind",
+"markets_open"
+],
+[
+"advance 4 days (all three days final).events[38].kind",
+"house_cutoff"
+],
+[
+"advance 4 days (all three days final).events[39].kind",
+"public_cutoff"
+],
+[
+"advance 4 days (all three days final).events[40].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[41].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[42].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[43].kind",
+"oracle_fetch"
+],
+[
+"advance 4 days (all three days final).events[44].kind",
+"finalize"
+],
+[
+"advance 4 days (all three days final).events[45].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[46].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[47].kind",
+"hedge"
+],
+[
+"advance 4 days (all three days final).events[48].kind",
+"epoch"
+],
+[
+"advance 4 days (all three days final).events[49].kind",
+"markets_open"
+],
+[
+"advance 4 days (all three days final).events[50].kind",
+"markets_open"
+],
+[
+"settlements A:http",
+200
+],
+[
+"settlements A[0].day",
+"2026-07-16"
+],
+[
+"settlements A[0].kind",
+"residual"
+],
+[
+"settlements A[0].payoutE6",
+2000000
+],
+[
+"settlements A[0].status",
+"final"
+],
+[
+"settlements A[0].value",
+30
+],
+[
+"settlements A[1].day",
+"2026-07-16"
+],
+[
+"settlements A[1].kind",
+"policy"
+],
+[
+"settlements A[1].payoutE6",
+4000008
+],
+[
+"settlements A[1].status",
+"final"
+],
+[
+"settlements A[1].value",
+880
+],
+[
+"settlements A[2].day",
+"2026-07-16"
+],
+[
+"settlements A[2].kind",
+"policy"
+],
+[
+"settlements A[2].payoutE6",
+5600000
+],
+[
+"settlements A[2].status",
+"final"
+],
+[
+"settlements A[2].value",
+30
+],
+[
+"settlements A[3].day",
+"2026-07-17"
+],
+[
+"settlements A[3].kind",
+"policy"
+],
+[
+"settlements A[3].payoutE6",
+4000008
+],
+[
+"settlements A[3].status",
+"final"
+],
+[
+"settlements A[3].value",
+880
+],
+[
+"settlements A[4].day",
+"2026-07-18"
+],
+[
+"settlements A[4].kind",
+"policy"
+],
+[
+"settlements A[4].payoutE6",
+12000000
+],
+[
+"settlements A[4].status",
+"final"
+],
+[
+"settlements A[4].value",
+800
+],
+[
+"settlements B:http",
+200
+],
+[
+"settlements B[0].day",
+"2026-07-16"
+],
+[
+"settlements B[0].kind",
+"policy"
+],
+[
+"settlements B[0].payoutE6",
+0
+],
+[
+"settlements B[0].status",
+"final"
+],
+[
+"settlements B[0].value",
+850
+],
+[
+"settlements B[1].day",
+"2026-07-17"
+],
+[
+"settlements B[1].kind",
+"policy"
+],
+[
+"settlements B[1].payoutE6",
+0
+],
+[
+"settlements B[1].status",
+"final"
+],
+[
+"settlements B[1].value",
+860
+],
+[
+"settlements B[2].day",
+"2026-07-18"
+],
+[
+"settlements B[2].kind",
+"policy"
+],
+[
+"settlements B[2].payoutE6",
+0
+],
+[
+"settlements B[2].status",
+"final"
+],
+[
+"settlements B[2].value",
+760
+],
+[
+"settlements trader:http",
+200
+],
+[
+"settlements trader[0].day",
+"2026-07-16"
+],
+[
+"settlements trader[0].kind",
+"residual"
+],
+[
+"settlements trader[0].payoutE6",
+3000000
+],
+[
+"settlements trader[0].status",
+"final"
+],
+[
+"settlements trader[0].value",
+30
+],
+[
+"positions A:http",
+200
+],
+[
+"positions A.balances.juniorShares",
+0
+],
+[
+"positions A.balances.lockedE6",
+0
+],
+[
+"positions A.balances.seniorShares",
+0
+],
+[
+"positions A.balances.usdcE6",
+5015955667
+],
+[
+"positions A.policies[0].capTenthsF",
+60
+],
+[
+"positions A.policies[0].maxPayoutE6",
+36000000
+],
+[
+"positions A.policies[0].path",
+"house-hedge"
+],
+[
+"positions A.policies[0].peril",
+"cold"
+],
+[
+"positions A.policies[0].premiumE6",
+2957349
+],
+[
+"positions A.policies[0].refundedE6",
+0
+],
+[
+"positions A.policies[0].settlements[0].day",
+"2026-07-16"
+],
+[
+"positions A.policies[0].settlements[0].kind",
+"policy"
+],
+[
+"positions A.policies[0].settlements[0].payoutE6",
+4000008
+],
+[
+"positions A.policies[0].settlements[0].status",
+"final"
+],
+[
+"positions A.policies[0].settlements[0].value",
+880
+],
+[
+"positions A.policies[0].settlements[1].day",
+"2026-07-17"
+],
+[
+"positions A.policies[0].settlements[1].kind",
+"policy"
+],
+[
+"positions A.policies[0].settlements[1].payoutE6",
+4000008
+],
+[
+"positions A.policies[0].settlements[1].status",
+"final"
+],
+[
+"positions A.policies[0].settlements[1].value",
+880
+],
+[
+"positions A.policies[0].settlements[2].day",
+"2026-07-18"
+],
+[
+"positions A.policies[0].settlements[2].kind",
+"policy"
+],
+[
+"positions A.policies[0].settlements[2].payoutE6",
+12000000
+],
+[
+"positions A.policies[0].settlements[2].status",
+"final"
+],
+[
+"positions A.policies[0].settlements[2].value",
+800
+],
+[
+"positions A.policies[0].status",
+"settled"
+],
+[
+"positions A.policies[0].strikeTenthsF",
+900
+],
+[
+"positions A.policies[0].units",
+12
+],
+[
+"positions A.policies[1].capTenthsF",
+60
+],
+[
+"positions A.policies[1].maxPayoutE6",
+7000000
+],
+[
+"positions A.policies[1].path",
+"business-ladder"
+],
+[
+"positions A.policies[1].peril",
+"heat"
+],
+[
+"positions A.policies[1].premiumE6",
+5187000
+],
+[
+"positions A.policies[1].refundedE6",
+0
+],
+[
+"positions A.policies[1].settlements[0].day",
+"2026-07-16"
+],
+[
+"positions A.policies[1].settlements[0].kind",
+"policy"
+],
+[
+"positions A.policies[1].settlements[0].payoutE6",
+5600000
+],
+[
+"positions A.policies[1].settlements[0].status",
+"final"
+],
+[
+"positions A.policies[1].settlements[0].value",
+30
+],
+[
+"positions A.policies[1].status",
+"settled"
+],
+[
+"positions A.policies[1].strikeTenthsF",
+900
+],
+[
+"positions A.policies[1].units",
+10
+],
+[
+"positions B:http",
+200
+],
+[
+"positions B.balances.juniorShares",
+0
+],
+[
+"positions B.balances.lockedE6",
+0
+],
+[
+"positions B.balances.seniorShares",
+0
+],
+[
+"positions B.balances.usdcE6",
+4994267000
+],
+[
+"positions B.policies[0].capTenthsF",
+60
+],
+[
+"positions B.policies[0].maxPayoutE6",
+18000000
+],
+[
+"positions B.policies[0].path",
+"house-hedge"
+],
+[
+"positions B.policies[0].peril",
+"heat"
+],
+[
+"positions B.policies[0].premiumE6",
+5733000
+],
+[
+"positions B.policies[0].refundedE6",
+0
+],
+[
+"positions B.policies[0].settlements[0].day",
+"2026-07-16"
+],
+[
+"positions B.policies[0].settlements[0].kind",
+"policy"
+],
+[
+"positions B.policies[0].settlements[0].payoutE6",
+0
+],
+[
+"positions B.policies[0].settlements[0].status",
+"final"
+],
+[
+"positions B.policies[0].settlements[0].value",
+850
+],
+[
+"positions B.policies[0].settlements[1].day",
+"2026-07-17"
+],
+[
+"positions B.policies[0].settlements[1].kind",
+"policy"
+],
+[
+"positions B.policies[0].settlements[1].payoutE6",
+0
+],
+[
+"positions B.policies[0].settlements[1].status",
+"final"
+],
+[
+"positions B.policies[0].settlements[1].value",
+860
+],
+[
+"positions B.policies[0].settlements[2].day",
+"2026-07-18"
+],
+[
+"positions B.policies[0].settlements[2].kind",
+"policy"
+],
+[
+"positions B.policies[0].settlements[2].payoutE6",
+0
+],
+[
+"positions B.policies[0].settlements[2].status",
+"final"
+],
+[
+"positions B.policies[0].settlements[2].value",
+760
+],
+[
+"positions B.policies[0].status",
+"settled"
+],
+[
+"positions B.policies[0].strikeTenthsF",
+900
+],
+[
+"positions B.policies[0].units",
+6
+],
+[
+"positions LP:http",
+200
+],
+[
+"positions LP.balances.juniorShares",
+0
+],
+[
+"positions LP.balances.lockedE6",
+0
+],
+[
+"positions LP.balances.seniorShares",
+4000000000000000
+],
+[
+"positions LP.balances.usdcE6",
+5000000000
+],
+[
+"positions LP.lp[0].shares",
+4000000000000000
+],
+[
+"positions LP.lp[0].tranche",
+"senior"
+],
+[
+"positions LP.lp[0].valueE6",
+4000000538
+],
+[
+"positions trader:http",
+200
+],
+[
+"positions trader.balances.juniorShares",
+0
+],
+[
+"positions trader.balances.lockedE6",
+0
+],
+[
+"positions trader.balances.seniorShares",
+0
+],
+[
+"positions trader.balances.usdcE6",
+1997750000
+],
+[
+"stake WI (A holds demo WI):http",
+200
+],
+[
+"stake WI (A holds demo WI).result.stakedShares",
+"1000000000000000000000000000"
+],
+[
+"stake WI (A holds demo WI).result.stakedValueWei",
+"1000000000000000000000"
+],
+[
+"stake WI (A holds demo WI).result.totalShares",
+"1001000000000000000000000000000"
+],
+[
+"stake WI (A holds demo WI).result.totalStakedWei",
+"1001000000000000000000000"
+],
+[
+"stake WI (A holds demo WI).result.votingPowerWei",
+"1000000000000000000000"
+],
+[
+"stake WI (A holds demo WI).result.wiBalanceWei",
+"999000000000000000000000"
+],
+[
+"stake WI (A holds demo WI).status",
+"done"
+],
+[
+"staking A:http",
+200
+],
+[
+"staking A.stakedShares",
+"1000000000000000000000000000"
+],
+[
+"staking A.stakedValueWei",
+"1000000000000000000000"
+],
+[
+"staking A.totalShares",
+"1001000000000000000000000000000"
+],
+[
+"staking A.totalStakedWei",
+"1001000000000000000000000"
+],
+[
+"staking A.votingPowerWei",
+"1000000000000000000000"
+],
+[
+"staking A.wiBalanceWei",
+"999000000000000000000000"
+],
+[
+"pool:http",
+200
+],
+[
+"pool.capitalE6",
+504989684333
+],
+[
+"pool.deployedE6",
+5721000000
+],
+[
+"pool.exposureByContract[0].lockedE6",
+270000000
+],
+[
+"pool.exposureByContract[0].netQty",
+0
+],
+[
+"pool.exposureByContract[1].lockedE6",
+276000000
+],
+[
+"pool.exposureByContract[1].netQty",
+0
+],
+[
+"pool.exposureByContract[2].lockedE6",
+267000000
+],
+[
+"pool.exposureByContract[2].netQty",
+0
+],
+[
+"pool.exposureByContract[3].lockedE6",
+273000000
+],
+[
+"pool.exposureByContract[3].netQty",
+0
+],
+[
+"pool.exposureByContract[4].lockedE6",
+279000000
+],
+[
+"pool.exposureByContract[4].netQty",
+0
+],
+[
+"pool.exposureByContract[5].lockedE6",
+276000000
+],
+[
+"pool.exposureByContract[5].netQty",
+0
+],
+[
+"pool.exposureByContract[6].lockedE6",
+270000000
+],
+[
+"pool.exposureByContract[6].netQty",
+0
+],
+[
+"pool.freeE6",
+499268684333
+],
+[
+"pool.juniorAssetsE6",
+199989643251
+],
+[
+"pool.juniorShares",
+200000000000000000
+],
+[
+"pool.lockedE6",
+5721000000
+],
+[
+"pool.navHistory[0].juniorNavE6",
+1000039
+],
+[
+"pool.navHistory[0].seniorNavE6",
+1000000
+],
+[
+"pool.navHistory[1].juniorNavE6",
+1000054
+],
+[
+"pool.navHistory[1].seniorNavE6",
+1000000
+],
+[
+"pool.navHistory[2].juniorNavE6",
+1000038
+],
+[
+"pool.navHistory[2].seniorNavE6",
+1000000
+],
+[
+"pool.navHistory[3].juniorNavE6",
+1000016
+],
+[
+"pool.navHistory[3].seniorNavE6",
+1000000
+],
+[
+"pool.navHistory[4].juniorNavE6",
+999948
+],
+[
+"pool.navHistory[4].seniorNavE6",
+1000000
+],
+[
+"pool.queue.deposits[0].amountE6",
+5000000000
+],
+[
+"pool.queue.deposits[0].kind",
+"deposit"
+],
+[
+"pool.queue.deposits[0].shares",
+5000000000000000
+],
+[
+"pool.queue.deposits[0].status",
+"processed"
+],
+[
+"pool.queue.deposits[0].tranche",
+"senior"
+],
+[
+"pool.queue.withdrawals[0].amountE6",
+null
+],
+[
+"pool.queue.withdrawals[0].kind",
+"withdrawal"
+],
+[
+"pool.queue.withdrawals[0].shares",
+1000000000000000
+],
+[
+"pool.queue.withdrawals[0].status",
+"queued"
+],
+[
+"pool.queue.withdrawals[0].tranche",
+"senior"
+],
+[
+"pool.reservedE6",
+0
+],
+[
+"pool.seniorAssetsE6",
+305000041082
+],
+[
+"pool.seniorShares",
+305000000000000000
+]
+]
